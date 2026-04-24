@@ -1,0 +1,96 @@
+# Project Architecture: AI Mentor
+
+Here is a visual representation of the AI Mentor application's architecture and structure.
+
+```mermaid
+graph TD
+    %% Define styles
+    classDef frontend fill:#61DAFB,stroke:#333,stroke-width:1px,color:#000;
+    classDef backend fill:#4B8BBE,stroke:#333,stroke-width:1px,color:#fff;
+    classDef storage fill:#FFDFBA,stroke:#333,stroke-width:1px,color:#000;
+    classDef context fill:#EAEAEA,stroke:#333,stroke-width:1px,color:#000,stroke-dasharray: 5 5;
+
+    %% ── Frontend Domain ──
+    subgraph Frontend [Frontend (React + Vite)]
+        App[App.jsx\nReact Router]
+        Ctx((AppContext)):::context
+        
+        %% Pages
+        subgraph Pages [Pages]
+            direction TB
+            Splash[SplashScreen]
+            Onboard[Onboarding]
+            Setup[ProfileSetup]
+            CareerSel[CareerSelect]
+            Dash[Dashboard]
+            Chat[MentorChat]
+            College[CollegePredictor]
+            Decisions[DecisionEngine]
+            Skills[SkillHub]
+            Opps[Opportunities]
+            Prof[Profile]
+        end
+
+        %% Components
+        subgraph Components [Shared Components]
+            Btn[Button]
+            Crd[Card]
+            Inp[Input]
+            TopNav[TopBar]
+            BotNav[BottomNav]
+            Journey[MyJourney]
+        end
+
+        App --> Ctx
+        App --> Pages
+        Pages -. Uses .-> Components
+        Pages -. Reads/Writes .-> Ctx
+        Journey -. Subscribes to .-> Ctx
+    end
+
+    %% ── Backend Domain ──
+    subgraph Backend [Backend (Python + Flask)]
+        AppPy[app.py\nAPI Gateway]
+        
+        %% Routes
+        subgraph Routes [API Routes]
+            RouteCar[career_routes.py]
+            RouteRoad[roadmap_routes.py]
+            RouteTask[task_routes.py]
+            RouteMen[mentor_routes.py]
+            RouteProg[progress_routes.py]
+        end
+
+        %% Utilities
+        subgraph Utils [Business Logic]
+            Log[logic.py]
+            AI[ai_helper.py\nLLM Integration]
+        end
+
+        AppPy --> Routes
+        Routes --> Log
+        Log --> AI
+    end
+
+    %% ── File Storage Domain ──
+    subgraph StorageLayer [Local JSON Storage]
+        Data[data/\nStatic JSON (colleges, paths)]:::storage
+        Store[storage/\nUser Data (progress)]:::storage
+    end
+
+    %% ── Connections ──
+    Setup -- POST /api/get_career --> RouteCar
+    Journey -- POST /api/get_roadmap --> RouteRoad
+    Chat -- POST /api/ai_mentor --> RouteMen
+
+    Log -. Reads .-> Data
+    Log -. Reads/Writes .-> Store
+
+    %% Apply Classes
+    Frontend:::frontend
+    Pages:::frontend
+    Components:::frontend
+    Backend:::backend
+    Routes:::backend
+    Utils:::backend
+```

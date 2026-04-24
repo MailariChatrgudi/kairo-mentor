@@ -1,0 +1,45 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: rgba(248, 248, 248, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.top-bar__left, .top-bar__right {
+  width: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.top-bar__right {
+  justify-content: flex-end;
+}
+
+.top-bar__back {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.top-bar__back:active {
+  opacity: 0.5;
+}
+
+.top-bar__title {
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  flex: 1;
+}

@@ -1,0 +1,97 @@
+.opportunities {
+  min-height: 100vh;
+  background: var(--color-primary-bg);
+  padding-bottom: 90px;
+}
+
+.opportunities__filters {
+  display: flex;
+  gap: 8px;
+  padding: 12px 20px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.opportunities__filters::-webkit-scrollbar {
+  display: none;
+}
+
+.opportunities__filter {
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--color-secondary-bg);
+  background: var(--color-white);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.opportunities__filter--active {
+  background: var(--color-accent-gold);
+  border-color: var(--color-accent-gold);
+  color: white;
+}
+
+.opportunities__list {
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.opportunities__card {
+  padding: 16px !important;
+}
+
+.opportunities__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.opportunities__type {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.opportunities__title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.opportunities__meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.opportunities__meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.opportunities__tags {
+  display: flex;
+  gap: 6px;
+}
+
+.opportunities__tag {
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background: var(--color-secondary-bg);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}

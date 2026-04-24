@@ -1,0 +1,196 @@
+.mentor-chat {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-primary-bg);
+}
+
+.mentor-chat__messages {
+  flex: 1;
+  padding: 16px 16px 180px;
+  overflow-y: auto;
+}
+
+.mentor-chat__avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 24px;
+}
+
+.mentor-chat__avatar {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 8px;
+}
+
+.mentor-chat__avatar-ring {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #C8A951, #D8D3B0);
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mentor-chat__avatar-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mentor-chat__avatar-pulse {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid rgba(200, 169, 81, 0.2);
+  animation: pulse-ring 2s ease-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.2); opacity: 0; }
+}
+
+.mentor-chat__avatar-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.mentor-chat__bubble {
+  max-width: 80%;
+  padding: 14px 18px;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.mentor-chat__bubble--mentor {
+  background: var(--color-white);
+  color: var(--color-text-primary);
+  border-bottom-left-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-right: auto;
+}
+
+.mentor-chat__bubble--user {
+  background: var(--color-accent-gold);
+  color: white;
+  border-bottom-right-radius: 6px;
+  margin-left: auto;
+}
+
+.mentor-chat__typing {
+  display: flex;
+  gap: 5px;
+  padding: 4px 0;
+}
+
+.mentor-chat__typing span {
+  width: 7px;
+  height: 7px;
+  background: #C0C0C0;
+  border-radius: 50%;
+  animation: typing-dot 1.4s ease-in-out infinite;
+}
+
+.mentor-chat__typing span:nth-child(2) { animation-delay: 0.2s; }
+.mentor-chat__typing span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typing-dot {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-6px); opacity: 1; }
+}
+
+.mentor-chat__quick-replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 0 16px;
+}
+
+.mentor-chat__quick-btn {
+  padding: 10px 16px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--color-accent-gold);
+  background: rgba(200, 169, 81, 0.06);
+  color: var(--color-accent-gold);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mentor-chat__quick-btn:active {
+  background: var(--color-accent-gold);
+  color: white;
+  transform: scale(0.96);
+}
+
+.mentor-chat__input-bar {
+  position: fixed;
+  bottom: 68px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(0,0,0,0.04);
+}
+
+.mentor-chat__input {
+  flex: 1;
+  padding: 14px 18px;
+  border: 1.5px solid var(--color-secondary-bg);
+  border-radius: var(--radius-full);
+  font-size: 15px;
+  font-family: var(--font-family);
+  outline: none;
+  background: var(--color-primary-bg);
+  color: var(--color-text-primary);
+  transition: border-color 0.2s;
+}
+
+.mentor-chat__input:focus {
+  border-color: var(--color-accent-gold);
+}
+
+.mentor-chat__input::placeholder {
+  color: #BEBEBE;
+}
+
+.mentor-chat__send {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-secondary-bg);
+  color: #BEBEBE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mentor-chat__send--active {
+  background: var(--color-accent-gold);
+  color: white;
+  box-shadow: 0 4px 12px rgba(200, 169, 81, 0.3);
+}

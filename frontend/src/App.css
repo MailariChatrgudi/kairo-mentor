@@ -1,0 +1,6 @@
+/* App-specific transitions and global structure overrides */
+
+.page-transition-wrapper {
+  width: 100%;
+  min-height: 100vh;
+}

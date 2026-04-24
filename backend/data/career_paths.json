@@ -1,0 +1,52 @@
+{
+  "IT": {
+    "description": "Technology and software development careers — high demand, high pay, remote-friendly.",
+    "interest_keywords": ["coding", "programming", "software", "technology", "computers", "apps", "websites", "data", "ai", "cloud", "cybersecurity", "hacking", "mobile", "android", "digital", "automation", "devops"],
+    "goal_keywords": ["high salary", "remote work", "innovation", "startup", "tech company", "product", "build", "create", "freelance"],
+    "careers": ["Software Engineer", "Data Analyst", "AI/ML Engineer", "Cybersecurity Analyst", "Cloud Engineer", "Web Developer", "Mobile App Developer"],
+    "branches": ["Computer Science", "Information Technology", "AI & Machine Learning", "Data Science"],
+    "avg_package": "₹6–25 LPA",
+    "top_companies": ["Google", "Microsoft", "Amazon", "Infosys", "TCS", "Wipro"],
+    "rank_range": { "general": 50000, "obc": 75000, "sc_st": 100000 }
+  },
+  "Core": {
+    "description": "Traditional engineering disciplines — civil, mechanical, electrical — backbone of infrastructure.",
+    "interest_keywords": ["engineering", "machines", "construction", "buildings", "electricity", "mechanical", "civil", "chemical", "electronics", "hardware", "manufacturing", "automobile", "circuits", "power", "energy"],
+    "goal_keywords": ["stability", "infrastructure", "design", "build things", "physical", "manufacturing", "government psu", "core sector"],
+    "careers": ["Mechanical Engineer", "Civil Engineer", "Electrical Engineer", "Electronics & Communication Engineer", "Chemical Engineer"],
+    "branches": ["Mechanical Engineering", "Civil Engineering", "Electrical Engineering", "Electronics & Communication", "Chemical Engineering"],
+    "avg_package": "₹3–8 LPA",
+    "top_companies": ["L&T", "BHEL", "ONGC", "SAIL", "Tata Steel", "Siemens"],
+    "rank_range": { "general": 100000, "obc": 150000, "sc_st": 200000 }
+  },
+  "Govt": {
+    "description": "Government and public sector careers — job security, pension, prestige, and social impact.",
+    "interest_keywords": ["government", "stability", "ias", "upsc", "banking", "ssc", "railway", "defence", "army", "navy", "airforce", "police", "teaching", "civil services", "isro", "drdo"],
+    "goal_keywords": ["job security", "pension", "stable", "respect", "prestige", "serve nation", "public service", "officer", "ias"],
+    "careers": ["IAS Officer", "Bank PO", "SSC CGL Officer", "Railway Engineer", "Defence Officer", "ISRO/DRDO Scientist", "Government Teacher"],
+    "branches": ["Any Engineering Branch", "Computer Science", "Electronics", "Mechanical"],
+    "avg_package": "₹4–12 LPA + perks",
+    "top_companies": ["UPSC", "IBPS", "SSC", "Indian Railways", "ISRO", "DRDO", "Defence"],
+    "rank_range": { "general": 999999, "obc": 999999, "sc_st": 999999 }
+  },
+  "Startup": {
+    "description": "Fast-paced innovation and entrepreneurship — build products, join early-stage companies, or start your own.",
+    "interest_keywords": ["startup", "entrepreneur", "founder", "product", "ux", "ui", "design", "growth", "venture", "innovation", "pitch", "funding", "mvp", "agile", "fullstack", "digital marketing", "freelance"],
+    "goal_keywords": ["own business", "startup", "be my own boss", "build a product", "launch", "independent", "self employed", "entrepreneur", "venture", "founder", "create something"],
+    "careers": ["Full-Stack Developer", "Product Manager", "UI/UX Designer", "Growth Hacker", "Startup Founder", "DevOps Engineer"],
+    "branches": ["Computer Science", "Information Technology", "Design", "Management"],
+    "avg_package": "₹4–15 LPA (equity upside)",
+    "top_companies": ["Zepto", "Razorpay", "CRED", "PhonePe", "Meesho", "Slice"],
+    "rank_range": { "general": 100000, "obc": 150000, "sc_st": 200000 }
+  },
+  "Business": {
+    "description": "Management, finance, and commerce careers — strategy, analysis, and organizational leadership.",
+    "interest_keywords": ["business", "finance", "accounting", "management", "marketing", "hr", "human resources", "supply chain", "commerce", "economics", "corporate", "sales", "operations", "logistics", "financial", "ca", "chartered"],
+    "goal_keywords": ["management", "corporate", "finance", "mba", "business growth", "consulting", "strategy", "leadership", "team management", "investment"],
+    "careers": ["Business Analyst", "Chartered Accountant", "Marketing Manager", "HR Manager", "Financial Analyst", "Supply Chain Manager"],
+    "branches": ["Management", "Commerce", "MBA", "BBA", "Economics"],
+    "avg_package": "₹4–14 LPA",
+    "top_companies": ["Deloitte", "McKinsey", "KPMG", "Accenture", "HDFC Bank", "Goldman Sachs"],
+    "rank_range": { "general": 999999, "obc": 999999, "sc_st": 999999 }
+  }
+}

@@ -1,0 +1,40 @@
+.splash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.splash__gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, #FFFFFF 0%, #F8F8F8 30%, #F0EDE0 70%, #EDE8D4 100%);
+  z-index: 0;
+}
+
+.splash__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.splash__logo {
+  margin-bottom: 8px;
+}
+
+.splash__logo-img {
+  width: 140px;
+  height: auto;
+  border-radius: 24px;
+}
+
+.splash__tagline {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

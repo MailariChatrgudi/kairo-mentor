@@ -1,0 +1,206 @@
+[
+  {
+    "college_name": "BMS College of Engineering",
+    "location": "Basavanagudi, Bengaluru",
+    "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "cutoff_rank": {
+      "KCET": {
+        "CSE": "1000-3000",
+        "ISE": "2000-5000",
+        "ECE": "5000-12000",
+        "EEE": "10000-25000",
+        "Mechanical": "20000-40000+",
+        "Civil": "30000-60000+"
+      },
+      "COMEDK": {
+        "CSE": "1500-4000",
+        "ISE": "3000-6000",
+        "ECE": "5000-10000",
+        "EEE": "10000-20000"
+      }
+    },
+    "infrastructure_rating": 3.8,
+    "academics_rating": 3.8,
+    "placement_rating": 4.3,
+    "average_package": "₹6–10 LPA",
+    "top_companies": ["Amazon", "Microsoft", "Deloitte", "Accenture", "Infosys", "TCS", "Capgemini", "Cisco"],
+    "pros": [
+      "Strong placements for CSE/ISE/ECE",
+      "Excellent campus life",
+      "Prime Bangalore location",
+      "Strong alumni network",
+      "Good ROI",
+      "Good internship exposure"
+    ],
+    "cons": [
+      "Average infrastructure",
+      "Outdated VTU syllabus",
+      "Weak core placements",
+      "Wi-Fi and hostel issues",
+      "Requires self-learning"
+    ],
+    "youtube_review_links": [
+      "https://youtu.be/4xboBV4baog",
+      "https://youtu.be/nf4h62BdFSo"
+    ]
+  },
+  {
+    "college_name": "R.V. College of Engineering",
+    "location": "Mysore Road, Bengaluru",
+    "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "cutoff_rank": {
+      "KCET": {
+        "CSE": "300-1200",
+        "ISE": "800-2500",
+        "ECE": "2000-5000",
+        "EEE": "4000-10000",
+        "Mechanical": "8000-20000",
+        "Civil": "15000-40000"
+      },
+      "COMEDK": {
+        "CSE": "300-1200",
+        "ISE": "1000-3000",
+        "ECE": "2000-6000",
+        "EEE": "5000-12000"
+      }
+    },
+    "infrastructure_rating": 4.3,
+    "academics_rating": 4.0,
+    "placement_rating": 4.5,
+    "average_package": "₹8–12 LPA",
+    "top_companies": ["Amazon", "Microsoft", "Adobe", "Goldman Sachs", "Cisco", "Deloitte", "Infosys", "TCS"],
+    "pros": [
+      "Top-tier placements",
+      "Strong academics",
+      "Competitive peer group",
+      "Good reputation",
+      "Strong industry connections"
+    ],
+    "cons": [
+      "Outside city location",
+      "Less vibrant campus life",
+      "High academic pressure",
+      "Average hostel facilities"
+    ],
+    "youtube_review_links": [
+      "https://youtu.be/Z9qk2Nrhgfs",
+      "https://youtu.be/he6l2_dPMdA"
+    ]
+  },
+  {
+    "college_name": "Ramaiah Institute of Technology",
+    "location": "MS Ramaiah Nagar, Bengaluru",
+    "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "cutoff_rank": {
+      "KCET": {
+        "CSE": "1500-4000",
+        "ISE": "2500-6000",
+        "ECE": "6000-12000",
+        "EEE": "10000-25000",
+        "Mechanical": "20000-40000+",
+        "Civil": "30000-60000+"
+      },
+      "COMEDK": {
+        "CSE": "2000-5000",
+        "ISE": "3500-7000",
+        "ECE": "6000-12000",
+        "EEE": "10000-20000"
+      }
+    },
+    "infrastructure_rating": 4.0,
+    "academics_rating": 3.8,
+    "placement_rating": 4.3,
+    "average_package": "₹6–10 LPA",
+    "top_companies": ["Amazon", "Microsoft", "Accenture", "Deloitte", "Infosys", "TCS", "Capgemini", "Bosch"],
+    "pros": [
+      "Balanced college life",
+      "Good placements",
+      "Good location",
+      "Less academic pressure",
+      "Strong alumni network"
+    ],
+    "cons": [
+      "Not top-tier infrastructure",
+      "Outdated syllabus",
+      "Limited core placements",
+      "Moderate research culture"
+    ],
+    "youtube_review_links": [
+      "https://youtu.be/HMBGYXurrfo",
+      "https://youtu.be/KtKmb8Zl1nk"
+    ]
+  },
+  {
+    "college_name": "PES University",
+    "location": "RR Nagar & Electronic City, Bengaluru",
+    "branches_available": ["CSE", "ECE", "EEE", "Mechanical", "Civil"],
+    "cutoff_rank": {
+      "KCET": {
+        "CSE": "300-1200",
+        "ECE": "1500-4000"
+      },
+      "PESSAT": {
+        "CSE": "1000-2500",
+        "ECE": "2500-6000"
+      }
+    },
+    "infrastructure_rating": 4.5,
+    "academics_rating": 4.3,
+    "placement_rating": 4.5,
+    "average_package": "₹8–12 LPA",
+    "top_companies": ["Amazon", "Microsoft", "Adobe", "Flipkart", "Goldman Sachs", "Cisco", "Deloitte"],
+    "pros": [
+      "Best infrastructure",
+      "Strong placements",
+      "Updated curriculum",
+      "Strong coding culture",
+      "High-quality peer group"
+    ],
+    "cons": [
+      "High academic pressure",
+      "High fees",
+      "Less vibrant campus life",
+      "Limited core opportunities"
+    ],
+    "youtube_review_links": [
+      "https://youtu.be/q2eOqHGCxj4",
+      "https://youtu.be/InBJyaQVT68"
+    ]
+  },
+  {
+    "college_name": "Dayananda Sagar College of Engineering",
+    "location": "Kumaraswamy Layout, Bengaluru",
+    "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "cutoff_rank": {
+      "KCET": {
+        "CSE": "5000-12000",
+        "ISE": "8000-15000",
+        "ECE": "12000-25000",
+        "EEE": "20000-40000",
+        "Mechanical": "30000-60000+",
+        "Civil": "40000-80000+"
+      }
+    },
+    "infrastructure_rating": 4.0,
+    "academics_rating": 3.5,
+    "placement_rating": 3.8,
+    "average_package": "₹4–7 LPA",
+    "top_companies": ["Infosys", "TCS", "Wipro", "Accenture", "Capgemini", "Cognizant"],
+    "pros": [
+      "Decent infrastructure",
+      "Good campus life",
+      "Affordable via KCET",
+      "Manageable academics"
+    ],
+    "cons": [
+      "Weaker placements",
+      "Limited high packages",
+      "Outdated syllabus",
+      "Requires self-learning"
+    ],
+    "youtube_review_links": [
+      "https://youtu.be/T5NPBI3_qIM",
+      "https://youtu.be/kRfsqIQboRM"
+    ]
+  }
+]

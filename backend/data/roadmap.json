@@ -1,0 +1,239 @@
+{
+  "Software Engineer": {
+    "total_weeks": 16,
+    "total_days": 90,
+    "phases": [
+      {
+        "phase": 1,
+        "title": "Foundation & Programming Basics",
+        "weeks": "1–3",
+        "topics": ["Python/Java basics", "Variables, loops, functions", "OOP concepts", "Git & GitHub basics"],
+        "resources": ["CS50 Harvard (Free)", "Python.org docs", "GeeksforGeeks", "FreeCodeCamp"],
+        "milestone": "Build a simple CLI calculator or todo app",
+        "difficulty": "Beginner"
+      },
+      {
+        "phase": 2,
+        "title": "Data Structures & Algorithms",
+        "weeks": "4–7",
+        "topics": ["Arrays, LinkedList, Stack, Queue", "Recursion & Backtracking", "Sorting & Searching", "Trees & Graphs basics"],
+        "resources": ["LeetCode", "Striver's SDE Sheet", "Abdul Bari DSA (YouTube)", "NeetCode.io"],
+        "milestone": "Solve 50 LeetCode Easy problems",
+        "difficulty": "Intermediate"
+      },
+      {
+        "phase": 3,
+        "title": "System Design & Databases",
+        "weeks": "8–10",
+        "topics": ["SQL basics", "MongoDB intro", "REST API design", "System design fundamentals"],
+        "resources": ["SQLZoo", "Mongo University", "System Design Primer (GitHub)", "Tech Dummies (YouTube)"],
+        "milestone": "Design a URL shortener system",
+        "difficulty": "Intermediate"
+      },
+      {
+        "phase": 4,
+        "title": "Full Stack Development",
+        "weeks": "11–14",
+        "topics": ["React.js frontend", "Node.js/Express or Flask backend", "REST API integration", "Authentication (JWT)"],
+        "resources": ["The Odin Project", "Full Stack Open", "Traversy Media (YouTube)", "Fireship.io"],
+        "milestone": "Build a full-stack CRUD application",
+        "difficulty": "Advanced"
+      },
+      {
+        "phase": 5,
+        "title": "Interview Prep & Projects",
+        "weeks": "15–16",
+        "topics": ["Resume building", "Mock interviews", "Portfolio projects", "Company-specific prep"],
+        "resources": ["Pramp.com", "Interviewing.io", "LinkedIn", "GitHub portfolio"],
+        "milestone": "Apply to 20 companies with polished portfolio",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "Data Analyst": {
+    "total_weeks": 14,
+    "total_days": 90,
+    "phases": [
+      {
+        "phase": 1,
+        "title": "Excel & SQL Fundamentals",
+        "weeks": "1–2",
+        "topics": ["Excel formulas & pivot tables", "SQL SELECT, JOIN, GROUP BY", "Data cleaning basics", "Spreadsheet analysis"],
+        "resources": ["Mode SQL Tutorial", "sqlbolt.com", "Excel Easy", "W3Schools SQL"],
+        "milestone": "Analyze a sales dataset using SQL",
+        "difficulty": "Beginner"
+      },
+      {
+        "phase": 2,
+        "title": "Python for Data Analysis",
+        "weeks": "3–5",
+        "topics": ["Python basics", "Pandas & NumPy", "Data cleaning with Pandas", "Matplotlib & Seaborn"],
+        "resources": ["Kaggle Python Course", "Pandas docs", "Corey Schafer (YouTube)", "Real Python"],
+        "milestone": "Exploratory analysis on Titanic dataset",
+        "difficulty": "Beginner"
+      },
+      {
+        "phase": 3,
+        "title": "Data Visualization & Reporting",
+        "weeks": "6–8",
+        "topics": ["Power BI basics", "Tableau fundamentals", "Dashboard design", "Storytelling with data"],
+        "resources": ["Power BI Microsoft Learn", "Tableau Public", "DataCamp", "Storytelling with Data (book)"],
+        "milestone": "Build an interactive sales dashboard",
+        "difficulty": "Intermediate"
+      },
+      {
+        "phase": 4,
+        "title": "Statistics & Machine Learning Basics",
+        "weeks": "9–12",
+        "topics": ["Descriptive statistics", "Probability basics", "Linear regression", "Classification intro"],
+        "resources": ["StatQuest (YouTube)", "Khan Academy Stats", "Scikit-learn docs", "Kaggle courses"],
+        "milestone": "Predict house prices using linear regression",
+        "difficulty": "Intermediate"
+      },
+      {
+        "phase": 5,
+        "title": "Portfolio & Job Prep",
+        "weeks": "13–14",
+        "topics": ["Kaggle competitions", "Portfolio on GitHub", "Interview preparation", "Case studies"],
+        "resources": ["Kaggle.com", "GitHub", "Analytics Vidhya", "HackerRank SQL"],
+        "milestone": "Complete 2 Kaggle projects + LinkedIn profile",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "AI/ML Engineer": {
+    "total_weeks": 18,
+    "total_days": 90,
+    "phases": [
+      {
+        "phase": 1,
+        "title": "Math & Python Foundations",
+        "weeks": "1–3",
+        "topics": ["Linear Algebra basics", "Calculus for ML", "Probability & Statistics", "Python + NumPy + Pandas"],
+        "resources": ["3Blue1Brown (YouTube)", "Khan Academy", "MIT OpenCourseWare", "Kaggle Python"],
+        "milestone": "Implement matrix operations from scratch",
+        "difficulty": "Beginner"
+      },
+      {
+        "phase": 2,
+        "title": "Machine Learning Core",
+        "weeks": "4–8",
+        "topics": ["Supervised learning", "Unsupervised learning", "Model evaluation", "Scikit-learn"],
+        "resources": ["Andrew Ng ML Course (Coursera)", "Hands-on ML (book)", "Kaggle courses", "Towards Data Science"],
+        "milestone": "Build and evaluate 5 different ML models",
+        "difficulty": "Intermediate"
+      },
+      {
+        "phase": 3,
+        "title": "Deep Learning & Neural Networks",
+        "weeks": "9–13",
+        "topics": ["Neural network basics", "CNN for images", "RNN for sequences", "TensorFlow/PyTorch"],
+        "resources": ["fast.ai", "Deep Learning Specialization (Coursera)", "PyTorch tutorials", "Papers With Code"],
+        "milestone": "Train an image classifier with 90%+ accuracy",
+        "difficulty": "Advanced"
+      },
+      {
+        "phase": 4,
+        "title": "NLP & Generative AI",
+        "weeks": "14–16",
+        "topics": ["Text preprocessing", "Transformers & BERT", "LLMs & prompt engineering", "LangChain basics"],
+        "resources": ["Hugging Face course", "Andrej Karpathy (YouTube)", "LangChain docs", "OpenAI docs"],
+        "milestone": "Build an AI chatbot using LLMs",
+        "difficulty": "Advanced"
+      },
+      {
+        "phase": 5,
+        "title": "MLOps & Deployment",
+        "weeks": "17–18",
+        "topics": ["Model deployment with Flask/FastAPI", "Docker basics", "MLflow for experiments", "Cloud deployment (AWS/GCP)"],
+        "resources": ["MLflow docs", "Docker docs", "Made With ML", "AWS Free Tier"],
+        "milestone": "Deploy ML model as a live REST API",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "IAS Officer": {
+    "total_weeks": 52,
+    "total_days": 365,
+    "phases": [
+      {
+        "phase": 1,
+        "title": "UPSC Prelims Preparation",
+        "weeks": "1–20",
+        "topics": ["Indian Polity (Laxmikanth)", "Modern History", "Geography", "Economy basics", "Current Affairs"],
+        "resources": ["NCERT books 6–12", "The Hindu newspaper", "Vajiram & Ravi notes", "Vision IAS"],
+        "milestone": "Complete NCERT reading + 500 MCQ practice",
+        "difficulty": "Hard"
+      },
+      {
+        "phase": 2,
+        "title": "UPSC Mains Preparation",
+        "weeks": "21–40",
+        "topics": ["Essay writing", "GS Paper 1–4", "Optional subject", "Answer writing practice"],
+        "resources": ["Insights IAS", "UPSC previous papers", "ForumIAS", "Mrunal.org"],
+        "milestone": "Write 50 mains answers and get feedback",
+        "difficulty": "Hard"
+      },
+      {
+        "phase": 3,
+        "title": "Personality Test (Interview)",
+        "weeks": "41–52",
+        "topics": ["Current affairs mastery", "DAF (Detailed Application Form)", "Mock interviews", "Personality development"],
+        "resources": ["IASbaba", "Mock interview centres", "UPSC topper interviews", "The Hindu editorials"],
+        "milestone": "Clear 10 mock interview rounds",
+        "difficulty": "Hard"
+      }
+    ]
+  },
+  "Full-Stack Developer": {
+    "total_weeks": 14,
+    "total_days": 90,
+    "phases": [
+      {
+        "phase": 1,
+        "title": "Web Fundamentals",
+        "weeks": "1–2",
+        "topics": ["HTML5 & CSS3", "JavaScript ES6+", "DOM manipulation", "Responsive design"],
+        "resources": ["MDN Web Docs", "The Odin Project", "JavaScript.info", "CSS Tricks"],
+        "milestone": "Build a responsive personal portfolio website",
+        "difficulty": "Beginner"
+      },
+      {
+        "phase": 2,
+        "title": "React.js Frontend",
+        "weeks": "3–5",
+        "topics": ["React components & hooks", "State management (Context/Redux)", "React Router", "Fetching APIs"],
+        "resources": ["React docs (react.dev)", "Traversy Media", "Jack Herrington (YouTube)", "Scrimba React course"],
+        "milestone": "Build a weather app with live API",
+        "difficulty": "Intermediate"
+      },
+      {
+        "phase": 3,
+        "title": "Node.js Backend",
+        "weeks": "6–8",
+        "topics": ["Node.js & Express", "REST API design", "MongoDB with Mongoose", "Authentication (JWT/OAuth)"],
+        "resources": ["Node.js docs", "Express docs", "MongoDB University", "Academind (YouTube)"],
+        "milestone": "Build a REST API with full CRUD + Auth",
+        "difficulty": "Intermediate"
+      },
+      {
+        "phase": 4,
+        "title": "Advanced Stack & Deployment",
+        "weeks": "9–12",
+        "topics": ["TypeScript basics", "Next.js for SSR", "Docker containers", "Deploy on Vercel/Railway"],
+        "resources": ["Next.js docs", "TypeScript docs", "Docker docs", "Vercel docs"],
+        "milestone": "Deploy a full-stack SaaS application",
+        "difficulty": "Advanced"
+      },
+      {
+        "phase": 5,
+        "title": "Portfolio & Interview Prep",
+        "weeks": "13–14",
+        "topics": ["3 full projects on GitHub", "System design for web", "JS interview questions", "Resume optimization"],
+        "resources": ["GitHub", "GreatFrontEnd", "Tech Interview Handbook", "LinkedIn"],
+        "milestone": "Land first internship or Junior Dev role",
+        "difficulty": "Advanced"
+      }
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+.career-select {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-primary-bg);
+  padding-bottom: 40px;
+}
+
+/* ── Header ────────────────────────────────────── */
+.career-select__header {
+  padding: 48px 24px 24px;
+}
+
+.career-select__step-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.career-select__header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--color-text-primary);
+}
+
+.career-select__subtitle {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+/* ── Card list ─────────────────────────────────── */
+.career-select__list {
+  flex: 1;
+  padding: 8px 24px;
+}
+
+.career-select__card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-secondary-bg);
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+  font-family: var(--font-family);
+}
+
+.career-select__card:hover {
+  border-color: rgba(200, 169, 81, 0.4);
+  box-shadow: 0 4px 20px rgba(200, 169, 81, 0.08);
+  transform: translateY(-1px);
+}
+
+.career-select__card--active {
+  border-color: var(--color-accent-gold);
+  background: rgba(200, 169, 81, 0.04);
+  box-shadow: 0 4px 24px rgba(200, 169, 81, 0.14);
+}
+
+.career-select__card-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+}
+
+.career-select__icon-wrap {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 12px;
+  background: var(--color-secondary-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.career-select__card--active .career-select__icon-wrap {
+  background: rgba(200, 169, 81, 0.12);
+}
+
+.career-select__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.career-select__card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.3;
+}
+
+.career-select__card--active .career-select__card-title {
+  color: var(--color-accent-gold);
+}
+
+.career-select__card-desc {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+/* ── Footer ────────────────────────────────────── */
+.career-select__footer {
+  padding: 20px 24px;
+}
