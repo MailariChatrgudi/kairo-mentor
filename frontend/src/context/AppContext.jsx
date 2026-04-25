@@ -25,8 +25,8 @@ export const AppProvider = ({ children }) => {
   const [journeyProgress, setJourneyProgress] = useState(() => {
     try {
       return JSON.parse(localStorage.getItem('kairo_journey')) || { currentPhase: 1, reflections: [] };
-    } catch { 
-      return { currentPhase: 1, reflections: [] }; 
+    } catch {
+      return { currentPhase: 1, reflections: [] };
     }
   });
 
@@ -38,7 +38,14 @@ export const AppProvider = ({ children }) => {
     const d = parseInt(day) || 1;
     setCurrentDay(d);
     localStorage.setItem('kairo_current_day', d);
+    // Keep journeyProgress in sync so other components work correctly
+    setJourneyProgress(prev => ({ ...prev, currentPhase: d }));
   };
+
+  const [fullUserData, setFullUserData] = useState(null);
+
+  // Derive the canonical course_id from backend user data if available
+  const courseId = fullUserData?.career?.course_id || 'fullstack';
 
   // ── Sync with localStorage ──
   useEffect(() => {
@@ -51,16 +58,12 @@ export const AppProvider = ({ children }) => {
   }, [userProfile]);
 
   useEffect(() => {
-    if (selectedCareer) {
-        localStorage.setItem('kairo_career', selectedCareer);
-    }
+    if (selectedCareer) localStorage.setItem('kairo_career', selectedCareer);
   }, [selectedCareer]);
 
   useEffect(() => {
     localStorage.setItem('kairo_journey', JSON.stringify(journeyProgress));
   }, [journeyProgress]);
-
-  const [fullUserData, setFullUserData] = useState(null);
 
   // ── Focus Timer State ──
   const [focusMinutes, setFocusMinutes] = useState(() => {
@@ -90,6 +93,7 @@ export const AppProvider = ({ children }) => {
     setSelectedCareer(null);
     setRoadmapData(null);
     setJourneyProgress({ currentPhase: 1, reflections: [] });
+    setCurrentDay(1);
     setFullUserData(null);
     setIsExplorer(false);
   };
@@ -106,7 +110,8 @@ export const AppProvider = ({ children }) => {
         fullUserData, setFullUserData,
         focusMinutes, addFocusMinutes,
         isExplorer, setIsExplorer,
-        logout
+        logout,
+        courseId,
       }}
     >
       {children}

@@ -1,0 +1,52 @@
+{
+  "user_id": "mailari_chatragudi",
+  "profile": {
+    "name": "mailari_chatragudi",
+    "student_type": "12th",
+    "interest": "",
+    "goal": "",
+    "financial_background": "",
+    "rank_or_year": ""
+  },
+  "career": {
+    "selected": "AI Engineer",
+    "suggested": [],
+    "course_id": "ai"
+  },
+  "journey": {
+    "phase": 1,
+    "day": 10
+  },
+  "progress": {
+    "streak": 1,
+    "start_date": "2026-04-25",
+    "last_active_date": "2026-04-25",
+    "activity": {
+      "2026-04-25": 1
+    }
+  },
+  "video_progress": {
+    "day_1": {
+      "t1": true,
+      "t2": true,
+      "t3": true
+    },
+    "day_2": {
+      "t4": true
+    },
+    "day_3": {
+      "t5": true
+    }
+  },
+  "task_progress": {},
+  "assignment_progress": {
+    "day_1": {
+      "status": "completed",
+      "proof_link": "asdfghjkl;",
+      "submitted_at": "2026-04-24T19:01:09.735400"
+    }
+  },
+  "updated_at": "2026-04-24T21:20:23.196124",
+  "quiz_progress": {},
+  "course_progress": {}
+}

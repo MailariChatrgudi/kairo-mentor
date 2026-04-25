@@ -1,0 +1,3670 @@
+{
+  "course_meta": {
+    "title": "Machine Learning",
+    "source_playlist": "https://youtube.com/playlist?list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T",
+    "channel": "Gate Smashers",
+    "total_videos": 53,
+    "total_days": 30,
+    "daily_schedule": {
+      "total_hours_per_day": 2,
+      "watch_videos": "1 hour",
+      "practice_and_implement": "1 hour"
+    },
+    "phases": [
+      "Phase 1 (Days 1-Days 7): Fundamentals and Linear Models",
+      "Phase 2 (Days 8-Days 15): Classification and Tree-based Models",
+      "Phase 3 (Days 16-Days 21): Unsupervised Learning and Dimensionality Reduction",
+      "Phase 4 (Days 23-Days 30): Neural Networks and Advanced Topics"
+    ]
+  },
+  "roadmap": [
+    {
+      "day": 1,
+      "phase": "Phase 1 (Days 1-Days 7): Fundamentals and Linear Models",
+      "title": "Introduction to  Machine Learning",
+      "playlist_videos": [
+        {
+          "tutorial_no": 1,
+          "title": "Introduction to Data Science & ML | Roadmap to Learn Data Science & ML",
+          "url": "https://www.youtube.com/watch?v=kz184QIO4ZQ&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=1",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 2,
+          "title": "Supervised Learning Algorithms | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=LKlOH8OLLcw&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=2",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Introduction to Machine Learning.",
+      "practice_task": "Implement a basic version of the concepts discussed in Introduction to Machine Learning using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What is the primary goal of Machine Learning?",
+          "options": [
+            "To follow strict hard-coded rules",
+            "To enable computers to learn from data without explicit programming",
+            "To store large amounts of data without processing",
+            "To replace human intelligence entirely"
+          ],
+          "answer": "To enable computers to learn from data without explicit programming"
+        },
+        {
+          "q": "Which of these is a subset of Machine Learning that focuses on Neural Networks?",
+          "options": [
+            "Data Mining",
+            "Cloud Computing",
+            "Deep Learning",
+            "Big Data"
+          ],
+          "answer": "Deep Learning"
+        },
+        {
+          "q": "In Supervised Learning, what is provided along with the input data?",
+          "options": [
+            "Nothing",
+            "Unlabeled clusters",
+            "Target labels/outputs",
+            "Random noise"
+          ],
+          "answer": "Target labels/outputs"
+        },
+        {
+          "q": "Which step comes first in a typical Data Science roadmap?",
+          "options": [
+            "Deploying the model",
+            "Data Collection and Cleaning",
+            "Writing the research paper",
+            "Hyperparameter tuning"
+          ],
+          "answer": "Data Collection and Cleaning"
+        },
+        {
+          "q": "Which of the following is a classic example of a Supervised Learning task?",
+          "options": [
+            "Grouping news articles by topic",
+            "Spam detection in emails",
+            "Market basket analysis",
+            "Dimensionality reduction"
+          ],
+          "answer": "Spam detection in emails"
+        },
+        {
+          "q": "Supervised learning is mainly divided into which two categories?",
+          "options": [
+            "Clustering and Association",
+            "Regression and Classification",
+            "Reinforcement and Rewards",
+            "PCA and LDA"
+          ],
+          "answer": "Regression and Classification"
+        },
+        {
+          "q": "What characterizes a 'Regression' problem?",
+          "options": [
+            "Predicting a discrete category",
+            "Predicting a continuous numerical value",
+            "Finding hidden patterns in unlabeled data",
+            "Reducing the number of features"
+          ],
+          "answer": "Predicting a continuous numerical value"
+        },
+        {
+          "q": "In Classification, the output variable is typically:",
+          "options": [
+            "A real number",
+            "A categorical value or class",
+            "A large matrix",
+            "An infinite sequence"
+          ],
+          "answer": "A categorical value or class"
+        },
+        {
+          "q": "Which algorithm is commonly used for Supervised Learning?",
+          "options": [
+            "K-Means",
+            "Apriori",
+            "Linear Regression",
+            "PCA"
+          ],
+          "answer": "Linear Regression"
+        },
+        {
+          "q": "If you are predicting house prices, which type of learning are you using?",
+          "options": [
+            "Unsupervised - Clustering",
+            "Supervised - Regression",
+            "Supervised - Classification",
+            "Reinforcement Learning"
+          ],
+          "answer": "Supervised - Regression"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "phase": "Phase 1 (Days 1-days 7): Fundamentals and Linear Models",
+      "title": "Types of Machine Learning",
+      "playlist_videos": [
+        {
+          "tutorial_no": 3,
+          "title": "Introduction to Regression with Real Life Examples",
+          "url": "https://www.youtube.com/watch?v=cHT-qLnRm0E&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=3",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 4,
+          "title": "Linear Regression📈 with Real life examples & Calculations | Easiest Explanation",
+          "url": "https://www.youtube.com/watch?v=zUQr6HAAKp4&list=PLxCzCOWd7aiEXg5BV10k9THt",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Types of Machine Learning.",
+      "practice_task": "Implement a basic version of the concepts discussed in Types of Machine Learning using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "In the context of Regression, what is the 'Dependent Variable'?",
+          "options": [
+            "The input feature",
+            "The variable we are trying to predict",
+            "The constant intercept",
+            "The error term"
+          ],
+          "answer": "The variable we are trying to predict"
+        },
+        {
+          "q": "Which of these is a real-life application of Regression?",
+          "options": [
+            "Image recognition",
+            "Stock price prediction",
+            "Grouping similar customers",
+            "Playing chess"
+          ],
+          "answer": "Stock price prediction"
+        },
+        {
+          "q": "In Simple Linear Regression, how many independent variables are there?",
+          "options": [
+            "Zero",
+            "One",
+            "Two or more",
+            "Infinite"
+          ],
+          "answer": "One"
+        },
+        {
+          "q": "What does the 'best fit line' represent in Linear Regression?",
+          "options": [
+            "The line that maximizes the error",
+            "The line that passes through all data points",
+            "The line with the minimum Sum of Squared Errors",
+            "A horizontal line at the mean of X"
+          ],
+          "answer": "The line with the minimum Sum of Squared Errors"
+        },
+        {
+          "q": "In the equation y = mx + c, what does 'm' represent?",
+          "options": [
+            "The Y-intercept",
+            "The independent variable",
+            "The slope of the line",
+            "The prediction error"
+          ],
+          "answer": "The slope of the line"
+        },
+        {
+          "q": "What is the 'Intercept' in a Linear Regression model?",
+          "options": [
+            "The value of Y when X is zero",
+            "The value of X when Y is zero",
+            "The distance between two points",
+            "The average of all Y values"
+          ],
+          "answer": "The value of Y when X is zero"
+        },
+        {
+          "q": "What is the purpose of a Residual in Regression?",
+          "options": [
+            "To increase accuracy",
+            "To measure the difference between actual and predicted values",
+            "To act as a bias term",
+            "To normalize the data"
+          ],
+          "answer": "To measure the difference between actual and predicted values"
+        },
+        {
+          "q": "Which relationship does Linear Regression assume between variables?",
+          "options": [
+            "Non-linear",
+            "Exponential",
+            "Linear",
+            "No relationship"
+          ],
+          "answer": "Linear"
+        },
+        {
+          "q": "Which chart is most commonly used to visualize the relationship in Linear Regression?",
+          "options": [
+            "Pie Chart",
+            "Bar Graph",
+            "Scatter Plot",
+            "Histogram"
+          ],
+          "answer": "Scatter Plot"
+        },
+        {
+          "q": "If the slope of the regression line is positive, it means:",
+          "options": [
+            "As X increases, Y decreases",
+            "As X increases, Y increases",
+            "X and Y have no relation",
+            "The model is overfitting"
+          ],
+          "answer": "As X increases, Y increases"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "phase": "Phase 1 (Days 1-days 7): Fundamentals and Linear Models",
+      "title": "Parametric vs Non-parametric",
+      "playlist_videos": [
+        {
+          "tutorial_no": 5,
+          "title": " Logistic Regression with Simplest & Easiest Example | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=r8OjlgWpAI0&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=5",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 6,
+          "title": "Linear Regression Vs. Logistic Regression | Supervised Learning | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=BVP1EDKb6_g&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=6",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Parametric vs Non-parametric.",
+      "practice_task": "Implement a basic version of the concepts discussed in Parametric vs Non-parametric using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What type of problems does Logistic Regression solve?",
+          "options": [
+            "Continuous prediction",
+            "Classification (Discrete)",
+            "Clustering",
+            "Dimensionality reduction"
+          ],
+          "answer": "Classification (Discrete)"
+        },
+        {
+          "q": "Which function is used in Logistic Regression to map values between 0 and 1?",
+          "options": [
+            "Linear function",
+            "Sigmoid (Logistic) function",
+            "Tangent function",
+            "Polynomial function"
+          ],
+          "answer": "Sigmoid (Logistic) function"
+        },
+        {
+          "q": "What is the main difference in output between Linear and Logistic Regression?",
+          "options": [
+            "Linear gives a class, Logistic gives a value",
+            "Linear gives a continuous value, Logistic gives a probability/class",
+            "There is no difference",
+            "Logistic Regression is unsupervised"
+          ],
+          "answer": "Linear gives a continuous value, Logistic gives a probability/class"
+        },
+        {
+          "q": "In Binary Classification, how many classes are we predicting?",
+          "options": [
+            "One",
+            "Two",
+            "Three",
+            "Unlimited"
+          ],
+          "answer": "Two"
+        },
+        {
+          "q": "Which curve shape represents the Logistic Regression model?",
+          "options": [
+            "Straight line",
+            "U-shape",
+            "S-shape",
+            "Bell shape"
+          ],
+          "answer": "S-shape"
+        },
+        {
+          "q": "What is a 'Decision Boundary' in Logistic Regression?",
+          "options": [
+            "The maximum value of the feature",
+            "The threshold that separates different classes",
+            "The error margin",
+            "The average of the data"
+          ],
+          "answer": "The threshold that separates different classes"
+        },
+        {
+          "q": "Parametric models (like Linear Regression) assume:",
+          "options": [
+            "A fixed form for the mapping function",
+            "The data has no structure",
+            "The number of parameters grows with data",
+            "No mathematical formulas are needed"
+          ],
+          "answer": "A fixed form for the mapping function"
+        },
+        {
+          "q": "Which of these is a benefit of Parametric models?",
+          "options": [
+            "They are very complex",
+            "They require very little data",
+            "They are simpler and faster to train",
+            "They always have higher accuracy"
+          ],
+          "answer": "They are simpler and faster to train"
+        },
+        {
+          "q": "Logistic regression is used when the Dependent Variable is:",
+          "options": [
+            "Numerical",
+            "Categorical",
+            "Time-based",
+            "Random"
+          ],
+          "answer": "Categorical"
+        },
+        {
+          "q": "If the sigmoid output is 0.7 and the threshold is 0.5, the class is:",
+          "options": [
+            "Class 0",
+            "Class 1",
+            "Uncertain",
+            "Error"
+          ],
+          "answer": "Class 1"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "phase": "Phase 1 (Days 1-days 7): Fundamentals and Linear Models",
+      "title": "Overfitting and Underfitting",
+      "playlist_videos": [
+        {
+          "tutorial_no": 7,
+          "title": "kNN Classification with Real Life Example | Movie Imdb Example | Supervised Learning",
+          "url": "https://www.youtube.com/watch?v=O1nWXTXcCwI&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=7",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 8,
+          "title": "Naive Bayes Classification Full Explanation with examples | Supervised Learning",
+          "url": "https://www.youtube.com/watch?v=GBMMtXRiQX0&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=8",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Overfitting and Underfitting.",
+      "practice_task": "Implement a basic version of the concepts discussed in Overfitting and Underfitting using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What does KNN stand for?",
+          "options": [
+            "Kernel Nearest Node",
+            "K-Nearest Neighbors",
+            "K-Neural Network",
+            "Key Neighbor Network"
+          ],
+          "answer": "K-Nearest Neighbors"
+        },
+        {
+          "q": "KNN is a 'Lazy Learner' because:",
+          "options": [
+            "It is very slow to predict",
+            "It doesn't learn a model during training; it just stores the data",
+            "It requires high GPU power",
+            "It only works on small datasets"
+          ],
+          "answer": "It doesn't learn a model during training; it just stores the data"
+        },
+        {
+          "q": "Which distance metric is most commonly used in KNN?",
+          "options": [
+            "Manhattan Distance",
+            "Euclidean Distance",
+            "Minkowski Distance",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        },
+        {
+          "q": "What happens if the 'K' value in KNN is too small?",
+          "options": [
+            "The model becomes too simple",
+            "The model is prone to overfitting and sensitive to noise",
+            "The model will underfit",
+            "The model will ignore all neighbors"
+          ],
+          "answer": "The model is prone to overfitting and sensitive to noise"
+        },
+        {
+          "q": "Naive Bayes is based on which mathematical theorem?",
+          "options": [
+            "Pythagoras Theorem",
+            "Bayes Theorem",
+            "Central Limit Theorem",
+            "Gauss Theorem"
+          ],
+          "answer": "Bayes Theorem"
+        },
+        {
+          "q": "Why is Naive Bayes called 'Naive'?",
+          "options": [
+            "It is very simple to code",
+            "It assumes that all features are independent of each other",
+            "It cannot handle large datasets",
+            "It makes random guesses"
+          ],
+          "answer": "It assumes that all features are independent of each other"
+        },
+        {
+          "q": "Which application is Naive Bayes most famous for?",
+          "options": [
+            "Self-driving cars",
+            "Stock market prediction",
+            "Spam Filtering",
+            "Clustering images"
+          ],
+          "answer": "Spam Filtering"
+        },
+        {
+          "q": "In KNN, 'K' represents:",
+          "options": [
+            "The number of features",
+            "The number of classes",
+            "The number of nearest neighbors to consider",
+            "The training time"
+          ],
+          "answer": "The number of nearest neighbors to consider"
+        },
+        {
+          "q": "If a model performs very well on training data but poorly on test data, it is:",
+          "options": [
+            "Underfitting",
+            "Balanced",
+            "Overfitting",
+            "Optimal"
+          ],
+          "answer": "Overfitting"
+        },
+        {
+          "q": "Underfitting occurs when:",
+          "options": [
+            "The model is too complex",
+            "The model is too simple to capture the underlying trend",
+            "There is too much data",
+            "The learning rate is too high"
+          ],
+          "answer": "The model is too simple to capture the underlying trend"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "phase": "Phase 1 (Days 1-days 7): Fundamentals and Linear Models",
+      "title": "Mathematical Model of Linear Regression",
+      "playlist_videos": [
+        {
+          "tutorial_no": 9,
+          "title": "Introduction to Decision Tree 🌲 with Real life examples",
+          "url": "https://www.youtube.com/watch?v=mvveVcbHynE&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=9",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 10,
+          "title": "Decision Tree 🌲 ID3 Algorithm with Example & Calculations 🧮",
+          "url": "https://www.youtube.com/watch?v=CWzpomtLqqs&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=10",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Mathematical Model of Linear Regression.",
+      "practice_task": "Implement a basic version of the concepts discussed in Mathematical Model of Linear Regression using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "A Decision Tree starts with a single node called the:",
+          "options": [
+            "Leaf Node",
+            "Branch Node",
+            "Root Node",
+            "Internal Node"
+          ],
+          "answer": "Root Node"
+        },
+        {
+          "q": "Which nodes in a Decision Tree represent the final outcome/class?",
+          "options": [
+            "Root Node",
+            "Decision Node",
+            "Leaf Node",
+            "Parent Node"
+          ],
+          "answer": "Leaf Node"
+        },
+        {
+          "q": "What does the ID3 algorithm stand for?",
+          "options": [
+            "Iterative Dichotomiser 3",
+            "Internal Data 3",
+            "Intelligent Decision 3",
+            "Identity Description 3"
+          ],
+          "answer": "Iterative Dichotomiser 3"
+        },
+        {
+          "q": "Which metric is used by ID3 to select the best attribute for splitting?",
+          "options": [
+            "Gini Index",
+            "Information Gain",
+            "Mean Squared Error",
+            "Euclidean Distance"
+          ],
+          "answer": "Information Gain"
+        },
+        {
+          "q": "What is 'Entropy' in the context of Decision Trees?",
+          "options": [
+            "A measure of order",
+            "A measure of impurity or randomness in the data",
+            "The speed of the algorithm",
+            "The depth of the tree"
+          ],
+          "answer": "A measure of impurity or randomness in the data"
+        },
+        {
+          "q": "If a dataset is perfectly pure (all samples belong to one class), its Entropy is:",
+          "options": [
+            "0",
+            "1",
+            "0.5",
+            "Infinite"
+          ],
+          "answer": "0"
+        },
+        {
+          "q": "What is 'Pruning' in Decision Trees used for?",
+          "options": [
+            "Growing the tree larger",
+            "Removing branches to prevent overfitting",
+            "Adding more features",
+            "Changing the root node"
+          ],
+          "answer": "Removing branches to prevent overfitting"
+        },
+        {
+          "q": "Which of these is a disadvantage of Decision Trees?",
+          "options": [
+            "They are hard to interpret",
+            "They cannot handle categorical data",
+            "They are prone to overfitting",
+            "They require data normalization"
+          ],
+          "answer": "They are prone to overfitting"
+        },
+        {
+          "q": "Information Gain is calculated as:",
+          "options": [
+            "Initial Entropy - Average Entropy after split",
+            "Final Entropy + Initial Entropy",
+            "Number of Leaf Nodes / Total Nodes",
+            "Accuracy * Precision"
+          ],
+          "answer": "Initial Entropy - Average Entropy after split"
+        },
+        {
+          "q": "Decision trees can be used for:",
+          "options": [
+            "Classification only",
+            "Regression only",
+            "Both Classification and Regression",
+            "Neither"
+          ],
+          "answer": "Both Classification and Regression"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "phase": "Phase 1 (Days 1-days 7): Fundamentals and Linear Models",
+      "title": "Multiple Linear Regression",
+      "playlist_videos": [
+        {
+          "tutorial_no": 11,
+          "title": " Conditional Probability with Easiest Explanation & Example",
+          "url": "https://www.youtube.com/watch?v=dQ6RL8qe320&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=11",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 12,
+          "title": " Introduction to Ensemble Learning with Real Life Examples | Machine⚙️ Learning",
+          "url": "https://www.youtube.com/watch?v=qQjOWmf8I_I&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=12",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Multiple Linear Regression.",
+      "practice_task": "Implement a basic version of the concepts discussed in Multiple Linear Regression using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What is Conditional Probability?",
+          "options": [
+            "The probability of an event happening by itself",
+            "The probability of an event A occurring, given that B has already occurred",
+            "The probability of two independent events",
+            "The sum of all probabilities"
+          ],
+          "answer": "The probability of an event A occurring, given that B has already occurred"
+        },
+        {
+          "q": "What is the formula for P(A|B)?",
+          "options": [
+            "P(A) / P(B)",
+            "P(A ∩ B) / P(B)",
+            "P(A) * P(B)",
+            "P(B|A) / P(A)"
+          ],
+          "answer": "P(A ∩ B) / P(B)"
+        },
+        {
+          "q": "What is the core idea of 'Ensemble Learning'?",
+          "options": [
+            "Using a single complex model",
+            "Combining multiple weak models to create a strong predictive model",
+            "Using only the best performing data points",
+            "Reducing the size of the dataset"
+          ],
+          "answer": "Combining multiple weak models to create a strong predictive model"
+        },
+        {
+          "q": "Which of these is a major technique in Ensemble Learning?",
+          "options": [
+            "Bagging",
+            "Boosting",
+            "Stacking",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        },
+        {
+          "q": "Multiple Linear Regression involves:",
+          "options": [
+            "Only one independent variable",
+            "Two or more independent variables",
+            "Two or more dependent variables",
+            "No dependent variables"
+          ],
+          "answer": "Two or more independent variables"
+        },
+        {
+          "q": "In Multiple Regression, what is 'Multicollinearity'?",
+          "options": [
+            "When the target is not correlated with inputs",
+            "When independent variables are highly correlated with each other",
+            "When the error is zero",
+            "When the model has too many classes"
+          ],
+          "answer": "When independent variables are highly correlated with each other"
+        },
+        {
+          "q": "Which ensemble technique builds models in parallel?",
+          "options": [
+            "Boosting",
+            "Bagging (Bootstrap Aggregating)",
+            "Gradient Descent",
+            "Linear Regression"
+          ],
+          "answer": "Bagging (Bootstrap Aggregating)"
+        },
+        {
+          "q": "Which ensemble technique builds models sequentially to correct previous errors?",
+          "options": [
+            "Bagging",
+            "Random Forest",
+            "Boosting",
+            "Clustering"
+          ],
+          "answer": "Boosting"
+        },
+        {
+          "q": "Random Forest is an example of:",
+          "options": [
+            "Boosting",
+            "Bagging",
+            "Simple Decision Tree",
+            "Linear Regression"
+          ],
+          "answer": "Bagging"
+        },
+        {
+          "q": "The output of Multiple Linear Regression is visualized in:",
+          "options": [
+            "A 2D line",
+            "A multi-dimensional hyperplane",
+            "A simple circle",
+            "A pie chart"
+          ],
+          "answer": "A multi-dimensional hyperplane"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "phase": "Phase 1 (Days 1-days 7): Fundamentals and Linear Models",
+      "title": "Sigmoid Function and Decision Boundary",
+      "playlist_videos": [
+        {
+          "tutorial_no": 13,
+          "title": "K-mean Clustering with Numerical Example | Unsupervised Learning | Machine🖥️ Learning 🙇‍♂️🙇",
+          "url": "https://www.youtube.com/watch?v=5FpsGnkbEpM&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=13",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 14,
+          "title": "Hierarchical Clustering | Agglomerative vs Divisive with examples",
+          "url": "https://www.youtube.com/watch?v=zxQF8Rmpk1M&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=14",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Sigmoid Function and Decision Boundary.",
+      "practice_task": "Implement a basic version of the concepts discussed in Sigmoid Function and Decision Boundary using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "K-Means is what type of learning?",
+          "options": [
+            "Supervised",
+            "Unsupervised",
+            "Reinforcement",
+            "Semi-supervised"
+          ],
+          "answer": "Unsupervised"
+        },
+        {
+          "q": "In K-Means, what does 'K' represent?",
+          "options": [
+            "Number of features",
+            "Number of clusters to be formed",
+            "Number of iterations",
+            "Number of outliers"
+          ],
+          "answer": "Number of clusters to be formed"
+        },
+        {
+          "q": "What is a 'Centroid' in K-Means?",
+          "options": [
+            "The center point of a cluster",
+            "The furthest point in the data",
+            "A label provided by the user",
+            "The sum of all data points"
+          ],
+          "answer": "The center point of a cluster"
+        },
+        {
+          "q": "How does K-Means assign a data point to a cluster?",
+          "options": [
+            "By random choice",
+            "Based on the nearest centroid (distance)",
+            "Based on the highest feature value",
+            "By alphabetic order"
+          ],
+          "answer": "Based on the nearest centroid (distance)"
+        },
+        {
+          "q": "What is the main goal of Hierarchical Clustering?",
+          "options": [
+            "To find the best fit line",
+            "To build a tree-like hierarchy of clusters",
+            "To reduce dimensionality",
+            "To classify email as spam"
+          ],
+          "answer": "To build a tree-like hierarchy of clusters"
+        },
+        {
+          "q": "The two main types of Hierarchical Clustering are:",
+          "options": [
+            "Linear and Non-linear",
+            "Agglomerative and Divisive",
+            "Supervised and Unsupervised",
+            "K-means and K-medoids"
+          ],
+          "answer": "Agglomerative and Divisive"
+        },
+        {
+          "q": "Agglomerative clustering is also known as the:",
+          "options": [
+            "Top-down approach",
+            "Bottom-up approach",
+            "Random approach",
+            "Centroid approach"
+          ],
+          "answer": "Bottom-up approach"
+        },
+        {
+          "q": "What is a 'Dendrogram'?",
+          "options": [
+            "A type of neural network",
+            "A diagram representing the hierarchical relationship between clusters",
+            "A mathematical function",
+            "A scatter plot"
+          ],
+          "answer": "A diagram representing the hierarchical relationship between clusters"
+        },
+        {
+          "q": "Divisive clustering starts with:",
+          "options": [
+            "Each point as a separate cluster",
+            "One giant cluster containing all points",
+            "Three random clusters",
+            "No clusters"
+          ],
+          "answer": "One giant cluster containing all points"
+        },
+        {
+          "q": "Which method is commonly used to find the optimal 'K' in K-Means?",
+          "options": [
+            "Sigmoid Method",
+            "Elbow Method",
+            "Cross-validation",
+            "P-value"
+          ],
+          "answer": "Elbow Method"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "phase": "Phase 2 (Days 8-Days 15): Classification and Tree-based Models",
+      "title": "Entropy and Information Gain",
+      "playlist_videos": [
+        {
+          "tutorial_no": 15,
+          "title": "Single Linkage Clustering | Agglomerative Clustering | Hierarchical Clustering",
+          "url": "https://www.youtube.com/watch?v=pbTQQCA9Xs0&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=15",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 16,
+          "title": "Complete Linkage⛓️ Clustering with Example | Clustering in Unsupervised Learning | ML",
+          "url": "https://www.youtube.com/watch?v=Ufzq9oLhzX0&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=16",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Entropy and Information Gain.",
+      "practice_task": "Implement a basic version of the concepts discussed in Entropy and Information Gain using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "In Hierarchical Clustering, what does 'Linkage' refer to?",
+          "options": [
+            "The distance between the root and leaves",
+            "The method used to calculate the distance between two clusters",
+            "The total number of points",
+            "The connection to the database"
+          ],
+          "answer": "The method used to calculate the distance between two clusters"
+        },
+        {
+          "q": "Single Linkage is defined as the distance between:",
+          "options": [
+            "The two furthest points in two clusters",
+            "The two closest points in two clusters",
+            "The centroids of two clusters",
+            "The average of all points"
+          ],
+          "answer": "The two closest points in two clusters"
+        },
+        {
+          "q": "Complete Linkage is defined as the distance between:",
+          "options": [
+            "The two closest points in two clusters",
+            "The two furthest points in two clusters",
+            "The standard deviations",
+            "The medians"
+          ],
+          "answer": "The two furthest points in two clusters"
+        },
+        {
+          "q": "Single Linkage is prone to which phenomenon?",
+          "options": [
+            "Overfitting",
+            "Chaining effect (long, thin clusters)",
+            "Centroid collapse",
+            "Dimensionality explosion"
+          ],
+          "answer": "Chaining effect (long, thin clusters)"
+        },
+        {
+          "q": "Which linkage method is usually more robust to noise?",
+          "options": [
+            "Single Linkage",
+            "Complete Linkage",
+            "Zero Linkage",
+            "Infinite Linkage"
+          ],
+          "answer": "Complete Linkage"
+        },
+        {
+          "q": "In a Proximity Matrix, what do the diagonal elements represent?",
+          "options": [
+            "Maximum distance",
+            "Distance of a point to itself (usually 0)",
+            "The sum of clusters",
+            "The average distance"
+          ],
+          "answer": "Distance of a point to itself (usually 0)"
+        },
+        {
+          "q": "What is the primary input required for Hierarchical clustering besides the data?",
+          "options": [
+            "The number of clusters (K)",
+            "A distance/similarity matrix",
+            "Target labels",
+            "A learning rate"
+          ],
+          "answer": "A distance/similarity matrix"
+        },
+        {
+          "q": "Average Linkage calculates distance based on:",
+          "options": [
+            "The minimum distance",
+            "The maximum distance",
+            "The mean of all pair-wise distances between clusters",
+            "The distance between the two root nodes"
+          ],
+          "answer": "The mean of all pair-wise distances between clusters"
+        },
+        {
+          "q": "A cluster is 'Pure' if:",
+          "options": [
+            "It has many different classes",
+            "It contains only one class of data",
+            "It is very large",
+            "It is at the root of the tree"
+          ],
+          "answer": "It contains only one class of data"
+        },
+        {
+          "q": "Entropy calculation involves which mathematical operation?",
+          "options": [
+            "Square root",
+            "Logarithm (base 2)",
+            "Differentiation",
+            "Integration"
+          ],
+          "answer": "Logarithm (base 2)"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "phase": "Phase 2 (Days 8-Days 15): Classification and Tree-based Models",
+      "title": "Decision Tree Implementation",
+      "playlist_videos": [
+        {
+          "tutorial_no": 17,
+          "title": "K-medoids Clustering with Numerical Example | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=FosEwkYIGmU&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=17",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 18,
+          "title": "Random Forest 🌳 in Machine Learning 🧑‍💻👩‍💻",
+          "url": "https://www.youtube.com/watch?v=DXqxXe3rep0&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=18",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Decision Tree Implementation.",
+      "practice_task": "Implement a basic version of the concepts discussed in Decision Tree Implementation using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What is the primary difference between K-Means and K-Medoids?",
+          "options": [
+            "K-Means is supervised, K-Medoids is not",
+            "K-Medoids uses actual data points as centers, K-Means uses the mean",
+            "K-Means is more robust to outliers than K-Medoids",
+            "There is no difference"
+          ],
+          "answer": "K-Medoids uses actual data points as centers, K-Means uses the mean"
+        },
+        {
+          "q": "Why might you prefer K-Medoids over K-Means?",
+          "options": [
+            "It is faster",
+            "It is less sensitive to noise and outliers",
+            "It doesn't require a distance metric",
+            "It always produces more clusters"
+          ],
+          "answer": "It is less sensitive to noise and outliers"
+        },
+        {
+          "q": "What is a 'Medoid'?",
+          "options": [
+            "The average of all points in a cluster",
+            "A central data point in a cluster whose sum of distances to other points is minimal",
+            "A point furthest from the cluster center",
+            "The first point in the dataset"
+          ],
+          "answer": "A central data point in a cluster whose sum of distances to other points is minimal"
+        },
+        {
+          "q": "Random Forest is composed of many:",
+          "options": [
+            "Neural Networks",
+            "Linear Regressions",
+            "Decision Trees",
+            "SVMs"
+          ],
+          "answer": "Decision Trees"
+        },
+        {
+          "q": "What is 'Bootstrap' in Random Forest?",
+          "options": [
+            "The final prediction",
+            "Randomly selecting subsets of the data with replacement",
+            "Increasing the depth of trees",
+            "Normalizing the features"
+          ],
+          "answer": "Randomly selecting subsets of the data with replacement"
+        },
+        {
+          "q": "What is 'Aggregating' in Bagging?",
+          "options": [
+            "Splitting the data",
+            "Combining results from multiple models (e.g., voting or averaging)",
+            "Pruning the tree",
+            "Cleaning the data"
+          ],
+          "answer": "Combining results from multiple models (e.g., voting or averaging)"
+        },
+        {
+          "q": "In Random Forest classification, how is the final class determined?",
+          "options": [
+            "The result of the first tree",
+            "Majority voting among all trees",
+            "Average of all results",
+            "Random selection"
+          ],
+          "answer": "Majority voting among all trees"
+        },
+        {
+          "q": "Does Random Forest help in reducing overfitting?",
+          "options": [
+            "No, it increases it",
+            "Yes, by averaging multiple trees",
+            "Only if we use one tree",
+            "Only if we use very small data"
+          ],
+          "answer": "Yes, by averaging multiple trees"
+        },
+        {
+          "q": "Which algorithm is commonly used for K-Medoids?",
+          "options": [
+            "ID3",
+            "PAM (Partitioning Around Medoids)",
+            "Gradient Descent",
+            "Backpropagation"
+          ],
+          "answer": "PAM (Partitioning Around Medoids)"
+        },
+        {
+          "q": "In Random Forest, what is randomly selected besides the data points?",
+          "options": [
+            "The target label",
+            "A subset of features (attributes)",
+            "The number of classes",
+            "The distance metric"
+          ],
+          "answer": "A subset of features (attributes)"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "phase": "Phase 2 (Days 8-Days 15): Classification and Tree-based Models",
+      "title": "K-Nearest Neighbors (KNN)",
+      "playlist_videos": [
+        {
+          "tutorial_no": 19,
+          "title": "kNN for Classified & Regression with Easiest Explanation | Machine Learning 🤖🙇",
+          "url": "https://www.youtube.com/watch?v=zqQ_pi6j2jE&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=19",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 20,
+          "title": "Mean, Median, Mode with Real Life examples | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=keLk7odKCsE&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=20",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind K-Nearest Neighbors (KNN).",
+      "practice_task": "Implement a basic version of the concepts discussed in K-Nearest Neighbors (KNN) using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "Can KNN be used for Regression problems?",
+          "options": [
+            "No, only classification",
+            "Yes, by taking the average/mean of K neighbors' values",
+            "Yes, but only if K=1",
+            "Only for unsupervised learning"
+          ],
+          "answer": "Yes, by taking the average/mean of K neighbors' values"
+        },
+        {
+          "q": "What happens in KNN regression when K is the number of neighbors?",
+          "options": [
+            "We vote for the class",
+            "We take the average of the target values of those K neighbors",
+            "We pick the highest value",
+            "We pick the lowest value"
+          ],
+          "answer": "We take the average of the target values of those K neighbors"
+        },
+        {
+          "q": "What is the 'Mean' of a dataset?",
+          "options": [
+            "The middle value",
+            "The most frequent value",
+            "The average (Sum of values / Total count)",
+            "The range of values"
+          ],
+          "answer": "The average (Sum of values / Total count)"
+        },
+        {
+          "q": "What is the 'Median'?",
+          "options": [
+            "The average",
+            "The middle value when data is sorted",
+            "The highest value",
+            "The sum of all values"
+          ],
+          "answer": "The middle value when data is sorted"
+        },
+        {
+          "q": "What is the 'Mode'?",
+          "options": [
+            "The most frequently occurring value",
+            "The difference between high and low",
+            "The center of gravity",
+            "The total count"
+          ],
+          "answer": "The most frequently occurring value"
+        },
+        {
+          "q": "Which measure is most affected by extreme outliers?",
+          "options": [
+            "Median",
+            "Mode",
+            "Mean",
+            "None"
+          ],
+          "answer": "Mean"
+        },
+        {
+          "q": "In a perfectly symmetrical distribution, which are equal?",
+          "options": [
+            "Mean and Range",
+            "Mean, Median, and Mode",
+            "Median and Variance",
+            "Mode and Outliers"
+          ],
+          "answer": "Mean, Median, and Mode"
+        },
+        {
+          "q": "If you have data [1, 2, 2, 3, 100], what is the median?",
+          "options": [
+            "2",
+            "21.6",
+            "100",
+            "3"
+          ],
+          "answer": "2"
+        },
+        {
+          "q": "If you have data [10, 10, 20, 30], what is the mode?",
+          "options": [
+            "10",
+            "20",
+            "17.5",
+            "30"
+          ],
+          "answer": "10"
+        },
+        {
+          "q": "Why do we scale features before using KNN?",
+          "options": [
+            "To save memory",
+            "Because KNN is based on distance, and large-scale features can dominate calculations",
+            "To make the data discrete",
+            "To remove the K parameter"
+          ],
+          "answer": "Because KNN is based on distance, and large-scale features can dominate calculations"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "phase": "Phase 2 (Days 8-Days 15): Classification and Tree-based Models",
+      "title": "SVM - Part 2 (Kernel Trick)",
+      "playlist_videos": [
+        {
+          "tutorial_no": 21,
+          "title": "Standard Deviation & Variance with Examples",
+          "url": "https://www.youtube.com/watch?v=D9xfxOzOwrQ&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=21",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 22,
+          "title": "Standard Deviation & Variance with Examples",
+          "url": "https://www.youtube.com/watch?v=Oq27arfMwA0&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=22",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind SVM - Part 2 (Kernel Trick).",
+      "practice_task": "Implement a basic version of the concepts discussed in SVM - Part 2 (Kernel Trick) using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What does Variance measure?",
+          "options": [
+            "The average value of the data",
+            "How spread out the numbers are from the mean",
+            "The total sum of squares",
+            "The probability of an event"
+          ],
+          "answer": "How spread out the numbers are from the mean"
+        },
+        {
+          "q": "What is Standard Deviation?",
+          "options": [
+            "The square of variance",
+            "The square root of variance",
+            "The same as mean",
+            "The range divided by 2"
+          ],
+          "answer": "The square root of variance"
+        },
+        {
+          "q": "A low Standard Deviation indicates that data points are:",
+          "options": [
+            "Far from the mean",
+            "Very close to the mean",
+            "Randomly distributed",
+            "All negative"
+          ],
+          "answer": "Very close to the mean"
+        },
+        {
+          "q": "What is the unit of Variance compared to the original data?",
+          "options": [
+            "Same unit",
+            "Squared unit",
+            "No unit",
+            "Square root unit"
+          ],
+          "answer": "Squared unit"
+        },
+        {
+          "q": "In SVM, what does 'Support Vector' refer to?",
+          "options": [
+            "All the points in the dataset",
+            "The points closest to the decision boundary (hyperplane)",
+            "The labels of the data",
+            "The code libraries used"
+          ],
+          "answer": "The points closest to the decision boundary (hyperplane)"
+        },
+        {
+          "q": "What is the 'Kernel Trick' in SVM?",
+          "options": [
+            "A way to delete outliers",
+            "A mathematical function to transform low-dimensional data into higher dimensions to make it separable",
+            "A method to speed up the computer",
+            "A technique to use SVM for clustering"
+          ],
+          "answer": "A mathematical function to transform low-dimensional data into higher dimensions to make it separable"
+        },
+        {
+          "q": "Which of these is a common SVM Kernel?",
+          "options": [
+            "Linear",
+            "Polynomial",
+            "RBF (Radial Basis Function)",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        },
+        {
+          "q": "SVM aims to find the hyperplane that has the:",
+          "options": [
+            "Minimum margin",
+            "Maximum margin",
+            "Zero margin",
+            "Smallest error"
+          ],
+          "answer": "Maximum margin"
+        },
+        {
+          "q": "Variance is always:",
+          "options": [
+            "Negative",
+            "Zero or positive",
+            "Less than 1",
+            "Greater than 100"
+          ],
+          "answer": "Zero or positive"
+        },
+        {
+          "q": "If all data points are the same value (e.g., 5, 5, 5), the Variance is:",
+          "options": [
+            "5",
+            "1",
+            "0",
+            "25"
+          ],
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "phase": "Phase 2 (Days 8-Days 15): Classification and Tree-based Models",
+      "title": "Bayes Theorem",
+      "playlist_videos": [
+        {
+          "tutorial_no": 23,
+          "title": "Supervised vs Unsupervised learning with real life example",
+          "url": "https://www.youtube.com/watch?v=fM8XdC1EweU&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=23",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 24,
+          "title": "Python code for Mean, Median, Mode, SD, Variance and Range",
+          "url": "https://www.youtube.com/watch?v=oYKuCCxlWbk&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=24",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Bayes Theorem.",
+      "practice_task": "Implement a basic version of the concepts discussed in Bayes Theorem using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What is the key difference between Supervised and Unsupervised Learning?",
+          "options": [
+            "Supervised is faster",
+            "Supervised uses labeled data, Unsupervised uses unlabeled data",
+            "Unsupervised is used for prediction",
+            "There is no difference"
+          ],
+          "answer": "Supervised uses labeled data, Unsupervised uses unlabeled data"
+        },
+        {
+          "q": "Clustering is an example of:",
+          "options": [
+            "Supervised Learning",
+            "Unsupervised Learning",
+            "Reinforcement Learning",
+            "Regression"
+          ],
+          "answer": "Unsupervised Learning"
+        },
+        {
+          "q": "Which Python library is most commonly used for statistical calculations like mean and median?",
+          "options": [
+            "Matplotlib",
+            "NumPy/Pandas",
+            "Flask",
+            "Django"
+          ],
+          "answer": "NumPy/Pandas"
+        },
+        {
+          "q": "What is the 'Range' of a dataset?",
+          "options": [
+            "The sum of all values",
+            "The difference between the maximum and minimum value",
+            "The average",
+            "The square of the standard deviation"
+          ],
+          "answer": "The difference between the maximum and minimum value"
+        },
+        {
+          "q": "In Python, which function calculates the mean using NumPy?",
+          "options": [
+            "np.middle()",
+            "np.average() / np.mean()",
+            "np.sum()",
+            "np.calculate()"
+          ],
+          "answer": "np.average() / np.mean()"
+        },
+        {
+          "q": "Bayes' Theorem relates:",
+          "options": [
+            "Mean and Median",
+            "Prior probability and Posterior probability",
+            "Inputs and Weights",
+            "Training and Testing data"
+          ],
+          "answer": "Prior probability and Posterior probability"
+        },
+        {
+          "q": "If you are grouping customers by their buying habits without any prior labels, you are performing:",
+          "options": [
+            "Classification",
+            "Regression",
+            "Clustering",
+            "Reinforcement"
+          ],
+          "answer": "Clustering"
+        },
+        {
+          "q": "What is the goal of Unsupervised Learning?",
+          "options": [
+            "To predict a target value",
+            "To find hidden patterns or structures in data",
+            "To minimize error",
+            "To label the data"
+          ],
+          "answer": "To find hidden patterns or structures in data"
+        },
+        {
+          "q": "The formula for P(B|A) in Bayes Theorem involves:",
+          "options": [
+            "P(A|B) * P(B) / P(A)",
+            "P(A) + P(B)",
+            "P(A) * P(B)",
+            "P(A-B)"
+          ],
+          "answer": "P(A|B) * P(B) / P(A)"
+        },
+        {
+          "q": "Real-life example of Unsupervised Learning:",
+          "options": [
+            "Voice recognition (Siri)",
+            "Cancer detection",
+            "Recommendation systems (People also bought...)",
+            "Email spam filter"
+          ],
+          "answer": "Recommendation systems (People also bought...)"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "phase": "Phase 2 (Days 8-Days 15): Classification and Tree-based Models",
+      "title": "Random Forest",
+      "playlist_videos": [
+        {
+          "tutorial_no": 25,
+          "title": " How Weights are Increased in Boosting | Ensemble Learning",
+          "url": "https://www.youtube.com/watch?v=oYKuCCxlWbk&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=24",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 26,
+          "title": "BAGGING vs. BOOSTING vs STACKING in Ensemble Learning | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=j9jGLwPa6_E&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=26",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Random Forest.",
+      "practice_task": "Implement a basic version of the concepts discussed in Random Forest using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "In Boosting, how are weights handled for misclassified points?",
+          "options": [
+            "They are decreased",
+            "They are kept the same",
+            "They are increased so the next model focuses on them",
+            "They are removed"
+          ],
+          "answer": "They are increased so the next model focuses on them"
+        },
+        {
+          "q": "What is the main goal of Boosting?",
+          "options": [
+            "To reduce variance",
+            "To reduce bias and convert weak learners to strong learners",
+            "To cluster data",
+            "To reduce dimensionality"
+          ],
+          "answer": "To reduce bias and convert weak learners to strong learners"
+        },
+        {
+          "q": "Which ensemble method uses 'Voting' for classification?",
+          "options": [
+            "Bagging",
+            "Boosting",
+            "Stacking",
+            "Linear Regression"
+          ],
+          "answer": "Bagging"
+        },
+        {
+          "q": "Bagging focuses on reducing:",
+          "options": [
+            "Bias",
+            "Variance",
+            "The number of features",
+            "Training time"
+          ],
+          "answer": "Variance"
+        },
+        {
+          "q": "What is 'Stacking' in Ensemble Learning?",
+          "options": [
+            "Running models in parallel",
+            "Using the predictions of several models as input for a final meta-model",
+            "Increasing weight of data",
+            "Randomly picking features"
+          ],
+          "answer": "Using the predictions of several models as input for a final meta-model"
+        },
+        {
+          "q": "Which of these is a popular Boosting algorithm?",
+          "options": [
+            "AdaBoost",
+            "XGBoost",
+            "Gradient Boosting",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        },
+        {
+          "q": "In Bagging, data samples are drawn:",
+          "options": [
+            "Without replacement",
+            "With replacement",
+            "Sequentially",
+            "Only from the outliers"
+          ],
+          "answer": "With replacement"
+        },
+        {
+          "q": "Boosting algorithms build models:",
+          "options": [
+            "In parallel",
+            "Independently",
+            "Sequentially",
+            "Only once"
+          ],
+          "answer": "Sequentially"
+        },
+        {
+          "q": "AdaBoost stands for:",
+          "options": [
+            "Advanced Boosting",
+            "Adaptive Boosting",
+            "Additional Boosting",
+            "Array Boosting"
+          ],
+          "answer": "Adaptive Boosting"
+        },
+        {
+          "q": "A single decision tree in a Random Forest is usually:",
+          "options": [
+            "A weak learner",
+            "A strong learner",
+            "A deep network",
+            "A linear model"
+          ],
+          "answer": "A weak learner"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "phase": "Phase 2 (Days 8-Days 15): Classification and Tree-based Models",
+      "title": "Clustering Introduction",
+      "playlist_videos": [
+        {
+          "tutorial_no": 27,
+          "title": "Bayes Theorem & Total Probability with Examples",
+          "url": "https://www.youtube.com/watch?v=SktJqrYereQ&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=27",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 28,
+          "title": "Cross Validation in Machine Learning with Examples",
+          "url": "https://www.youtube.com/watch?v=v6DtYYafrWQ&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=28",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Clustering Introduction.",
+      "practice_task": "Implement a basic version of the concepts discussed in Clustering Introduction using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "The Theorem of Total Probability is used to find:",
+          "options": [
+            "The probability of a subset",
+            "The overall probability of an event that can happen via several distinct paths",
+            "The probability of zero",
+            "The product of all events"
+          ],
+          "answer": "The overall probability of an event that can happen via several distinct paths"
+        },
+        {
+          "q": "Why do we need Cross-Validation?",
+          "options": [
+            "To make training faster",
+            "To assess how the model will generalize to an independent dataset",
+            "To increase the size of the dataset",
+            "To delete noisy data"
+          ],
+          "answer": "To assess how the model will generalize to an independent dataset"
+        },
+        {
+          "q": "In K-Fold Cross Validation, the data is divided into:",
+          "options": [
+            "K clusters",
+            "K equal-sized folds",
+            "K random points",
+            "K leaf nodes"
+          ],
+          "answer": "K equal-sized folds"
+        },
+        {
+          "q": "In K-Fold (where K=5), how many times is the model trained?",
+          "options": [
+            "1",
+            "5",
+            "25",
+            "Depends on the user"
+          ],
+          "answer": "5"
+        },
+        {
+          "q": "What is the primary advantage of Cross-Validation over a simple Train/Test split?",
+          "options": [
+            "It uses less memory",
+            "It ensures every observation is used for both training and testing exactly once",
+            "It is mathematically simpler",
+            "It requires no data cleaning"
+          ],
+          "answer": "It ensures every observation is used for both training and testing exactly once"
+        },
+        {
+          "q": "What is 'Hold-out' method?",
+          "options": [
+            "Another name for K-fold",
+            "Splitting data into two sets: Training and Testing",
+            "Discarding outliers",
+            "Storing data on a cloud"
+          ],
+          "answer": "Splitting data into two sets: Training and Testing"
+        },
+        {
+          "q": "Which probability is calculated using Bayes Theorem after evidence is seen?",
+          "options": [
+            "Prior",
+            "Posterior",
+            "Likelihood",
+            "Marginal"
+          ],
+          "answer": "Posterior"
+        },
+        {
+          "q": "Prior probability means:",
+          "options": [
+            "Probability before seeing new evidence",
+            "Probability after seeing new evidence",
+            "The error rate",
+            "The total probability"
+          ],
+          "answer": "Probability before seeing new evidence"
+        },
+        {
+          "q": "Clustering is a process of grouping objects such that:",
+          "options": [
+            "Objects in different groups are similar",
+            "Objects in the same group are more similar to each other than to those in other groups",
+            "Every object is in its own group",
+            "There are only two groups"
+          ],
+          "answer": "Objects in the same group are more similar to each other than to those in other groups"
+        },
+        {
+          "q": "K-fold cross validation helps to detect:",
+          "options": [
+            "Missing values",
+            "Overfitting",
+            "Data types",
+            "System errors"
+          ],
+          "answer": "Overfitting"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "phase": "Phase 2 (Days 8-Days 15): Classification and Tree-based Models",
+      "title": "Hierarchical Clustering",
+      "playlist_videos": [
+        {
+          "tutorial_no": 29,
+          "title": "Pearson's Correlation Coefficient | Supervised Learning | Data Science & Machine Learning",
+          "url": "https://www.youtube.com/watch?v=9Zzqb82lkcU&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=29",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 30,
+          "title": " kNN(k Nearest Neighbour) Numerical Example | Supervised Learning | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=mjoAoX--2fg&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=30",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Hierarchical Clustering.",
+      "practice_task": "Implement a basic version of the concepts discussed in Hierarchical Clustering using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What does Pearson's Correlation Coefficient (r) measure?",
+          "options": [
+            "The difference between means",
+            "The linear relationship between two continuous variables",
+            "The probability of an event",
+            "The number of clusters"
+          ],
+          "answer": "The linear relationship between two continuous variables"
+        },
+        {
+          "q": "The value of Pearson's Correlation Coefficient ranges from:",
+          "options": [
+            "0 to 1",
+            "-1 to +1",
+            "-10 to +10",
+            "0 to Infinity"
+          ],
+          "answer": "-1 to +1"
+        },
+        {
+          "q": "What does r = 0 indicate?",
+          "options": [
+            "Strong positive correlation",
+            "Strong negative correlation",
+            "No linear correlation",
+            "Perfect correlation"
+          ],
+          "answer": "No linear correlation"
+        },
+        {
+          "q": "What does r = +1 indicate?",
+          "options": [
+            "Perfect negative correlation",
+            "Perfect positive linear correlation",
+            "Random relationship",
+            "High variance"
+          ],
+          "answer": "Perfect positive linear correlation"
+        },
+        {
+          "q": "In a KNN numerical problem, if we have points A(1,2) and B(4,6), what is the Euclidean distance?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "7"
+          ],
+          "answer": "5"
+        },
+        {
+          "q": "How do you handle ties in KNN classification?",
+          "options": [
+            "Pick a class randomly",
+            "Reduce K or use an odd value for K",
+            "Discard the data point",
+            "Ask the user"
+          ],
+          "answer": "Reduce K or use an odd value for K"
+        },
+        {
+          "q": "Correlation does not imply:",
+          "options": [
+            "Relationship",
+            "Causation",
+            "Association",
+            "Linearity"
+          ],
+          "answer": "Causation"
+        },
+        {
+          "q": "Negative correlation means:",
+          "options": [
+            "As X increases, Y increases",
+            "As X increases, Y decreases",
+            "X and Y are not related",
+            "Both X and Y are negative"
+          ],
+          "answer": "As X increases, Y decreases"
+        },
+        {
+          "q": "What is the formula for Euclidean distance between (x1, y1) and (x2, y2)?",
+          "options": [
+            "x1 - x2 + y1 - y2",
+            "sqrt((x2-x1)^2 + (y2-y1)^2)",
+            "abs(x1-x2) + abs(y1-y2)",
+            "(x1+x2)/2"
+          ],
+          "answer": "sqrt((x2-x1)^2 + (y2-y1)^2)"
+        },
+        {
+          "q": "If r = -0.9, the relationship is:",
+          "options": [
+            "Weak positive",
+            "Strong negative",
+            "Weak negative",
+            "No relationship"
+          ],
+          "answer": "Strong negative"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "phase": "Phase 3 (Days 16-Days 21): Unsupervised Learning and Dimensionality Reduction",
+      "title": "Principal Component Analysis (PCA)",
+      "playlist_videos": [
+        {
+          "tutorial_no": 31,
+          "title": "Decision Tree 🌳 Example | Calculate Entropy, Information ℹ️ Gain | Supervised Learning",
+          "url": "https://www.youtube.com/watch?v=DnhVLfjlGXE&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=31",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 32,
+          "title": "Single Linkage Clustering Example | Unsupervised Learning | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=CcPzgFFE_pY&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=32",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Principal Component Analysis (PCA).",
+      "practice_task": "Implement a basic version of the concepts discussed in Principal Component Analysis (PCA) using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "Information Gain is used to determine:",
+          "options": [
+            "The depth of the tree",
+            "Which attribute should be the splitting node",
+            "The number of leaf nodes",
+            "The error rate"
+          ],
+          "answer": "Which attribute should be the splitting node"
+        },
+        {
+          "q": "Formula for Entropy H(S) is:",
+          "options": [
+            "Sum(p * log p)",
+            "-Sum(pi * log2 pi)",
+            "1 - Sum(p^2)",
+            "Mean / Variance"
+          ],
+          "answer": "-Sum(pi * log2 pi)"
+        },
+        {
+          "q": "PCA stands for:",
+          "options": [
+            "Primary Cluster Analysis",
+            "Principal Component Analysis",
+            "Predictive Coding Algorithm",
+            "Partially Coded Analysis"
+          ],
+          "answer": "Principal Component Analysis"
+        },
+        {
+          "q": "PCA is primarily used for:",
+          "options": [
+            "Classification",
+            "Regression",
+            "Dimensionality Reduction",
+            "Data Augmentation"
+          ],
+          "answer": "Dimensionality Reduction"
+        },
+        {
+          "q": "In PCA, the new features are called:",
+          "options": [
+            "Attributes",
+            "Eigen-labels",
+            "Principal Components",
+            "Clusters"
+          ],
+          "answer": "Principal Components"
+        },
+        {
+          "q": "Principal Components are ______ to each other.",
+          "options": [
+            "Parallel",
+            "Orthogonal (at 90 degrees)",
+            "Identical",
+            "Correlated"
+          ],
+          "answer": "Orthogonal (at 90 degrees)"
+        },
+        {
+          "q": "PCA tries to maximize which property while reducing dimensions?",
+          "options": [
+            "Mean",
+            "Variance (captured information)",
+            "Error",
+            "Number of rows"
+          ],
+          "answer": "Variance (captured information)"
+        },
+        {
+          "q": "Dimensionality reduction helps in:",
+          "options": [
+            "Data Visualization",
+            "Reducing training time",
+            "Removing redundant features",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        },
+        {
+          "q": "In Single Linkage Clustering, we merge clusters based on the ______ distance.",
+          "options": [
+            "Maximum",
+            "Minimum",
+            "Average",
+            "Centroid"
+          ],
+          "answer": "Minimum"
+        },
+        {
+          "q": "The first Principal Component (PC1) accounts for:",
+          "options": [
+            "The least variance",
+            "The most variance",
+            "Zero variance",
+            "The average variance"
+          ],
+          "answer": "The most variance"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "phase": "Phase 3 (Days 16-Days 21): Unsupervised Learning and Dimensionality Reduction",
+      "title": "Perceptron Learning Rule",
+      "playlist_videos": [
+        {
+          "tutorial_no": 33,
+          "title": "Token & Parameters in LLama3 META Models | 8B & 70B Parameters Model | GPT model",
+          "url": "https://www.youtube.com/watch?v=UcFhiOtNHsQ&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=33",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 34,
+          "title": "What is Data Preprocessing & Data Cleaning | Various Techniques with Example",
+          "url": "https://www.youtube.com/watch?v=tDu_KIlXaB0&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=34",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Perceptron Learning Rule.",
+      "practice_task": "Implement a basic version of the concepts discussed in Perceptron Learning Rule using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What do 'Parameters' in models like LLama 3 represent?",
+          "options": [
+            "The number of users",
+            "The weights and biases learned during training",
+            "The number of GPUs",
+            "The speed of the internet"
+          ],
+          "answer": "The weights and biases learned during training"
+        },
+        {
+          "q": "In LLama3-8B, what does '8B' stand for?",
+          "options": [
+            "8 Billion Bytes",
+            "8 Billion Parameters",
+            "8 Bit encoding",
+            "8 Branches"
+          ],
+          "answer": "8 Billion Parameters"
+        },
+        {
+          "q": "What is 'Data Preprocessing'?",
+          "options": [
+            "Predicting the outcome",
+            "Preparing and cleaning raw data before feeding it to a model",
+            "Storing data in a database",
+            "Formatting the final report"
+          ],
+          "answer": "Preparing and cleaning raw data before feeding it to a model"
+        },
+        {
+          "q": "Which of these is a step in Data Cleaning?",
+          "options": [
+            "Handling missing values",
+            "Removing duplicate records",
+            "Correcting data types",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        },
+        {
+          "q": "A 'Perceptron' is based on the structure of a:",
+          "options": [
+            "Computer Chip",
+            "Biological Neuron",
+            "Decision Tree",
+            "Logic Gate"
+          ],
+          "answer": "Biological Neuron"
+        },
+        {
+          "q": "What are the key components of a Perceptron?",
+          "options": [
+            "Inputs and Weights",
+            "Summation Function",
+            "Activation Function",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        },
+        {
+          "q": "The Perceptron Learning Rule updates weights based on:",
+          "options": [
+            "The size of the data",
+            "The error between actual and predicted output",
+            "The number of neurons",
+            "The training time"
+          ],
+          "answer": "The error between actual and predicted output"
+        },
+        {
+          "q": "Can a single-layer Perceptron solve the XOR problem?",
+          "options": [
+            "Yes",
+            "No, because XOR is not linearly separable",
+            "Only with many weights",
+            "Only with large data"
+          ],
+          "answer": "No, because XOR is not linearly separable"
+        },
+        {
+          "q": "What is the role of an 'Activation Function'?",
+          "options": [
+            "To sum the weights",
+            "To decide whether a neuron should 'fire' (output) or not",
+            "To store the input data",
+            "To clean the data"
+          ],
+          "answer": "To decide whether a neuron should 'fire' (output) or not"
+        },
+        {
+          "q": "What is 'Tokenization' in Large Language Models?",
+          "options": [
+            "Assigning passwords",
+            "Breaking text into smaller units like words or sub-words",
+            "Counting the number of pages",
+            "Translating text"
+          ],
+          "answer": "Breaking text into smaller units like words or sub-words"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "phase": "Phase 3 (Days 16-Days 21): Unsupervised Learning and Dimensionality Reduction",
+      "title": "Backpropagation Algorithm",
+      "playlist_videos": [
+        {
+          "tutorial_no": 35,
+          "title": "How to Deal with Missing Values in DataSet | Data Preprocessing & Data Cleaning",
+          "url": "https://www.youtube.com/watch?v=KfC7VfDfn8I&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=35",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 36,
+          "title": "kNN Imputation with Examples | Data Preprocessing and Data Cleaning 🧹",
+          "url": "https://www.youtube.com/watch?v=bRWNJjzrZ-w&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=36",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Backpropagation Algorithm.",
+      "practice_task": "Implement a basic version of the concepts discussed in Backpropagation Algorithm using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "Which technique is used to fill in missing numerical values with the average?",
+          "options": [
+            "Mode Imputation",
+            "Mean Imputation",
+            "Data Deletion",
+            "Backpropagation"
+          ],
+          "answer": "Mean Imputation"
+        },
+        {
+          "q": "When should you use 'Median Imputation'?",
+          "options": [
+            "Always",
+            "When the data has many outliers",
+            "Never",
+            "For categorical data"
+          ],
+          "answer": "When the data has many outliers"
+        },
+        {
+          "q": "What is 'KNN Imputation'?",
+          "options": [
+            "Deleting rows with missing values",
+            "Predicting missing values based on the values of nearest similar data points",
+            "Using 0 for all missing data",
+            "Using a random number"
+          ],
+          "answer": "Predicting missing values based on the values of nearest similar data points"
+        },
+        {
+          "q": "What is the main idea behind Backpropagation?",
+          "options": [
+            "To pass error backwards from output to input to update weights",
+            "To ignore errors",
+            "To double the number of neurons",
+            "To delete the data"
+          ],
+          "answer": "To pass error backwards from output to input to update weights"
+        },
+        {
+          "q": "Backpropagation is used for training:",
+          "options": [
+            "Linear Regression",
+            "K-Means Clustering",
+            "Multi-Layer Neural Networks",
+            "Decision Trees"
+          ],
+          "answer": "Multi-Layer Neural Networks"
+        },
+        {
+          "q": "In Backpropagation, which mathematical concept is used to update weights?",
+          "options": [
+            "Chain Rule (Calculus)",
+            "Pythagorean Theorem",
+            "Set Theory",
+            "Linear Search"
+          ],
+          "answer": "Chain Rule (Calculus)"
+        },
+        {
+          "q": "What is the 'Cost Function' or 'Loss Function'?",
+          "options": [
+            "The price of the software",
+            "A measure of how far off the model's prediction is from the actual label",
+            "The number of layers",
+            "The size of the dataset"
+          ],
+          "answer": "A measure of how far off the model's prediction is from the actual label"
+        },
+        {
+          "q": "If we delete every row with a missing value, it is called:",
+          "options": [
+            "Imputation",
+            "Listwise Deletion",
+            "Feature Engineering",
+            "Normalization"
+          ],
+          "answer": "Listwise Deletion"
+        },
+        {
+          "q": "For categorical missing data, which imputation is best?",
+          "options": [
+            "Mean",
+            "Median",
+            "Mode",
+            "Standard Deviation"
+          ],
+          "answer": "Mode"
+        },
+        {
+          "q": "What is the 'Learning Rate' in Neural Networks?",
+          "options": [
+            "The time taken to train",
+            "A scalar that determines the step size at each iteration toward a minimum of a loss function",
+            "The number of neurons",
+            "The number of training samples"
+          ],
+          "answer": "A scalar that determines the step size at each iteration toward a minimum of a loss function"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "phase": "Phase 3 (Days 16-Days 21): Unsupervised Learning and Dimensionality Reduction",
+      "title": "Loss Functions",
+      "playlist_videos": [
+        {
+          "tutorial_no": 37,
+          "title": " Fit() & Transform() Method | Data Preprocessing | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=f3n-SZzPu7U&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=37",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 38,
+          "title": "Feature Extraction in Data preprocessing | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=f3n-SZzPu7U&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=37",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Loss Functions.",
+      "practice_task": "Implement a basic version of the concepts discussed in Loss Functions using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "In Scikit-Learn, what does the .fit() method do?",
+          "options": [
+            "It transforms the data",
+            "It calculates parameters (like mean, std) from the training data",
+            "It deletes missing values",
+            "It prints the data"
+          ],
+          "answer": "It calculates parameters (like mean, std) from the training data"
+        },
+        {
+          "q": "What does the .transform() method do?",
+          "options": [
+            "It learns the parameters",
+            "It applies the learned transformation (like scaling) to the data",
+            "It trains the model",
+            "It reshapes the array"
+          ],
+          "answer": "It applies the learned transformation (like scaling) to the data"
+        },
+        {
+          "q": "When do you use .fit_transform()?",
+          "options": [
+            "On test data only",
+            "On training data to both learn and apply parameters in one step",
+            "To reverse the transformation",
+            "To plot the data"
+          ],
+          "answer": "On training data to both learn and apply parameters in one step"
+        },
+        {
+          "q": "What is 'Feature Extraction'?",
+          "options": [
+            "Removing columns",
+            "Creating new features from raw data to improve model performance",
+            "Collecting data from the web",
+            "Naming the columns"
+          ],
+          "answer": "Creating new features from raw data to improve model performance"
+        },
+        {
+          "q": "Which is an example of Feature Extraction in Image Processing?",
+          "options": [
+            "Resizing the image",
+            "Edge detection / Histogram of Gradients",
+            "Deleting the image",
+            "Printing the image"
+          ],
+          "answer": "Edge detection / Histogram of Gradients"
+        },
+        {
+          "q": "What is 'Feature Scaling'?",
+          "options": [
+            "Adding more features",
+            "Adjusting the range of features so they are on a similar scale (e.g., 0 to 1)",
+            "Multiplying features by 10",
+            "Sorting the features"
+          ],
+          "answer": "Adjusting the range of features so they are on a similar scale (e.g., 0 to 1)"
+        },
+        {
+          "q": "Why is it important to use .transform() on test data instead of .fit_transform()?",
+          "options": [
+            "To prevent data leakage from test set to training set",
+            "To make it faster",
+            "Because test data has no labels",
+            "It doesn't matter"
+          ],
+          "answer": "To prevent data leakage from test set to training set"
+        },
+        {
+          "q": "Which loss function is common for Regression?",
+          "options": [
+            "Cross-Entropy",
+            "Mean Squared Error (MSE)",
+            "Hinge Loss",
+            "Information Gain"
+          ],
+          "answer": "Mean Squared Error (MSE)"
+        },
+        {
+          "q": "Which loss function is commonly used for Logistic Regression?",
+          "options": [
+            "MSE",
+            "Log Loss / Binary Cross-Entropy",
+            "L1 Loss",
+            "Variance"
+          ],
+          "answer": "Log Loss / Binary Cross-Entropy"
+        },
+        {
+          "q": "The goal of training is to _____ the Loss Function.",
+          "options": [
+            "Maximize",
+            "Minimize",
+            "Normalize",
+            "Stabilize"
+          ],
+          "answer": "Minimize"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "phase": "Phase 3 (Days 16-Days 21): Unsupervised Learning and Dimensionality Reduction",
+      "title": "Evaluation Metrics - Accuracy, Precision, Recall",
+      "playlist_videos": [
+        {
+          "tutorial_no": 39,
+          "title": "Ridge and Lasso Regression | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=9hU2RZ_Y3DA&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=39",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 40,
+          "title": "Mean Squared Error (MSE) | Machine learning",
+          "url": "https://www.youtube.com/watch?v=nuVFE_KaEz4&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=40",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Evaluation Metrics - Accuracy, Precision, Recall.",
+      "practice_task": "Implement a basic version of the concepts discussed in Evaluation Metrics - Accuracy, Precision, Recall using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What is the primary purpose of Regularization in Regression?",
+          "options": [
+            "To increase complexity",
+            "To prevent overfitting by penalizing large coefficients",
+            "To speed up training",
+            "To handle missing values"
+          ],
+          "answer": "To prevent overfitting by penalizing large coefficients"
+        },
+        {
+          "q": "Ridge Regression uses which type of penalty?",
+          "options": [
+            "L1 (Absolute values)",
+            "L2 (Squared values)",
+            "L3 (Cubic values)",
+            "No penalty"
+          ],
+          "answer": "L2 (Squared values)"
+        },
+        {
+          "q": "Lasso Regression uses which type of penalty?",
+          "options": [
+            "L1 (Absolute values)",
+            "L2 (Squared values)",
+            "Binary penalty",
+            "Log penalty"
+          ],
+          "answer": "L1 (Absolute values)"
+        },
+        {
+          "q": "Which regularization technique can be used for 'Feature Selection'?",
+          "options": [
+            "Ridge",
+            "Lasso (it can shrink coefficients to zero)",
+            "Both",
+            "Neither"
+          ],
+          "answer": "Lasso (it can shrink coefficients to zero)"
+        },
+        {
+          "q": "Mean Squared Error (MSE) is the average of:",
+          "options": [
+            "Absolute errors",
+            "Squared differences between actual and predicted values",
+            "Sum of errors",
+            "Product of errors"
+          ],
+          "answer": "Squared differences between actual and predicted values"
+        },
+        {
+          "q": "Accuracy is defined as:",
+          "options": [
+            "Correct Predictions / Total Predictions",
+            "True Positives / Actual Positives",
+            "True Positives / Predicted Positives",
+            "Error Rate * 100"
+          ],
+          "answer": "Correct Predictions / Total Predictions"
+        },
+        {
+          "q": "When is Accuracy a misleading metric?",
+          "options": [
+            "When the data is perfectly balanced",
+            "When dealing with imbalanced datasets (e.g., 99% class A, 1% class B)",
+            "When the model is linear",
+            "When K=5"
+          ],
+          "answer": "When dealing with imbalanced datasets (e.g., 99% class A, 1% class B)"
+        },
+        {
+          "q": "Recall (Sensitivity) measures:",
+          "options": [
+            "Out of all predicted positives, how many were actually positive?",
+            "Out of all actual positives, how many did we correctly identify?",
+            "The number of negative predictions",
+            "The training speed"
+          ],
+          "answer": "Out of all actual positives, how many did we correctly identify?"
+        },
+        {
+          "q": "Precision measures:",
+          "options": [
+            "Out of all actual positives, how many were identified?",
+            "Out of all predicted positives, how many were correctly predicted?",
+            "The total accuracy",
+            "The range of the prediction"
+          ],
+          "answer": "Out of all predicted positives, how many were correctly predicted?"
+        },
+        {
+          "q": "The F1-Score is the harmonic mean of:",
+          "options": [
+            "Bias and Variance",
+            "Precision and Recall",
+            "Mean and Median",
+            "MSE and MAE"
+          ],
+          "answer": "Precision and Recall"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "phase": "Phase 3 (Days 16-Days 21): Unsupervised Learning and Dimensionality Reduction",
+      "title": "ROC and AUC Curve",
+      "playlist_videos": [
+        {
+          "tutorial_no": 41,
+          "title": "Multiple Linear Regression (MLR) | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=5nJHkOePfcA&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=41",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 42,
+          "title": "Support Vector Machines (SVMs) | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=NDqACjz5j8g&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=42",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind ROC and AUC Curve.",
+      "practice_task": "Implement a basic version of the concepts discussed in ROC and AUC Curve using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What is the key assumption of Multiple Linear Regression?",
+          "options": [
+            "Linear relationship between independent and dependent variables",
+            "Independent variables should not be highly correlated",
+            "Residuals should be normally distributed",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        },
+        {
+          "q": "In MLR, the adjusted R-squared is used because:",
+          "options": [
+            "It is easier to calculate",
+            "It penalizes adding irrelevant features that don't improve the model",
+            "It is always higher than R-squared",
+            "It removes outliers"
+          ],
+          "answer": "It penalizes adding irrelevant features that don't improve the model"
+        },
+        {
+          "q": "SVM works by finding the _____ that separates the data.",
+          "options": [
+            "Circle",
+            "Optimal Hyperplane",
+            "Cluster center",
+            "Mean value"
+          ],
+          "answer": "Optimal Hyperplane"
+        },
+        {
+          "q": "The 'Margin' in SVM is:",
+          "options": [
+            "The distance between the hyperplane and the nearest data point",
+            "The total number of errors",
+            "The learning rate",
+            "The number of support vectors"
+          ],
+          "answer": "The distance between the hyperplane and the nearest data point"
+        },
+        {
+          "q": "What does ROC stand for?",
+          "options": [
+            "Random Output Characteristic",
+            "Receiver Operating Characteristic",
+            "Regression Optimal Curve",
+            "Row Over Column"
+          ],
+          "answer": "Receiver Operating Characteristic"
+        },
+        {
+          "q": "ROC curve plots which two metrics?",
+          "options": [
+            "Precision vs Recall",
+            "True Positive Rate (TPR) vs False Positive Rate (FPR)",
+            "Accuracy vs Error",
+            "Mean vs Variance"
+          ],
+          "answer": "True Positive Rate (TPR) vs False Positive Rate (FPR)"
+        },
+        {
+          "q": "What is AUC?",
+          "options": [
+            "Average Unit Cost",
+            "Area Under the (ROC) Curve",
+            "Attribute Under Classification",
+            "Activation Unit Control"
+          ],
+          "answer": "Area Under the (ROC) Curve"
+        },
+        {
+          "q": "An AUC value of 1.0 means:",
+          "options": [
+            "Random guessing",
+            "A perfect classifier",
+            "The model is failing",
+            "All predictions are negative"
+          ],
+          "answer": "A perfect classifier"
+        },
+        {
+          "q": "An AUC value of 0.5 means:",
+          "options": [
+            "Perfect classifier",
+            "Random guessing (no discriminative power)",
+            "Overfitting",
+            "Underfitting"
+          ],
+          "answer": "Random guessing (no discriminative power)"
+        },
+        {
+          "q": "A hard-margin SVM is used when:",
+          "options": [
+            "Data is noisy",
+            "Data is perfectly linearly separable",
+            "Data is categorical",
+            "There are many outliers"
+          ],
+          "answer": "Data is perfectly linearly separable"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "phase": "Phase 3 (Days 16-Days 21): Unsupervised Learning and Dimensionality Reduction",
+      "title": "Hyperparameter Tuning",
+      "playlist_videos": [
+        {
+          "tutorial_no": 43,
+          "title": "Numerical Explanation on SVM | How Support Vector Machine Algorithm Works",
+          "url": "https://www.youtube.com/watch?v=BpcDcvARbUQ&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=43",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 44,
+          "title": "Linear Discriminant Analysis (LDA) | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=9LO-bj1jyz4&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=44",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Hyperparameter Tuning.",
+      "practice_task": "Implement a basic version of the concepts discussed in Hyperparameter Tuning using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What is the difference between a parameter and a hyperparameter?",
+          "options": [
+            "Parameters are set by the user; hyperparameters are learned",
+            "Parameters are learned by the model; hyperparameters are set by the user before training",
+            "They are the same thing",
+            "Parameters are only for deep learning"
+          ],
+          "answer": "Parameters are learned by the model; hyperparameters are set by the user before training"
+        },
+        {
+          "q": "Which of these is a hyperparameter for KNN?",
+          "options": [
+            "The slope",
+            "The value of K",
+            "The mean of data",
+            "The weights"
+          ],
+          "answer": "The value of K"
+        },
+        {
+          "q": "What is 'Grid Search'?",
+          "options": [
+            "Searching for data on the web",
+            "An exhaustive search through a manually specified subset of hyperparameters",
+            "A clustering algorithm",
+            "A way to plot graphs"
+          ],
+          "answer": "An exhaustive search through a manually specified subset of hyperparameters"
+        },
+        {
+          "q": "LDA stands for:",
+          "options": [
+            "Linear Data Analysis",
+            "Linear Discriminant Analysis",
+            "Logarithmic Data Allocation",
+            "Logical Decision Algorithm"
+          ],
+          "answer": "Linear Discriminant Analysis"
+        },
+        {
+          "q": "What is the primary difference between PCA and LDA?",
+          "options": [
+            "PCA is supervised, LDA is unsupervised",
+            "PCA is unsupervised (focuses on variance), LDA is supervised (focuses on class separability)",
+            "PCA is only for images",
+            "LDA cannot reduce dimensions"
+          ],
+          "answer": "PCA is unsupervised (focuses on variance), LDA is supervised (focuses on class separability)"
+        },
+        {
+          "q": "LDA is used for dimensionality reduction in which type of problems?",
+          "options": [
+            "Unsupervised",
+            "Classification (Supervised)",
+            "Regression",
+            "Clustering"
+          ],
+          "answer": "Classification (Supervised)"
+        },
+        {
+          "q": "In SVM, the 'Slack Variable' is used to:",
+          "options": [
+            "Increase speed",
+            "Allow for some misclassifications in non-linearly separable data (Soft Margin)",
+            "Delete data",
+            "Calculate weights"
+          ],
+          "answer": "Allow for some misclassifications in non-linearly separable data (Soft Margin)"
+        },
+        {
+          "q": "What is 'Random Search' for hyperparameter tuning?",
+          "options": [
+            "Picking any random number",
+            "Sampling hyperparameter combinations randomly from a distribution",
+            "Deleting random data",
+            "Using a random model"
+          ],
+          "answer": "Sampling hyperparameter combinations randomly from a distribution"
+        },
+        {
+          "q": "Which hyperparameter in SVM controls the trade-off between margin maximization and error?",
+          "options": [
+            "K",
+            "C",
+            "Alpha",
+            "Sigma"
+          ],
+          "answer": "C"
+        },
+        {
+          "q": "What is a 'Support Vector'?",
+          "options": [
+            "A data point that lies on the edge of the margin",
+            "A programming library",
+            "A class label",
+            "The average of the dataset"
+          ],
+          "answer": "A data point that lies on the edge of the margin"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "phase": "Phase 4 (Days 23-Days 30): Neural Networks and Advanced Topics",
+      "title": "Tokenization and Stemming",
+      "playlist_videos": [
+        {
+          "tutorial_no": 45,
+          "title": "Bias & Variance Tradeoff Explained: How to Fix Overfitting & Underfitting?",
+          "url": "https://www.youtube.com/watch?v=O-qONAxkvK0&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=45",
+          "github_resource": "https://github.com/topics/machine-learning"
+        },
+        {
+          "tutorial_no": 46,
+          "title": "K-Fold Cross Validation in Machine Learning",
+          "url": "https://www.youtube.com/watch?v=tYMMgwp3D10&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=46",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Tokenization and Stemming.",
+      "practice_task": "Implement a basic version of the concepts discussed in Tokenization and Stemming using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What is 'Bias' in Machine Learning?",
+          "options": [
+            "Random noise",
+            "Error due to overly simplistic assumptions (leads to underfitting)",
+            "Error due to overly complex model (leads to overfitting)",
+            "The average of predictions"
+          ],
+          "answer": "Error due to overly simplistic assumptions (leads to underfitting)"
+        },
+        {
+          "q": "What is 'Variance' in the context of Bias-Variance tradeoff?",
+          "options": [
+            "The error on training data",
+            "How much the prediction for a given point varies between different realizations of the model (leads to overfitting)",
+            "The speed of the model",
+            "The number of features"
+          ],
+          "answer": "How much the prediction for a given point varies between different realizations of the model (leads to overfitting)"
+        },
+        {
+          "q": "The ideal model has:",
+          "options": [
+            "High Bias, High Variance",
+            "Low Bias, Low Variance",
+            "Low Bias, High Variance",
+            "High Bias, Low Variance"
+          ],
+          "answer": "Low Bias, Low Variance"
+        },
+        {
+          "q": "Which situation describes 'Underfitting'?",
+          "options": [
+            "Low Bias, High Variance",
+            "High Bias, Low Variance",
+            "Low Bias, Low Variance",
+            "High Bias, High Variance"
+          ],
+          "answer": "High Bias, Low Variance"
+        },
+        {
+          "q": "Which situation describes 'Overfitting'?",
+          "options": [
+            "High Bias, Low Variance",
+            "Low Bias, High Variance",
+            "Low Bias, Low Variance",
+            "High Bias, High Variance"
+          ],
+          "answer": "Low Bias, High Variance"
+        },
+        {
+          "q": "K-fold cross validation is a technique to:",
+          "options": [
+            "Clean the data",
+            "Evaluate model performance and reduce variance in assessment",
+            "Change the labels",
+            "Increase bias"
+          ],
+          "answer": "Evaluate model performance and reduce variance in assessment"
+        },
+        {
+          "q": "If K=N (number of data points) in K-fold, it is called:",
+          "options": [
+            "Stratified K-fold",
+            "Leave-One-Out Cross-Validation (LOOCV)",
+            "Random split",
+            "Hold-out method"
+          ],
+          "answer": "Leave-One-Out Cross-Validation (LOOCV)"
+        },
+        {
+          "q": "What is 'Stemming' in NLP?",
+          "options": [
+            "Removing vowels",
+            "Reducing a word to its root or base form (e.g., 'playing' to 'play')",
+            "Translating words",
+            "Correcting spelling"
+          ],
+          "answer": "Reducing a word to its root or base form (e.g., 'playing' to 'play')"
+        },
+        {
+          "q": "What is the primary goal of Tokenization?",
+          "options": [
+            "To encrypt data",
+            "To split text into meaningful units like words or characters",
+            "To remove stop words",
+            "To count the number of sentences"
+          ],
+          "answer": "To split text into meaningful units like words or characters"
+        },
+        {
+          "q": "As model complexity increases:",
+          "options": [
+            "Bias increases, Variance decreases",
+            "Bias decreases, Variance increases",
+            "Both decrease",
+            "Both increase"
+          ],
+          "answer": "Bias decreases, Variance increases"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "phase": "Phase 4 (Days 23-Days 30): Neural Networks and Advanced Topics",
+      "title": "Reinforcement Learning Intro",
+      "playlist_videos": [
+        {
+          "tutorial_no": 47,
+          "title": "Leave-One-Out Cross Validation (LOOCV) Explained with Example | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=4tIrEho8UJo&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=47",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Reinforcement Learning Intro.",
+      "practice_task": "Implement a basic version of the concepts discussed in Reinforcement Learning Intro using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "LOOCV stands for:",
+          "options": [
+            "Linear Out Of Classification Volume",
+            "Leave-One-Out Cross-Validation",
+            "Low Order Online Code Validation",
+            "Label Output Over Cross Variable"
+          ],
+          "answer": "Leave-One-Out Cross-Validation"
+        },
+        {
+          "q": "In LOOCV, if there are 100 data points, how many models are trained?",
+          "options": [
+            "1",
+            "10",
+            "100",
+            "50"
+          ],
+          "answer": "100"
+        },
+        {
+          "q": "What is the main drawback of LOOCV?",
+          "options": [
+            "It is inaccurate",
+            "It is computationally very expensive for large datasets",
+            "It ignores data points",
+            "It only works for clustering"
+          ],
+          "answer": "It is computationally very expensive for large datasets"
+        },
+        {
+          "q": "Reinforcement Learning is based on the concept of:",
+          "options": [
+            "Learning from labeled pairs",
+            "Learning through interaction with an environment using rewards and penalties",
+            "Grouping data by similarity",
+            "Fitting a line to data"
+          ],
+          "answer": "Learning through interaction with an environment using rewards and penalties"
+        },
+        {
+          "q": "In RL, the 'Agent' is the:",
+          "options": [
+            "Data scientist",
+            "Learner or decision maker",
+            "Target variable",
+            "Reward signal"
+          ],
+          "answer": "Learner or decision maker"
+        },
+        {
+          "q": "In RL, the 'Environment' is:",
+          "options": [
+            "The computer hardware",
+            "Everything the agent interacts with",
+            "The training dataset",
+            "The python compiler"
+          ],
+          "answer": "Everything the agent interacts with"
+        },
+        {
+          "q": "What is a 'Reward' in Reinforcement Learning?",
+          "options": [
+            "The payment for the project",
+            "A feedback signal indicating how good or bad an action was",
+            "A new feature in the data",
+            "The loss function"
+          ],
+          "answer": "A feedback signal indicating how good or bad an action was"
+        },
+        {
+          "q": "What is an 'Action' in RL?",
+          "options": [
+            "A line of code",
+            "The move the agent makes in the environment",
+            "A math operation",
+            "The final report"
+          ],
+          "answer": "The move the agent makes in the environment"
+        },
+        {
+          "q": "What is 'State' in RL?",
+          "options": [
+            "The country where the data was collected",
+            "The current situation/configuration of the environment",
+            "The final result",
+            "The memory usage"
+          ],
+          "answer": "The current situation/configuration of the environment"
+        },
+        {
+          "q": "Which is an example of Reinforcement Learning?",
+          "options": [
+            "Email spam detection",
+            "House price prediction",
+            "A robot learning to walk",
+            "Grouping news articles"
+          ],
+          "answer": "A robot learning to walk"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "phase": "Phase 4 (Days 23-Days 30): Neural Networks and Advanced Topics",
+      "title": "Q-Learning",
+      "playlist_videos": [
+        {
+          "tutorial_no": 48,
+          "title": "Principal Component Analysis (PCA) Explained | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=Dv-Kk7PDEas&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=48",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Q-Learning.",
+      "practice_task": "Implement a basic version of the concepts discussed in Q-Learning using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What is the primary goal of PCA?",
+          "options": [
+            "To increase data size",
+            "To reduce the number of variables while preserving as much info as possible",
+            "To label the data",
+            "To find the best cluster"
+          ],
+          "answer": "To reduce the number of variables while preserving as much info as possible"
+        },
+        {
+          "q": "PCA is a ______ technique.",
+          "options": [
+            "Linear dimensionality reduction",
+            "Non-linear dimensionality reduction",
+            "Supervised classification",
+            "Regression"
+          ],
+          "answer": "Linear dimensionality reduction"
+        },
+        {
+          "q": "Q-Learning is a type of:",
+          "options": [
+            "Supervised Learning",
+            "Reinforcement Learning (Model-free)",
+            "Clustering",
+            "Deep Learning only"
+          ],
+          "answer": "Reinforcement Learning (Model-free)"
+        },
+        {
+          "q": "In Q-Learning, 'Q' stands for:",
+          "options": [
+            "Quantity",
+            "Quality",
+            "Quick",
+            "Query"
+          ],
+          "answer": "Quality"
+        },
+        {
+          "q": "The Q-table stores:",
+          "options": [
+            "The entire dataset",
+            "Maximum expected future rewards for each action at each state",
+            "The cluster centers",
+            "The bias terms"
+          ],
+          "answer": "Maximum expected future rewards for each action at each state"
+        },
+        {
+          "q": "What is the 'Exploration vs Exploitation' trade-off?",
+          "options": [
+            "Choosing between speed and accuracy",
+            "Choosing between trying new actions and using known good actions",
+            "Choosing between training and testing",
+            "Choosing between CPU and GPU"
+          ],
+          "answer": "Choosing between trying new actions and using known good actions"
+        },
+        {
+          "q": "The Bellman Equation is used to:",
+          "options": [
+            "Calculate PCA",
+            "Update the Q-values in the Q-table",
+            "Clean the data",
+            "Prune a decision tree"
+          ],
+          "answer": "Update the Q-values in the Q-table"
+        },
+        {
+          "q": "In PCA, the components are ordered by:",
+          "options": [
+            "Alphabetic order",
+            "The amount of variance they explain",
+            "Their mean value",
+            "Random selection"
+          ],
+          "answer": "The amount of variance they explain"
+        },
+        {
+          "q": "What is an 'Eigenvalue' in the context of PCA?",
+          "options": [
+            "A category label",
+            "The magnitude of the variance along a principal component",
+            "The error rate",
+            "A missing value"
+          ],
+          "answer": "The magnitude of the variance along a principal component"
+        },
+        {
+          "q": "Q-Learning aims to find the optimal:",
+          "options": [
+            "Hyperplane",
+            "Policy (set of actions)",
+            "Centroid",
+            "Root node"
+          ],
+          "answer": "Policy (set of actions)"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "phase": "Phase 4 (Days 23-Days 30): Neural Networks and Advanced Topics",
+      "title": "Association Rule Learning",
+      "playlist_videos": [
+        {
+          "tutorial_no": 49,
+          "title": "How to update cost in K-Medoid Clustering | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=eZEifQcy7X8&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=49",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Association Rule Learning.",
+      "practice_task": "Implement a basic version of the concepts discussed in Association Rule Learning using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "In K-Medoids, the 'cost' of a cluster is usually calculated using:",
+          "options": [
+            "The sum of distances of all points to the medoid",
+            "The variance of the cluster",
+            "The number of points",
+            "The average of all points"
+          ],
+          "answer": "The sum of distances of all points to the medoid"
+        },
+        {
+          "q": "When updating the medoid, we look for a point that:",
+          "options": [
+            "Is furthest from all other points",
+            "Minimizes the total configuration cost",
+            "Has the highest value",
+            "Is the first point in the cluster"
+          ],
+          "answer": "Minimizes the total configuration cost"
+        },
+        {
+          "q": "Association Rule Learning is used to:",
+          "options": [
+            "Predict house prices",
+            "Discover interesting relations between variables in large databases",
+            "Label images",
+            "Reduce noise"
+          ],
+          "answer": "Discover interesting relations between variables in large databases"
+        },
+        {
+          "q": "What is 'Market Basket Analysis'?",
+          "options": [
+            "Predicting the stock market",
+            "Analyzing which products customers buy together",
+            "A type of neural network",
+            "Calculating the total bill"
+          ],
+          "answer": "Analyzing which products customers buy together"
+        },
+        {
+          "q": "In Association Rules, what is 'Support'?",
+          "options": [
+            "The weight of a neuron",
+            "How frequently an itemset appears in the dataset",
+            "The error margin",
+            "The number of classes"
+          ],
+          "answer": "How frequently an itemset appears in the dataset"
+        },
+        {
+          "q": "In Association Rules, what is 'Confidence'?",
+          "options": [
+            "The probability of the model being correct",
+            "How often the rule is found to be true (e.g., if A is bought, how likely is B?)",
+            "The variance of the data",
+            "The depth of the tree"
+          ],
+          "answer": "How often the rule is found to be true (e.g., if A is bought, how likely is B?)"
+        },
+        {
+          "q": "What is 'Lift' in Association Rules?",
+          "options": [
+            "The height of the tree",
+            "The ratio of the observed support to that expected if items were independent",
+            "The number of items",
+            "The training speed"
+          ],
+          "answer": "The ratio of the observed support to that expected if items were independent"
+        },
+        {
+          "q": "If Lift > 1, it means the items are:",
+          "options": [
+            "Independent",
+            "Positively associated (A bought increases chance of B)",
+            "Negatively associated",
+            "Unrelated"
+          ],
+          "answer": "Positively associated (A bought increases chance of B)"
+        },
+        {
+          "q": "K-Medoids is more robust than K-Means because it uses _____ as a distance measure.",
+          "options": [
+            "Squared error",
+            "Absolute error (Manhattan distance usually)",
+            "Product",
+            "Logarithm"
+          ],
+          "answer": "Absolute error (Manhattan distance usually)"
+        },
+        {
+          "q": "Association Rule Learning is usually ______.",
+          "options": [
+            "Supervised",
+            "Unsupervised",
+            "Reinforcement",
+            "Semi-supervised"
+          ],
+          "answer": "Unsupervised"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "phase": "Phase 4 (Days 23-Days 30): Neural Networks and Advanced Topics",
+      "title": "Apriori Algorithm",
+      "playlist_videos": [
+        {
+          "tutorial_no": 50,
+          "title": "Perceptron Learning in ANN | Single Layer Perceptron Model",
+          "url": "https://www.youtube.com/watch?v=rvxd13IHx1Y&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=50",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Apriori Algorithm.",
+      "practice_task": "Implement a basic version of the concepts discussed in Apriori Algorithm using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What is an ANN?",
+          "options": [
+            "Advanced Neural Network",
+            "Artificial Neural Network",
+            "Array Node Network",
+            "Automatic Node Analysis"
+          ],
+          "answer": "Artificial Neural Network"
+        },
+        {
+          "q": "The first layer in an ANN is called the:",
+          "options": [
+            "Hidden Layer",
+            "Output Layer",
+            "Input Layer",
+            "Middle Layer"
+          ],
+          "answer": "Input Layer"
+        },
+        {
+          "q": "Layers between Input and Output are called:",
+          "options": [
+            "External Layers",
+            "Hidden Layers",
+            "Support Layers",
+            "Bias Layers"
+          ],
+          "answer": "Hidden Layers"
+        },
+        {
+          "q": "What is 'Bias' in a neural network neuron?",
+          "options": [
+            "An error in data",
+            "An extra parameter that allows the activation function to be shifted",
+            "The weight of the input",
+            "The label of the data"
+          ],
+          "answer": "An extra parameter that allows the activation function to be shifted"
+        },
+        {
+          "q": "The Apriori Algorithm is used for:",
+          "options": [
+            "Clustering",
+            "Finding frequent itemsets and association rules",
+            "Regression",
+            "Image classification"
+          ],
+          "answer": "Finding frequent itemsets and association rules"
+        },
+        {
+          "q": "The Apriori principle states that:",
+          "options": [
+            "All itemsets are frequent",
+            "If an itemset is frequent, all of its subsets must also be frequent",
+            "If an itemset is infrequent, all its subsets are frequent",
+            "Only large itemsets matter"
+          ],
+          "answer": "If an itemset is frequent, all of its subsets must also be frequent"
+        },
+        {
+          "q": "Which step helps Apriori reduce the search space?",
+          "options": [
+            "Pruning (discarding itemsets with support < threshold)",
+            "Increasing K",
+            "Adding layers",
+            "Backpropagation"
+          ],
+          "answer": "Pruning (discarding itemsets with support < threshold)"
+        },
+        {
+          "q": "A single-layer perceptron can only solve ______ problems.",
+          "options": [
+            "Non-linear",
+            "Linearly separable",
+            "Clustering",
+            "Language translation"
+          ],
+          "answer": "Linearly separable"
+        },
+        {
+          "q": "Activation functions like Step function are used in:",
+          "options": [
+            "Regression",
+            "Basic Perceptrons",
+            "PCA",
+            "K-Means"
+          ],
+          "answer": "Basic Perceptrons"
+        },
+        {
+          "q": "If an itemset {Bread, Milk} has low support, Apriori will:",
+          "options": [
+            "Keep it for next step",
+            "Ignore all larger sets containing {Bread, Milk}",
+            "Increase its confidence",
+            "Ask for more data"
+          ],
+          "answer": "Ignore all larger sets containing {Bread, Milk}"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "phase": "Phase 4 (Days 23-Days 30): Neural Networks and Advanced Topics",
+      "title": "Recommender Systems",
+      "playlist_videos": [
+        {
+          "tutorial_no": 51,
+          "title": "What is Multilayer Perceptron (MLP)? | How It Works in Machine Learning",
+          "url": "https://www.youtube.com/watch?v=BPOl4_vN3IM&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=51",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Recommender Systems.",
+      "practice_task": "Implement a basic version of the concepts discussed in Recommender Systems using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "A Multilayer Perceptron (MLP) consists of at least how many layers?",
+          "options": [
+            "One",
+            "Two (Input and Output)",
+            "Three (Input, at least one Hidden, and Output)",
+            "Ten"
+          ],
+          "answer": "Three (Input, at least one Hidden, and Output)"
+        },
+        {
+          "q": "MLP uses which algorithm for training?",
+          "options": [
+            "Apriori",
+            "Backpropagation",
+            "K-means",
+            "Linear search"
+          ],
+          "answer": "Backpropagation"
+        },
+        {
+          "q": "Unlike a single-layer perceptron, an MLP can solve ______ problems.",
+          "options": [
+            "Simple only",
+            "Non-linearly separable (like XOR)",
+            "None",
+            "Only linear"
+          ],
+          "answer": "Non-linearly separable (like XOR)"
+        },
+        {
+          "q": "Recommender Systems are primarily divided into which two types?",
+          "options": [
+            "Fast and Slow",
+            "Content-based and Collaborative Filtering",
+            "Supervised and Unsupervised",
+            "Linear and Non-linear"
+          ],
+          "answer": "Content-based and Collaborative Filtering"
+        },
+        {
+          "q": "What is 'Content-based Filtering'?",
+          "options": [
+            "Recommending items similar to what a user liked in the past",
+            "Recommending items based on other users' opinions",
+            "Recommending the most expensive items",
+            "Randomly picking items"
+          ],
+          "answer": "Recommending items similar to what a user liked in the past"
+        },
+        {
+          "q": "What is 'Collaborative Filtering'?",
+          "options": [
+            "Recommending based on item descriptions",
+            "Recommending items based on the behavior/preferences of similar users",
+            "Using only one user's data",
+            "Manually picking items"
+          ],
+          "answer": "Recommending items based on the behavior/preferences of similar users"
+        },
+        {
+          "q": "The 'Cold Start' problem in Recommenders occurs when:",
+          "options": [
+            "The computer is cold",
+            "There is not enough data about a new user or a new item to make recommendations",
+            "The model is too fast",
+            "The data is in a cold storage"
+          ],
+          "answer": "There is not enough data about a new user or a new item to make recommendations"
+        },
+        {
+          "q": "Which function is non-linear and commonly used in MLP hidden layers?",
+          "options": [
+            "Step function",
+            "ReLU (Rectified Linear Unit) / Sigmoid / Tanh",
+            "Constant function",
+            "Linear line"
+          ],
+          "answer": "ReLU (Rectified Linear Unit) / Sigmoid / Tanh"
+        },
+        {
+          "q": "A Hybrid Recommender System combines:",
+          "options": [
+            "Mean and Median",
+            "Content-based and Collaborative filtering",
+            "Training and Testing",
+            "CPU and RAM"
+          ],
+          "answer": "Content-based and Collaborative filtering"
+        },
+        {
+          "q": "Which technique is used to calculate similarity in Recommender Systems?",
+          "options": [
+            "Cosine Similarity",
+            "Euclidean Distance",
+            "Pearson Correlation",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "phase": "Phase 4 (Days 23-Days 30): Neural Networks and Advanced Topics",
+      "title": "Case Study - ML Project",
+      "playlist_videos": [
+        {
+          "tutorial_no": 52,
+          "title": "Single Layer Neural Network | Machine Learning",
+          "url": "https://www.youtube.com/watch?v=qjMmMmwTOKI&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=52",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Case Study - ML Project.",
+      "practice_task": "Implement a basic version of the concepts discussed in Case Study - ML Project using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "A Single Layer Neural Network (Perceptron) consists of:",
+          "options": [
+            "Input and Output layer only",
+            "Many hidden layers",
+            "No weights",
+            "Only bias"
+          ],
+          "answer": "Input and Output layer only"
+        },
+        {
+          "q": "In a neural network, the 'Weight' represents:",
+          "options": [
+            "The importance of the input connection",
+            "The size of the data",
+            "The name of the user",
+            "The bias term"
+          ],
+          "answer": "The importance of the input connection"
+        },
+        {
+          "q": "What is the first step in starting an ML Project?",
+          "options": [
+            "Writing code",
+            "Problem Definition and Data Collection",
+            "Hyperparameter tuning",
+            "Model deployment"
+          ],
+          "answer": "Problem Definition and Data Collection"
+        },
+        {
+          "q": "EDA stands for:",
+          "options": [
+            "Early Data Analysis",
+            "Exploratory Data Analysis",
+            "Electronic Data Alignment",
+            "Every Data Access"
+          ],
+          "answer": "Exploratory Data Analysis"
+        },
+        {
+          "q": "What is the purpose of EDA?",
+          "options": [
+            "To build the final model",
+            "To understand the data, find patterns, and detect anomalies visually",
+            "To delete the dataset",
+            "To write a research paper"
+          ],
+          "answer": "To understand the data, find patterns, and detect anomalies visually"
+        },
+        {
+          "q": "After building a model, what is the 'Evaluation' phase?",
+          "options": [
+            "Checking how well the model performs using metrics like Accuracy or MSE",
+            "Buying new hardware",
+            "Collecting more data",
+            "Renaming the features"
+          ],
+          "answer": "Checking how well the model performs using metrics like Accuracy or MSE"
+        },
+        {
+          "q": "What is 'Feature Engineering'?",
+          "options": [
+            "Building the computer",
+            "Transforming or creating new features to help the model learn better",
+            "Writing the documentation",
+            "Deleting the features"
+          ],
+          "answer": "Transforming or creating new features to help the model learn better"
+        },
+        {
+          "q": "A single-layer perceptron calculates the weighted sum and then applies an:",
+          "options": [
+            "Addition",
+            "Activation Function",
+            "Subtraction",
+            "Iteration"
+          ],
+          "answer": "Activation Function"
+        },
+        {
+          "q": "When deploying a project, 'Pickle' in Python is used to:",
+          "options": [
+            "Wash the data",
+            "Save the trained model to a file for later use",
+            "Plot the graphs",
+            "Increase speed"
+          ],
+          "answer": "Save the trained model to a file for later use"
+        },
+        {
+          "q": "Which library is common for building web apps for ML projects?",
+          "options": [
+            "Streamlit / Flask / Django",
+            "NumPy",
+            "Pandas",
+            "Matplotlib"
+          ],
+          "answer": "Streamlit / Flask / Django"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "phase": "Phase 4 (Days 23-Days 30): Neural Networks and Advanced Topics",
+      "title": "Conclusion",
+      "playlist_videos": [
+        {
+          "tutorial_no": 53,
+          "title": "New to ML? Follow These Steps to Build Any Machine Learning Models",
+          "url": "https://www.youtube.com/watch?v=fmxmNwAB0_Y&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&index=53",
+          "github_resource": "https://github.com/topics/machine-learning"
+        }
+      ],
+      "watch_focus": "Focus on understanding the core mathematical intuition and real-world logic behind Conclusion.",
+      "practice_task": "Implement a basic version of the concepts discussed in Conclusion using Python (Scikit-Learn or NumPy).",
+      "quiz": [
+        {
+          "q": "What is the very first step to build any ML model?",
+          "options": [
+            "Importing Scikit-Learn",
+            "Understanding the Business Problem and Data",
+            "Evaluating accuracy",
+            "Tuning parameters"
+          ],
+          "answer": "Understanding the Business Problem and Data"
+        },
+        {
+          "q": "Which phase involves splitting the data into Train and Test sets?",
+          "options": [
+            "Deployment",
+            "Data Preprocessing",
+            "Conclusion",
+            "Clustering"
+          ],
+          "answer": "Data Preprocessing"
+        },
+        {
+          "q": "Which library is the industry standard for traditional ML algorithms in Python?",
+          "options": [
+            "TensorFlow",
+            "Scikit-Learn",
+            "PyTorch",
+            "Keras"
+          ],
+          "answer": "Scikit-Learn"
+        },
+        {
+          "q": "Why is it important to never train on the 'Test' data?",
+          "options": [
+            "The model will be too slow",
+            "It will lead to biased evaluation and misleadingly high performance",
+            "The computer will crash",
+            "Test data has no features"
+          ],
+          "answer": "It will lead to biased evaluation and misleadingly high performance"
+        },
+        {
+          "q": "What should you do if your model is overfitting?",
+          "options": [
+            "Add more complexity",
+            "Use Regularization or simplify the model",
+            "Delete the test set",
+            "Stop the project"
+          ],
+          "answer": "Use Regularization or simplify the model"
+        },
+        {
+          "q": "What should you do if your model is underfitting?",
+          "options": [
+            "Add more relevant features or use a more complex model",
+            "Remove all data",
+            "Use a simpler model",
+            "Use fewer parameters"
+          ],
+          "answer": "Add more relevant features or use a more complex model"
+        },
+        {
+          "q": "Which type of learning is best for finding similar customer segments?",
+          "options": [
+            "Regression",
+            "Clustering (Unsupervised)",
+            "Classification",
+            "Reinforcement"
+          ],
+          "answer": "Clustering (Unsupervised)"
+        },
+        {
+          "q": "Which type of learning is best for predicting if a transaction is 'Fraud' or 'Normal'?",
+          "options": [
+            "Clustering",
+            "Classification (Supervised)",
+            "PCA",
+            "Regression"
+          ],
+          "answer": "Classification (Supervised)"
+        },
+        {
+          "q": "The final stage of the ML pipeline after evaluation is often:",
+          "options": [
+            "Data Cleaning",
+            "Model Deployment",
+            "Feature Selection",
+            "Defining the problem"
+          ],
+          "answer": "Model Deployment"
+        },
+        {
+          "q": "Machine Learning is a continuous process of:",
+          "options": [
+            "Learning and Tuning",
+            "Writing and Deleting",
+            "Buying and Selling",
+            "Ignoring and Guessing"
+          ],
+          "answer": "Learning and Tuning"
+        }
+      ]
+    }
+  ]
+}

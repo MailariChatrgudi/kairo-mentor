@@ -1,0 +1,29 @@
+{
+  "user_id": "mailari_",
+  "profile": {
+    "name": "mailari_",
+    "student_type": "12th",
+    "interest": "",
+    "goal": "",
+    "financial_background": "",
+    "rank_or_year": ""
+  },
+  "career": {
+    "selected": "Full Stack Developer",
+    "suggested": []
+  },
+  "journey": {
+    "phase": 1,
+    "day": 1
+  },
+  "progress": {
+    "streak": 0,
+    "start_date": "2026-04-25",
+    "last_active_date": "",
+    "activity": {}
+  },
+  "video_progress": {},
+  "task_progress": {},
+  "assignment_progress": {},
+  "updated_at": "2026-04-24T18:35:04.488682"
+}
