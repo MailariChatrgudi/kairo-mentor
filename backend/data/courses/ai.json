@@ -1,0 +1,1033 @@
+{
+  "course_meta": {
+    "title": "AI Engineering",
+    "source_playlist": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI",
+    "channel": "Gate Smashers",
+    "total_videos": 60,
+    "total_days": 31,
+    "daily_schedule": {
+      "total_hours_per_day": 2,
+      "watch_videos": "1 hour",
+      "practice_and_implement": "1 hour"
+    },
+    "phases": [
+      "Phase 1 (Days 1–5): Introduction & Intelligent Agents",
+      "Phase 2 (Days 6–15): Problem Solving & Search Algorithms",
+      "Phase 3 (Days 16–23): Knowledge, Logic & Adversarial Search",
+      "Phase 4 (Days 24–31): Probabilistic Reasoning, Fuzzy Logic & Neural Networks"
+    ]
+  },
+  "roadmap": [
+    {
+      "day": 1,
+      "phase": "Phase 1 – Introduction & Intelligent Agents",
+      "title": "Foundations of AI & Syllabus Analysis",
+      "playlist_videos": [
+        {
+          "tutorial_no": 1,
+          "title": "Artificial Intelligence Syllabus Discussion and Analysis",
+          "url": "https://www.youtube.com/watch?v=uB3i-qV6VdM",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 2,
+          "title": "What's the FUTURE of Artificial Intelligence in 2025",
+          "url": "https://youtu.be/gm5DcqzZ3f4?si=XzjnoDYv5MU0Ksw2",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Understand the core definition of AI and the roadmap for the course. Focus on how AI differs from traditional programming and the four categories of AI definitions (Thinking Humanly, Acting Humanly, Thinking Rationally, Acting Rationally).",
+      "practice_task": "Research and write a 200-word comparison between Weak AI and Strong AI, identifying three real-world examples for each currently in use.",
+      "quiz": [
+        { "q": "Who is known as the father of Artificial Intelligence?", "options": ["Alan Turing", "John McCarthy", "Marvin Minsky", "Herbert Simon"], "answer": "John McCarthy" },
+        { "q": "Which test is used to determine if a machine can demonstrate human-like intelligence?", "options": ["Voight-Kampff Test", "Turing Test", "McCarthy Trial", "Analytical Engine Test"], "answer": "Turing Test" },
+        { "q": "What is the primary goal of AI?", "options": ["To make computers faster", "To simulate human intelligence in machines", "To create better hardware", "To replace all human jobs"], "answer": "To simulate human intelligence in machines" },
+        { "q": "Acting Humanly approach is related to which of the following?", "options": ["The Turing Test", "The Laws of Thought", "The Rational Agent", "Cognitive Modeling"], "answer": "The Turing Test" },
+        { "q": "Which of these is a subset of AI?", "options": ["Data Mining", "Machine Learning", "Software Engineering", "Cloud Computing"], "answer": "Machine Learning" },
+        { "q": "What is 'Strong AI'?", "options": ["AI specialized in one task", "AI with human-level cognitive abilities", "AI used in heavy machinery", "AI that requires high power"], "answer": "AI with human-level cognitive abilities" },
+        { "q": "The 'Laws of Thought' approach to AI is based on:", "options": ["Empirical data", "Logic and Syllogisms", "Human Behavior", "Biological Neurons"], "answer": "Logic and Syllogisms" },
+        { "q": "Which AI category focuses on 'Rational Agents'?", "options": ["Thinking Humanly", "Acting Humanly", "Thinking Rationally", "Acting Rationally"], "answer": "Acting Rationally" },
+        { "q": "Which of the following is NOT a component of the Turing Test?", "options": ["Natural Language Processing", "Knowledge Representation", "Automated Reasoning", "Mechanical Propulsion"], "answer": "Mechanical Propulsion" },
+        { "q": "What year was the term 'Artificial Intelligence' officially coined?", "options": ["1945", "1950", "1956", "1962"], "answer": "1956" }
+      ]
+    },
+    {
+      "day": 2,
+      "phase": "Phase 1 – Introduction & Intelligent Agents",
+      "title": "History, Applications, and AI Environments",
+      "playlist_videos": [
+        {
+          "tutorial_no": 3,
+          "title": "What is Artificial Intelligence | Learn AI with Real Life Examples | Can Machine Think??",
+          "url": "https://youtu.be/s-s9ilkMVj8?si=dAHcgK8PUn1n3LRB",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 4,
+          "title": " What is State Space Search | Introduction to Problem Solving in Artificial Intelligence",
+          "url": "https://youtu.be/E5jVBqe59EE?si=AB9yM1Nn4kWoHlhz",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Learn the timeline of AI development, from the golden years to AI winters, and identify diverse sectors like Healthcare, Finance, and Robotics where AI is applied.",
+      "practice_task": "Identify a specific AI application in the finance sector (e.g., fraud detection) and map out the data inputs it likely requires and the decisions it outputs.",
+      "quiz": [
+        { "q": "What does the term 'AI Winter' refer to?", "options": ["AI used in cold climates", "Period of reduced funding and interest in AI", "The processing power of supercomputers", "A specific AI algorithm for weather"], "answer": "Period of reduced funding and interest in AI" },
+        { "q": "Which of these was the first AI program?", "options": ["AlphaGo", "Logic Theorist", "Deep Blue", "Siri"], "answer": "Logic Theorist" },
+        { "q": "AI in healthcare is primarily used for:", "options": ["Building hospital beds", "Diagnosis and medical imaging", "Accounting", "Designing surgical masks"], "answer": "Diagnosis and medical imaging" },
+        { "q": "Expert Systems were prominent during which decade?", "options": ["1950s", "1960s", "1980s", "2010s"], "answer": "1980s" },
+        { "q": "In which application is Computer Vision most critical?", "options": ["Email Spam filtering", "Autonomous Vehicles", "Recommendation Systems", "Weather Prediction"], "answer": "Autonomous Vehicles" },
+        { "q": "The 'Dartmouth Workshop' is significant because:", "options": ["It ended AI research", "AI was founded there", "The first robot was built there", "It was the first AI winter"], "answer": "AI was founded there" },
+        { "q": "What does NLP stand for in AI?", "options": ["Natural Level Processing", "Network Layer Protocol", "Natural Language Processing", "Numeric Linear Programming"], "answer": "Natural Language Processing" },
+        { "q": "Which company developed the 'Deep Blue' computer?", "options": ["Google", "Microsoft", "IBM", "Apple"], "answer": "IBM" },
+        { "q": "In Finance, AI is often used for 'Algorithmic Trading'. What is this?", "options": ["Physical trading of goods", "Trading using automated scripts/rules", "Trading only in AI company stocks", "Manual floor trading"], "answer": "Trading using automated scripts/rules" },
+        { "q": "Which AI application is used to suggest movies on Netflix?", "options": ["Search Engine", "Recommender System", "Operating System", "Compiler"], "answer": "Recommender System" }
+      ]
+    },
+    {
+      "day": 3,
+      "phase": "Phase 1 – Introduction & Intelligent Agents",
+      "title": "Intelligent Agents and PEAS Descriptors",
+      "playlist_videos": [
+        {
+          "tutorial_no": 5,
+          "title": " Uninformed Vs Informed Search in Artificial Intelligence with Example",
+          "url": "https://youtu.be/gZpUcsB9TFc?si=3NZSC-CdnaITVlve",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 6,
+          "title": "Informed vs Uninformed vs Adversarial Search With Examples",
+          "url": "https://youtu.be/YatDNnaJ1TU?si=MnLNzM5MwpmWCvAg",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Understand the relationship between an agent, its sensors, actuators, and the environment. Master the PEAS (Performance, Environment, Actuators, Sensors) framework.",
+      "practice_task": "Choose three agents (e.g., Automated Taxi, Medical Diagnosis System, Part-picking Robot) and write down the full PEAS description for each.",
+      "quiz": [
+        { "q": "What does an agent use to perceive its environment?", "options": ["Actuators", "Sensors", "Brains", "Motors"], "answer": "Sensors" },
+        { "q": "What does an agent use to act upon the environment?", "options": ["Sensors", "Cameras", "Actuators", "Percepts"], "answer": "Actuators" },
+        { "q": "In PEAS, what does the 'P' stand for?", "options": ["Power", "Process", "Performance Measure", "Program"], "answer": "Performance Measure" },
+        { "q": "A 'Percept' is defined as:", "options": ["The agent's action", "The agent's sensory input at any given instant", "The agent's internal memory", "The agent's goal"], "answer": "The agent's sensory input at any given instant" },
+        { "q": "For an automated taxi, the 'Environment' includes:", "options": ["Roads and traffic", "Steering wheel", "Accelerator", "GPS sensor"], "answer": "Roads and traffic" },
+        { "q": "The 'S' in PEAS stands for:", "options": ["Software", "System", "Sensors", "Structure"], "answer": "Sensors" },
+        { "q": "Which of these is an Actuator for a robotic arm?", "options": ["Camera", "Joint Motor", "Touch Sensor", "Light Sensor"], "answer": "Joint Motor" },
+        { "q": "An agent that always chooses the action that maximizes its performance measure is called:", "options": ["Smart Agent", "Rational Agent", "Simple Agent", "Learning Agent"], "answer": "Rational Agent" },
+        { "q": "In a Medical Diagnosis system, what is the 'Performance Measure'?", "options": ["Patient's health/Recovery", "Hospital building", "Doctor's salary", "Keyboard input"], "answer": "Patient's health/Recovery" },
+        { "q": "Which of the following is NOT part of the PEAS framework?", "options": ["Environment", "Actuators", "Sensors", "Programming Language"], "answer": "Programming Language" }
+      ]
+    },
+    {
+      "day": 4,
+      "phase": "Phase 1 – Introduction & Intelligent Agents",
+      "title": "Properties of Environments",
+      "playlist_videos": [
+        {
+          "tutorial_no": 7,
+          "title": "Breadth First Search (BFS) with example | Uninformed Search",
+          "url": "https://youtu.be/qul0f79gxGs?si=x_aRCurA9hMEziAe",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Focus on the various dimensions of environments: Static vs. Dynamic, Discrete vs. Continuous, Observable vs. Partially Observable, etc.",
+      "practice_task": "Create a table classifying the environments for Chess, Poker, and Real-world Driving across all 6 environment dimensions discussed.",
+      "quiz": [
+        { "q": "If an agent's sensors give it access to the complete state of the environment, it is:", "options": ["Partially Observable", "Fully Observable", "Static", "Discrete"], "answer": "Fully Observable" },
+        { "q": "An environment that does not change while the agent is deliberating is:", "options": ["Dynamic", "Static", "Semidynamic", "Stochastic"], "answer": "Static" },
+        { "q": "Chess is an example of which type of environment?", "options": ["Continuous", "Discrete", "Stochastic", "Partially Observable"], "answer": "Discrete" },
+        { "q": "A 'Stochastic' environment is one where:", "options": ["The next state is completely determined by the current state", "The next state is uncertain/probabilistic", "There are no other agents", "The environment is unchanging"], "answer": "The next state is uncertain/probabilistic" },
+        { "q": "Driving a car is a ________ environment.", "options": ["Static", "Continuous", "Fully Observable", "Single-agent"], "answer": "Continuous" },
+        { "q": "If the environment is 'Episodic', the agent's current action:", "options": ["Affects all future decisions", "Does not affect future episodes", "Is determined by the first episode", "Is continuous"], "answer": "Does not affect future episodes" },
+        { "q": "Crossword puzzles are usually:", "options": ["Static", "Dynamic", "Stochastic", "Continuous"], "answer": "Static" },
+        { "q": "Which environment is most difficult for an AI to handle?", "options": ["Static, Discrete, Deterministic", "Dynamic, Continuous, Stochastic", "Fully Observable, Static, Discrete", "Single-agent, Static, Episodic"], "answer": "Dynamic, Continuous, Stochastic" },
+        { "q": "In a 'Multi-agent' environment:", "options": ["Only one agent acts", "Multiple agents interact or compete", "The agent has multiple sensors", "The agent has multiple actuators"], "answer": "Multiple agents interact or compete" },
+        { "q": "A 'Deterministic' environment is one where:", "options": ["The next state is random", "The next state is perfectly predictable from current state and action", "The agent is very fast", "The goal is fixed"], "answer": "The next state is perfectly predictable from current state and action" }
+      ]
+    },
+    {
+      "day": 5,
+      "phase": "Phase 1 – Introduction & Intelligent Agents",
+      "title": "Types of Agents",
+      "playlist_videos": [
+        {
+          "tutorial_no": 8,
+          "title": "Depth First Search (DFS) with example | Uninformed Search",
+          "url": "https://youtu.be/f8luGFRtshY?si=2WOJE417X0JGBWJd",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Distinguish between Simple Reflex, Model-based, Goal-based, and Utility-based agents. Understand why 'Learning Agents' are superior.",
+      "practice_task": "Draw a block diagram of a Utility-based Agent and explain the role of the 'Utility Function' in its decision-making process.",
+      "quiz": [
+        { "q": "Which agent acts only on the basis of the current percept, ignoring history?", "options": ["Model-based Reflex Agent", "Simple Reflex Agent", "Goal-based Agent", "Utility-based Agent"], "answer": "Simple Reflex Agent" },
+        { "q": "Which agent maintains an internal state to track parts of the world it can't see?", "options": ["Simple Reflex Agent", "Model-based Reflex Agent", "Goal-based Agent", "Utility-based Agent"], "answer": "Model-based Reflex Agent" },
+        { "q": "Goal-based agents differ from reflex agents by considering:", "options": ["Past percepts", "Future consequences to achieve a target", "Immediate rewards", "The utility function"], "answer": "Future consequences to achieve a target" },
+        { "q": "Which agent uses a function to map a state to a real number describing 'happiness'?", "options": ["Goal-based", "Utility-based", "Model-based", "Simple Reflex"], "answer": "Utility-based" },
+        { "q": "What are the four components of a Learning Agent?", "options": ["Input, Output, Process, Memory", "Learning element, Critic, Performance element, Problem generator", "Sensors, Actuators, CPU, RAM", "Model, Goal, Utility, Reflex"], "answer": "Learning element, Critic, Performance element, Problem generator" },
+        { "q": "The 'Critic' in a learning agent provides:", "options": ["New goals", "Feedback on how the agent is doing", "The current percept", "The next action"], "answer": "Feedback on how the agent is doing" },
+        { "q": "The 'Problem Generator' is responsible for:", "options": ["Solving the problem", "Suggesting actions that lead to new experiences", "Monitoring sensors", "Calculating utility"], "answer": "Suggesting actions that lead to new experiences" },
+        { "q": "A 'Simple Reflex Agent' works on which principle?", "options": ["Condition-Action Rules", "Deep Learning", "Probabilistic Inference", "Minimax Algorithm"], "answer": "Condition-Action Rules" },
+        { "q": "Which agent type is most suitable for a 'Partialy Observable' environment?", "options": ["Simple Reflex Agent", "Model-based Agent", "Static Agent", "Random Agent"], "answer": "Model-based Agent" },
+        { "q": "Which component of the learning agent is responsible for selecting external actions?", "options": ["Learning element", "Performance element", "Critic", "Problem generator"], "answer": "Performance element" }
+      ]
+    },
+    {
+      "day": 6,
+      "phase": "Phase 2 – Problem Solving & Search Algorithms",
+      "title": "Problem Solving & Search Basics",
+      "playlist_videos": [
+        {
+          "tutorial_no": 9,
+          "title": "Time & Space Complexity of BFS and DFS | Search space",
+          "url": "https://youtu.be/_Ky9w2zF8JM?si=hYEbStp_GULff83h",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 10,
+          "title": "Bidirectional Search Algorithm in Artificial Intelligence in Hindi with Real Life Examples",
+          "url": "https://youtu.be/rEema9uQ02c?si=umCZHOKScbFWYJz_",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Understand how to formulate a problem in AI using Initial State, Actions, Transition Model, Goal Test, and Path Cost. Visualize the State Space Search tree.",
+      "practice_task": "Formulate the '8-Puzzle' problem using the 5 components of problem formulation (States, Initial State, Actions, Transition Model, Goal Test).",
+      "quiz": [
+        { "q": "What is the 'State Space' in AI search?", "options": ["The physical memory of the computer", "The set of all possible states reachable from the initial state", "The final goal state only", "The path from start to finish"], "answer": "The set of all possible states reachable from the initial state" },
+        { "q": "Which of the following is NOT part of a well-defined problem?", "options": ["Initial State", "Goal Test", "Transition Model", "Agent's Sensors"], "answer": "Agent's Sensors" },
+        { "q": "In the Water Jug problem, what constitutes a 'State'?", "options": ["The size of the jugs", "The amount of water in each jug", "The color of the jugs", "The source of the water"], "answer": "The amount of water in each jug" },
+        { "q": "The process of removing a node from the 'frontier' and checking its successors is:", "options": ["Goal testing", "Expansion", "Heuristic calculation", "Backtracking"], "answer": "Expansion" },
+        { "q": "A 'Path' in a search tree is:", "options": ["A single node", "A sequence of states connected by actions", "The leaf nodes only", "The root node only"], "answer": "A sequence of states connected by actions" },
+        { "q": "What is 'Abstraction' in problem solving?", "options": ["Making the problem more complex", "The process of removing irrelevant details from a problem", "Visualizing the search tree", "Calculating the path cost"], "answer": "The process of removing irrelevant details from a problem" },
+        { "q": "The 'Frontier' (or Open List) contains:", "options": ["All nodes in the tree", "Nodes that have been expanded", "Nodes that have been generated but not yet expanded", "Only the goal node"], "answer": "Nodes that have been generated but not yet expanded" },
+        { "q": "What is 'Path Cost'?", "options": ["The time taken to find a solution", "A numeric value assigned to a path", "The number of nodes in the frontier", "The depth of the tree"], "answer": "A numeric value assigned to a path" },
+        { "q": "Which of these is a classic AI toy problem?", "options": ["8-Queens problem", "Web Scraping", "Sorting an array", "File Compression"], "answer": "8-Queens problem" },
+        { "q": "What is the 'Optimal Solution'?", "options": ["Any path that reaches the goal", "The path with the lowest path cost among all solutions", "The fastest search algorithm", "The path that visits the most nodes"], "answer": "The path with the lowest path cost among all solutions" }
+      ]
+    },
+    {
+      "day": 7,
+      "phase": "Phase 2 – Problem Solving & Search Algorithms",
+      "title": "Best-First Search & Depth-Limited Search",
+      "playlist_videos": [
+        {
+          "tutorial_no": 11,
+          "title": "Best First Search Algorithm | How it Works | All Imp Points(Pros & Cons)",
+          "url": "https://youtu.be/7ffDUDjwz5E?si=iFjX1cpYwoOP5Ny9",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 12,
+          "title": "Depth-Limited Search (DLS) Explained | Uninformed Search in AI",
+          "url": "https://youtu.be/jbw6nWFWxDk?si=sBRj7hNe9eGJyEIn",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Compare Informed (Best-First) and Uninformed (DLS) search techniques. Focus on the use of evaluation functions to guide search.",
+      "practice_task": "Explain how DLS solves the infinite path problem of DFS and identify its main limitation compared to Iterative Deepening.",
+      "quiz": [
+        { "q": "Best-First Search is a type of:", "options": ["Informed Search", "Uninformed Search", "Local Search", "Blind Search"], "answer": "Informed Search" },
+        { "q": "Which function is used by Best-First Search to choose the next node?", "options": ["Evaluation function f(n)", "Cost function g(n)", "Depth function d(n)", "Path function p(n)"], "answer": "Evaluation function f(n)" },
+        { "q": "Depth-Limited Search (DLS) is used to overcome which drawback of DFS?", "options": ["Infinite loops", "Slow processing", "High memory usage", "Low accuracy"], "answer": "Infinite loops" },
+        { "q": "In DLS, what happens if the goal is deeper than the limit?", "options": ["The algorithm fails to find it", "The algorithm increases the limit automatically", "The algorithm switches to BFS", "The algorithm crashes"], "answer": "The algorithm fails to find it" },
+        { "q": "Greedy Best-First Search expands the node that is closest to:", "options": ["The goal", "The root", "The current node", "The frontier"], "answer": "The goal" },
+        { "q": "DLS is equivalent to DFS when the limit is set to:", "options": ["Infinity", "Zero", "One", "Ten"], "answer": "Infinity" },
+        { "q": "What is a major disadvantage of Greedy Best-First Search?", "options": ["It is not optimal", "It uses too much memory", "It is too slow", "It only works on trees"], "answer": "It is not optimal" },
+        { "q": "Which data structure is typically used to implement Best-First Search?", "options": ["Priority Queue", "Stack", "FIFO Queue", "Linked List"], "answer": "Priority Queue" },
+        { "q": "DLS belongs to which search category?", "options": ["Uninformed Search", "Informed Search", "Heuristic Search", "Optimal Search"], "answer": "Uninformed Search" },
+        { "q": "Best-First Search picks the node with the ________ value of the evaluation function.", "options": ["Lowest", "Highest", "Average", "Random"], "answer": "Lowest" }
+      ]
+    },
+    {
+      "day": 8,
+      "phase": "Phase 2 – Problem Solving & Search Algorithms",
+      "title": "Iterative Deepening Search & 8-Puzzle Problem",
+      "playlist_videos": [
+        {
+          "tutorial_no": 13,
+          "title": "Iterative Deepening Depth-First Search (IDDFS) | Artificial Intelligence",
+          "url": "https://youtu.be/0-vP781wblQ?si=jerw9YLE3ksWy4WB",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 14,
+          "title": "8-Puzzle Problem in Artificial Intelligence without Heuristic | All Imp Points | Must Watch",
+          "url": "https://youtu.be/_CrEYrcImv0?si=zH1--BwHE9wYrAxK",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Understand why IDDFS combines the benefits of BFS (completeness) and DFS (space efficiency). Study the structure of the 8-puzzle as a state-space problem.",
+      "practice_task": "Calculate the state space size for an 8-puzzle and describe the blind search strategy used to reach the goal state.",
+      "quiz": [
+        { "q": "IDDFS combines the benefits of which two algorithms?", "options": ["BFS and DFS", "A* and BFS", "Greedy and DFS", "BFS and Dijkstra"], "answer": "BFS and DFS" },
+        { "q": "What is the space complexity of IDDFS?", "options": ["O(bd)", "O(b^d)", "O(d^b)", "O(1)"], "answer": "O(bd)" },
+        { "q": "Is IDDFS complete if the branching factor is finite?", "options": ["Yes", "No", "Only if it is informed", "Only on small trees"], "answer": "Yes" },
+        { "q": "In an 8-puzzle problem, a 'state' is defined by:", "options": ["The arrangement of tiles", "The number of tiles", "The size of the board", "The color of the tiles"], "answer": "The arrangement of tiles" },
+        { "q": "IDDFS repeatedly applies which search with increasing limits?", "options": ["Depth-Limited Search", "Breadth-First Search", "Best-First Search", "Uniform Cost Search"], "answer": "Depth-Limited Search" },
+        { "q": "What is the main advantage of IDDFS over BFS?", "options": ["Lower memory usage", "Faster speed", "Always finds the goal in one step", "Simpler logic"], "answer": "Lower memory usage" },
+        { "q": "In the 8-puzzle problem, what is the 'blank space' usually used for?", "options": ["Moving adjacent tiles", "Deleting tiles", "Winning the game", "Blocking the agent"], "answer": "Moving adjacent tiles" },
+        { "q": "Why is IDDFS often preferred for large search spaces?", "options": ["It manages memory efficiently and is complete", "It ignores the root", "It uses heuristics", "It never visits the same node twice"], "answer": "It manages memory efficiently and is complete" },
+        { "q": "The total number of states in an 8-puzzle is:", "options": ["9!", "8!", "9! / 2", "3^9"], "answer": "9! / 2" },
+        { "q": "Which search strategy is used on Day 8 to solve the 8-puzzle?", "options": ["Blind Search / Uninformed", "Informed Search", "Genetic Search", "Local Search"], "answer": "Blind Search / Uninformed" }
+      ]
+    },
+    {
+      "day": 9,
+      "phase": "Phase 2 – Problem Solving & Search Algorithms",
+      "title": "Heuristics & Informed Search for 8-Puzzle",
+      "playlist_videos": [
+        {
+          "tutorial_no": 15,
+          "title": "What is Heuristic in AI | Why we use Heuristic | How to Calculate Heuristic",
+          "url": "https://youtu.be/5F9YzkpnaRw?si=ORXRe0krcVGk6i2Z",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 16,
+          "title": "How to Solve 8-Puzzle Problem with Heuristic(Informed Search) in Artificial Intelligence",
+          "url": "https://youtu.be/nmWGhb9E4es?si=ryREekzWHhNksniw",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Master the concept of Heuristic Functions. Learn how to apply Manhattan Distance or Misplaced Tiles heuristics to solve puzzles efficiently.",
+      "practice_task": "Calculate the Manhattan Distance for a given 8-puzzle board configuration relative to a goal state.",
+      "quiz": [
+        { "q": "A heuristic function h(n) estimates:", "options": ["Cost from current node to goal", "Cost from root to current node", "Total path cost", "Number of nodes in frontier"], "answer": "Cost from current node to goal" },
+        { "q": "In the 8-puzzle, the 'Misplaced Tiles' heuristic counts:", "options": ["Tiles not in their goal position", "Total distance moved", "Tiles in the correct position", "Empty spaces"], "answer": "Tiles not in their goal position" },
+        { "q": "The 'Manhattan Distance' heuristic is calculated by:", "options": ["Sum of horizontal and vertical distances", "Straight line distance", "Number of diagonal moves", "Random estimation"], "answer": "Sum of horizontal and vertical distances" },
+        { "q": "A heuristic is 'admissible' if it:", "options": ["Never overestimates the true cost", "Always overestimates the true cost", "Is equal to zero", "Is always a negative number"], "answer": "Never overestimates the true cost" },
+        { "q": "Why do we use heuristics in AI search?", "options": ["To reduce the search space / time", "To make the algorithm more complex", "To use more memory", "To find any solution, even if wrong"], "answer": "To reduce the search space / time" },
+        { "q": "Which heuristic is generally more 'informed' for the 8-puzzle?", "options": ["Manhattan Distance", "Misplaced Tiles", "Zero Heuristic", "Breadth First"], "answer": "Manhattan Distance" },
+        { "q": "In informed search, we pick the node with the ________ heuristic value.", "options": ["Lowest", "Highest", "Median", "Maximum"], "answer": "Lowest" },
+        { "q": "Heuristic search is also known as:", "options": ["Heuristic-guided search", "Blind search", "Random walk", "Exhaustive search"], "answer": "Heuristic-guided search" },
+        { "q": "Is 'Manhattan Distance' admissible for the 8-puzzle?", "options": ["Yes", "No", "Only if there are no tiles", "Only on even days"], "answer": "Yes" },
+        { "q": "The value of h(n) for a goal node must be:", "options": ["0", "1", "Infinity", "-1"], "answer": "0" }
+      ]
+    },
+    {
+      "day": 10,
+      "phase": "Phase 2 – Problem Solving & Search Algorithms",
+      "title": "Generate & Test Search and Beam Search",
+      "playlist_videos": [
+        {
+          "tutorial_no": 17,
+          "title": "Generate and Test Search in Artificial Intelligence with Examples | Heuristic Search",
+          "url": "https://youtu.be/h-AfcPvpld4?si=XCFEW1VGNysn8Zdd",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 18,
+          "title": "Beam Search Algorithm | All Imp Points | Heuristic Search Techniques",
+          "url": "https://youtu.be/jhoXO1XF6Fk?si=slBSak6PBLt8yCwv",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Understand the simplicity of 'Generate and Test' and how Beam Search optimizes memory by keeping only the top 'k' promising nodes.",
+      "practice_task": "Differentiate between BFS and Beam Search in terms of memory usage and optimality.",
+      "quiz": [
+        { "q": "The 'Generate and Test' method is basically:", "options": ["Search with backtracking", "BFS", "Neural network", "Logic gate"], "answer": "Search with backtracking" },
+        { "q": "In Beam Search, the 'Beam Width' (W) refers to:", "options": ["The number of nodes kept at each level", "The depth of the tree", "The total number of states", "The width of the goal"], "answer": "The number of nodes kept at each level" },
+        { "q": "Beam Search is an optimization of which algorithm?", "options": ["Best-First Search", "DFS", "Dijkstra", "Minimax"], "answer": "Best-First Search" },
+        { "q": "If Beam Width is infinite, Beam Search becomes:", "options": ["Breadth-First Search", "Depth-First Search", "A*", "Hill Climbing"], "answer": "Breadth-First Search" },
+        { "q": "Is Beam Search guaranteed to find the optimal solution?", "options": ["No", "Yes", "Only if W=1", "Only if h(n)=0"], "answer": "No" },
+        { "q": "What is the primary advantage of Beam Search?", "options": ["Reduced memory usage", "Guaranteed optimality", "Simplicity", "Always finds the shortest path"], "answer": "Reduced memory usage" },
+        { "q": "In Generate and Test, a 'Generator' should be:", "options": ["Complete", "Random", "Slow", "Partial"], "answer": "Complete" },
+        { "q": "Which search technique is 'Generate and Test' most related to?", "options": ["State Space Search", "Deep Learning", "Fuzzy Logic", "Regression"], "answer": "State Space Search" },
+        { "q": "Beam Search explores ________ paths simultaneously.", "options": ["Multiple (k)", "Only one", "All", "Zero"], "answer": "Multiple (k)" },
+        { "q": "Which algorithm uses a 'satisfactory' test for generated solutions?", "options": ["Generate and Test", "A*", "AO*", "Minimax"], "answer": "Generate and Test" }
+      ]
+    },
+    {
+      "day": 11,
+      "phase": "Phase 2 – Problem Solving & Search Algorithms",
+      "title": "Hill Climbing & A* Search Algorithm",
+      "playlist_videos": [
+        {
+          "tutorial_no": 19,
+          "title": "Hill Climbing Algorithm in Artificial Intelligence with Real Life Examples",
+          "url": "https://youtu.be/3SiWtAnUROs?si=78smIZgPKyZThf9r",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 20,
+          "title": "A* algorithm in AI (artificial intelligence) in HINDI | A* algorithm with example",
+          "url": "https://youtu.be/tvAh0JZF2YE?si=zfbISSbgMurhnB4e",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Learn the concept of local optimization (Hill Climbing) and the 'Gold Standard' search algorithm (A*) that uses both path cost and heuristic.",
+      "practice_task": "Write the formula for A* search and identify the conditions under which it is guaranteed to find the shortest path.",
+      "quiz": [
+        { "q": "What is the core formula for A* Search?", "options": ["f(n) = g(n) + h(n)", "f(n) = g(n) - h(n)", "f(n) = h(n)", "f(n) = g(n)"], "answer": "f(n) = g(n) + h(n)" },
+        { "q": "In A*, g(n) represents:", "options": ["Cost from start to current node", "Heuristic estimate to goal", "Total expected cost", "Depth of node"], "answer": "Cost from start to current node" },
+        { "q": "Hill Climbing is a ________ search algorithm.", "options": ["Local", "Global", "Blind", "Exhaustive"], "answer": "Local" },
+        { "q": "A 'Local Maximum' in Hill Climbing is a state that is:", "options": ["Better than neighbors but not the best", "The best possible state", "Worse than all neighbors", "The initial state"], "answer": "Better than neighbors but not the best" },
+        { "q": "Hill Climbing can get stuck in which of these?", "options": ["Plateaus, Ridges, Local Maxima", "Goal nodes", "Infinite loops", "Root nodes"], "answer": "Plateaus, Ridges, Local Maxima" },
+        { "q": "A* is optimal if h(n) is:", "options": ["Admissible", "High", "Random", "Zero"], "answer": "Admissible" },
+        { "q": "Hill Climbing does not maintain a:", "options": ["Search tree", "Current state", "Heuristic", "Neighbor list"], "answer": "Search tree" },
+        { "q": "If h(n) is always 0, A* becomes:", "options": ["Dijkstra's / Uniform Cost Search", "DFS", "Greedy Search", "Hill Climbing"], "answer": "Dijkstra's / Uniform Cost Search" },
+        { "q": "Simple Hill Climbing picks:", "options": ["The first better neighbor found", "The best neighbor overall", "A random neighbor", "No neighbor"], "answer": "The first better neighbor found" },
+        { "q": "Steepest-Ascent Hill Climbing picks:", "options": ["The best neighbor among all", "The first better neighbor", "A random neighbor", "The goal directly"], "answer": "The best neighbor among all" }
+      ]
+    },
+    {
+      "day": 12,
+      "phase": "Phase 2 – Problem Solving & Search Algorithms",
+      "title": "A* Admissibility and AO* Algorithm",
+      "playlist_videos": [
+        {
+          "tutorial_no": 21,
+          "title": "How to Proof A* Admissible| Underestimation & Overestimation of A* in Hindi",
+          "url": "https://youtu.be/xz1Nq6cZejI?si=eZqHEMTbmRDTWnui",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 22,
+          "title": "AO* algorithm in AI (artificial intelligence) in HINDI | AO* algorithm with example",
+          "url": "https://youtu.be/u_TE42-uWD0?si=HJ7U2fZlFWdFUeGa",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Understand the proof of admissibility for A* and learn how AO* works for 'AND-OR' graphs used in problem decomposition.",
+      "practice_task": "Explain why underestimating the heuristic cost is essential for A* to be admissible.",
+      "quiz": [
+        { "q": "An admissible heuristic h(n) means:", "options": ["h(n) <= h*(n)", "h(n) >= h*(n)", "h(n) = g(n)", "h(n) > 0"], "answer": "h(n) <= h*(n)" },
+        { "q": "If A* overestimates the cost, it may:", "options": ["Fail to find the optimal path", "Find the shortest path faster", "Use no memory", "Crash"], "answer": "Fail to find the optimal path" },
+        { "q": "AO* algorithm is used to search ________ graphs.", "options": ["AND-OR", "Simple", "Directed", "Linear"], "answer": "AND-OR" },
+        { "q": "AO* is a ________ search algorithm.", "options": ["Heuristic", "Blind", "Optimal", "Stochastic"], "answer": "Heuristic" },
+        { "q": "In AO*, what does an 'AND' node signify?", "options": ["All sub-problems must be solved", "Only one sub-problem must be solved", "The goal is reached", "The path is blocked"], "answer": "All sub-problems must be solved" },
+        { "q": "Admissibility ensures A* will always find the ________ solution.", "options": ["Optimal / Shortest", "Longest", "First", "Random"], "answer": "Optimal / Shortest" },
+        { "q": "AO* stands for:", "options": ["AND-OR*", "Always Optimal*", "Alpha-Omega*", "Action-Output*"], "answer": "AND-OR*" },
+        { "q": "Which algorithm uses the 'Cost Revision' step?", "options": ["AO*", "BFS", "Minimax", "DFS"], "answer": "AO*" },
+        { "q": "Underestimation is also known as being:", "options": ["Optimistic", "Pessimistic", "Realistic", "Stochastic"], "answer": "Optimistic" },
+        { "q": "The AO* algorithm is primarily used in:", "options": ["Problem decomposition", "Sorting", "Image filtering", "Hardware design"], "answer": "Problem decomposition" }
+      ]
+    },
+    {
+      "day": 13,
+      "phase": "Phase 2 – Problem Solving & Search Algorithms",
+      "title": "Adversarial Search & Minimax Algorithm",
+      "playlist_videos": [
+        {
+          "tutorial_no": 23,
+          "title": "Introduction to Game Playing | Learn Game Playing Algorithms with Example",
+          "url": "https://youtu.be/FFzdXJ49KAI?si=maBry2F9xr2ISJ1I",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 24,
+          "title": "Minimax Algorithm in Game Playing | Artificial Intelligence",
+          "url": "https://youtu.be/Ntu8nNBL28o?si=Ntu8nNBL28o",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Enter the domain of Game Theory. Learn how agents make decisions in competitive zero-sum environments using the Minimax strategy.",
+      "practice_task": "Draw a small game tree for Tic-Tac-Toe and apply the Minimax algorithm to find the value of the root node.",
+      "quiz": [
+        { "q": "Minimax is used for ________ games.", "options": ["Zero-sum", "Single player", "Cooperative", "Random"], "answer": "Zero-sum" },
+        { "q": "The two players in Minimax are usually called:", "options": ["MAX and MIN", "Start and End", "Win and Loss", "Top and Bottom"], "answer": "MAX and MIN" },
+        { "q": "MAX player wants to ________ the evaluation value.", "options": ["Maximize", "Minimize", "Average", "Zero out"], "answer": "Maximize" },
+        { "q": "MIN player wants to ________ the evaluation value.", "options": ["Minimize", "Maximize", "Keep constant", "Randomize"], "answer": "Minimize" },
+        { "q": "Minimax uses which search strategy as its base?", "options": ["DFS", "BFS", "A*", "Local Search"], "answer": "DFS" },
+        { "q": "A 'Zero-sum' game means:", "options": ["One player's gain is the other's loss", "Both players lose", "Both players win", "Score is always zero"], "answer": "One player's gain is the other's loss" },
+        { "q": "In a game tree, leaves represent:", "options": ["Terminal states / Scores", "Starting points", "Possible moves", "Heuristics"], "answer": "Terminal states / Scores" },
+        { "q": "Is Minimax optimal against an optimal opponent?", "options": ["Yes", "No", "Only for Chess", "Only for 8-puzzle"], "answer": "Yes" },
+        { "q": "The depth of a game tree represents:", "options": ["Number of moves / Plies", "Number of players", "Difficulty", "Total memory"], "answer": "Number of moves / Plies" },
+        { "q": "Minimax is a type of:", "options": ["Adversarial Search", "Local Search", "Blind Search", "Genetic Search"], "answer": "Adversarial Search" }
+      ]
+    },
+    {
+      "day": 14,
+      "phase": "Phase 2 – Problem Solving & Search Algorithms",
+      "title": "Alpha-Beta Pruning & Knowledge Representation",
+      "playlist_videos": [
+        {
+          "tutorial_no": 25,
+          "title": "Alpha Beta Pruning in Hindi with Example | Artificial Intelligence",
+          "url": "https://youtu.be/dEs_kbvu_0s?si=qCIi7Kv1ViG4H9fj",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 26,
+          "title": "Knowledge Representation and Reasoning | Logic, Semantic Net, Frames etc",
+          "url": "https://youtu.be/9iN3O_oL2ac?si=jEHVUcz1sLMlA0QH",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Optimize Minimax using Alpha-Beta Pruning. Transition into how AI systems represent human knowledge using logic and networks.",
+      "practice_task": "Identify a sub-tree in a game diagram that can be 'pruned' and explain why the search doesn't need to visit it.",
+      "quiz": [
+        { "q": "Alpha-Beta Pruning is used to ________ in Minimax.", "options": ["Reduce the number of nodes evaluated", "Increase the depth", "Add more players", "Change the game rules"], "answer": "Reduce the number of nodes evaluated" },
+        { "q": "In pruning, Alpha (α) is associated with the ________ player.", "options": ["MAX", "MIN", "Both", "Random"], "answer": "MAX" },
+        { "q": "In pruning, Beta (β) is associated with the ________ player.", "options": ["MIN", "MAX", "None", "Goal"], "answer": "MIN" },
+        { "q": "Pruning occurs if:", "options": ["α >= β", "α < β", "α = 0", "β = 0"], "answer": "α >= β" },
+        { "q": "Alpha represents the ________ value found so far.", "options": ["Highest / Best for MAX", "Lowest", "Average", "Goal"], "answer": "Highest / Best for MAX" },
+        { "q": "Knowledge Representation (KR) is the study of:", "options": ["How to represent info for a machine to use", "How to draw trees", "How to prune trees", "How to design CPUs"], "answer": "How to represent info for a machine to use" },
+        { "q": "A 'Semantic Net' represents knowledge as a:", "options": ["Graph with nodes and labeled edges", "Table", "List", "Code block"], "answer": "Graph with nodes and labeled edges" },
+        { "q": "Which of these is a KR technique?", "options": ["Logic, Frames, Semantic Nets", "Sorting", "Pruning", "Searching"], "answer": "Logic, Frames, Semantic Nets" },
+        { "q": "Does Alpha-Beta Pruning change the final outcome of Minimax?", "options": ["No", "Yes", "Only in Chess", "Only in Go"], "answer": "No" },
+        { "q": "What is 'Reasoning' in AI?", "options": ["Deriving new facts from known knowledge", "Searching for a node", "Pruning a tree", "Encoding data"], "answer": "Deriving new facts from known knowledge" }
+      ]
+    },
+    {
+      "day": 15,
+      "phase": "Phase 2 – Problem Solving & Search Algorithms",
+      "title": "Propositional Logic & Intelligent Agent Review",
+      "playlist_videos": [
+        {
+          "tutorial_no": 27,
+          "title": "Propositional Logic in Artificial Intelligence | Knowledge Representation | All Imp Points",
+          "url": "https://youtu.be/6490tKrGEic?si=HbXOQwJ7uaPd96nK",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 28,
+          "title": "Introduction to Intelligent Agents and their types with Example in Artificial Intelligence",
+          "url": "https://youtu.be/BkedAnQfJ_U?si=_IHHiUCyBYEGiItl",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Master the basics of Boolean-based reasoning and review agent architectures to solidify Phase 1 and 2 concepts.",
+      "practice_task": "Convert three natural language statements into Propositional Logic formulas using AND, OR, and NOT connectives.",
+      "quiz": [
+        { "q": "Propositional Logic deals with:", "options": ["True/False statements", "Objects and relations", "Probability", "Fuzzy sets"], "answer": "True/False statements" },
+        { "q": "Which symbol represents 'AND' in logic?", "options": ["∧", "∨", "¬", "→"], "answer": "∧" },
+        { "q": "Which symbol represents 'Implication'?", "options": ["→", "¬", "∧", "⇔"], "answer": "→" },
+        { "q": "A 'Tautology' is a statement that is:", "options": ["Always true", "Always false", "Sometimes true", "Undefined"], "answer": "Always true" },
+        { "q": "A 'Contradiction' is a statement that is:", "options": ["Always false", "Always true", "Sometimes true", "Always zero"], "answer": "Always false" },
+        { "q": "An 'Agent' is anything that:", "options": ["Perceives and Acts", "Writes code", "Plays games only", "Has human skin"], "answer": "Perceives and Acts" },
+        { "q": "Which agent is the simplest?", "options": ["Simple Reflex", "Model Based", "Goal Based", "Utility Based"], "answer": "Simple Reflex" },
+        { "q": "Knowledge representation through logic is called:", "options": ["Formal Logic", "Heuristics", "Search", "Pruning"], "answer": "Formal Logic" },
+        { "q": "The 'Atomic' unit of propositional logic is:", "options": ["A Proposition", "A Variable", "A Predicate", "A Quantifier"], "answer": "A Proposition" },
+        { "q": "Which connector represents 'OR'?", "options": ["∨", "∧", "¬", "⇒"], "answer": "∨" }
+      ]
+    },
+    {
+      "day": 16,
+      "phase": "Phase 3 – Knowledge, Logic & Adversarial Search",
+      "title": "Reflex Agents: Simple & Model-Based",
+      "playlist_videos": [
+        {
+          "tutorial_no": 29,
+          "title": "Simple Reflex Agent in Artificial Intelligence with Example | Artificial Intelligence",
+          "url": "https://youtu.be/KZFfbebQPAU?si=5Z_PmIeUYCC346qs",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 30,
+          "title": "Model Based Reflex Agent in Artificial Intelligence in HINDI with Real Life Examples",
+          "url": "https://youtu.be/xKxh3fQwU8E?si=fDLm4SN8Fc5JdwlC",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Differentiate between an agent that reacts blindly (Simple) and one that maintains an internal 'world model' (Model-Based).",
+      "practice_task": "Provide a real-world scenario where a Simple Reflex agent would fail, but a Model-Based agent would succeed.",
+      "quiz": [
+        { "q": "A Simple Reflex Agent works based on:", "options": ["Condition-Action Rules", "Future goals", "Internal history", "Utility functions"], "answer": "Condition-Action Rules" },
+        { "q": "Does a Simple Reflex Agent consider history?", "options": ["No", "Yes", "Only for 5 seconds", "Only if programmed"], "answer": "No" },
+        { "q": "A Model-Based Agent maintains an ________.", "options": ["Internal State", "External goal", "Search tree", "Game tree"], "answer": "Internal State" },
+        { "q": "Model-Based agents are better for ________ environments.", "options": ["Partially Observable", "Fully Observable", "Static", "Discrete"], "answer": "Partially Observable" },
+        { "q": "The 'Model' in a Model-Based agent tracks:", "options": ["How the world evolves", "The goal", "The score", "The user"], "answer": "How the world evolves" },
+        { "q": "A Simple Reflex agent would fail in which scenario?", "options": ["When current percept isn't enough to decide", "In a chess game", "In a math problem", "Never"], "answer": "When current percept isn't enough to decide" },
+        { "q": "Which agent 'remembers' the past to some extent?", "options": ["Model-Based", "Simple Reflex", "Random", "Static"], "answer": "Model-Based" },
+        { "q": "The internal state of a model-based agent is updated using:", "options": ["Sensors and history", "Just current sensors", "Goals", "Logic only"], "answer": "Sensors and history" },
+        { "q": "Which agent uses 'If-Then' rules only?", "options": ["Simple Reflex", "Goal Based", "Utility Based", "Learning Agent"], "answer": "Simple Reflex" },
+        { "q": "Which is more complex to implement?", "options": ["Model-Based Agent", "Simple Reflex Agent", "Both are equal", "Neither"], "answer": "Model-Based Agent" }
+      ]
+    },
+    {
+      "day": 17,
+      "phase": "Phase 3 – Knowledge, Logic & Adversarial Search",
+      "title": "Goal-Based & Utility-Based Agents",
+      "playlist_videos": [
+        {
+          "tutorial_no": 31,
+          "title": "Goal Based Agents in Artificial Intelligence with real life examples in HINDI",
+          "url": "https://youtu.be/HsdiMkKnNLk?si=dmtaPElTUvJiImcY",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 32,
+          "title": "Utility Based Agents in Artificial Intelligence in Hindi with real life examples",
+          "url": "https://youtu.be/e-egxFtAF_4?si=DwPSyPRpZl8TI5DB",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Understand how 'Goals' and 'Utility' (quantitative happiness/benefit) guide more complex decision-making.",
+      "practice_task": "Define a utility function for a GPS navigation system (e.g., considering time, fuel, and road quality).",
+      "quiz": [
+        { "q": "Goal-Based Agents choose actions based on:", "options": ["Reaching a specific state", "Immediate rules", "Happiness score", "History"], "answer": "Reaching a specific state" },
+        { "q": "Utility-Based Agents choose actions based on:", "options": ["Degree of happiness / performance", "Binary goal", "Rules", "Random choice"], "answer": "Degree of happiness / performance" },
+        { "q": "A 'Utility Function' maps a state to a ________.", "options": ["Real number", "Boolean value", "String", "Image"], "answer": "Real number" },
+        { "q": "Which agent is best for finding the 'best' path, not just 'any' path?", "options": ["Utility-Based", "Goal-Based", "Reflex", "Simple"], "answer": "Utility-Based" },
+        { "q": "Goal-based agents are more ________ than reflex agents.", "options": ["Flexible", "Rigid", "Simple", "Fast"], "answer": "Flexible" },
+        { "q": "Utility is synonymous with:", "options": ["Worth / Desirability", "Speed", "Memory", "Size"], "answer": "Worth / Desirability" },
+        { "q": "A goal is just a ________ version of utility.", "options": ["Binary (Pass/Fail)", "Complex", "Long", "Numerical"], "answer": "Binary (Pass/Fail)" },
+        { "q": "Which agent would prefer a shorter route over a longer one to the same goal?", "options": ["Utility-Based", "Simple Reflex", "Model Based", "None"], "answer": "Utility-Based" },
+        { "q": "The primary component added to Goal-based agents is:", "options": ["Goal Information", "Sensors", "Rules", "Motors"], "answer": "Goal Information" },
+        { "q": "In a taxi agent, 'Safety' and 'Comfort' are part of:", "options": ["Utility", "Rules", "Percepts", "Actuators"], "answer": "Utility" }
+      ]
+    },
+    {
+      "day": 18,
+      "phase": "Phase 3 – Knowledge, Logic & Adversarial Search",
+      "title": "Fuzzy Logic Concepts & Operations",
+      "playlist_videos": [
+        {
+          "tutorial_no": 33,
+          "title": "Fuzzy Logic in Artificial Intelligence with Example | Artificial Intelligence",
+          "url": "https://youtu.be/vof2vhfqoBo?si=kAqG02_jfSiOFHLr",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 34,
+          "title": "Various Operations in Fuzzy Logic with Example | Union, Intersection, Complement etc",
+          "url": "https://youtu.be/o-2O4fmIu3E?si=_KhUePkOC62WZ4_a",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Learn how AI handles ambiguity (not just 0 or 1). Study Fuzzy sets and set operations like Union and Intersection.",
+      "practice_task": "Create a fuzzy set for 'Temperature' with values like 'Cold', 'Warm', and 'Hot' using membership degrees.",
+      "quiz": [
+        { "q": "Fuzzy Logic deals with ________ values.", "options": ["Partial truth (0 to 1)", "Binary (0 or 1)", "Only 0", "Only 1"], "answer": "Partial truth (0 to 1)" },
+        { "q": "The membership function is denoted by:", "options": ["μ(x)", "f(x)", "h(x)", "p(x)"], "answer": "μ(x)" },
+        { "q": "Fuzzy Intersection (AND) usually uses which operation?", "options": ["MIN", "MAX", "Addition", "Subtraction"], "answer": "MIN" },
+        { "q": "Fuzzy Union (OR) usually uses which operation?", "options": ["MAX", "MIN", "Multiplication", "Division"], "answer": "MAX" },
+        { "q": "Fuzzy Complement (NOT) of x is:", "options": ["1 - x", "x + 1", "0", "1/x"], "answer": "1 - x" },
+        { "q": "Fuzzy Logic was introduced by:", "options": ["Lotfi Zadeh", "John McCarthy", "Alan Turing", "Andrew Ng"], "answer": "Lotfi Zadeh" },
+        { "q": "Which of these is a fuzzy value?", "options": ["Very Tall", "Height = 6ft", "True", "False"], "answer": "Very Tall" },
+        { "q": "Fuzzy logic is used in:", "options": ["Washing machines, ACs", "Calculator", "Light switch", "Door lock"], "answer": "Washing machines, ACs" },
+        { "q": "The process of converting fuzzy values back to crisp values is:", "options": ["Defuzzification", "Fuzzification", "Inference", "Pruning"], "answer": "Defuzzification" },
+        { "q": "A membership value of 0.7 means:", "options": ["Strong partial membership", "Completely true", "False", "No membership"], "answer": "Strong partial membership" }
+      ]
+    },
+    {
+      "day": 19,
+      "phase": "Phase 3 – Knowledge, Logic & Adversarial Search",
+      "title": "Neural Networks & Natural Language Processing",
+      "playlist_videos": [
+        {
+          "tutorial_no": 35,
+          "title": "Introduction to Neural Networks with Example in HINDI | Artificial Intelligence",
+          "url": "https://youtu.be/EYeF2e2IKEo?si=sxLGoLTOET8Q3B0H",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 36,
+          "title": "Natural Language Processing in Artificial Intelligence in Hindi | NLP with Demo and Examples",
+          "url": "https://youtu.be/bPpwZxasJo0?si=twjwoGeGJUAJhhYD",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Understand the biological inspiration for Neural Nets and how AI processes human speech and text through NLP.",
+      "practice_task": "Explain the concept of 'Sentiment Analysis' and how it acts as an application of NLP.",
+      "quiz": [
+        { "q": "Artificial Neural Networks (ANN) are inspired by:", "options": ["Human Brain / Neurons", "Computers", "Trees", "Solar system"], "answer": "Human Brain / Neurons" },
+        { "q": "A basic unit of a neural network is called:", "options": ["Perceptron", "Transistor", "Pixel", "Bit"], "answer": "Perceptron" },
+        { "q": "NLP stands for:", "options": ["Natural Language Processing", "Normal Logic Programming", "Network Level Protocol", "Numeric Linear Process"], "answer": "Natural Language Processing" },
+        { "q": "In a neuron, weights are used to:", "options": ["Adjust the importance of input", "Store data", "Change color", "Delete nodes"], "answer": "Adjust the importance of input" },
+        { "q": "Which layer is between Input and Output in a Neural Net?", "options": ["Hidden Layer", "Middle Layer", "Virtual Layer", "Ghost Layer"], "answer": "Hidden Layer" },
+        { "q": "NLP application includes:", "options": ["Translation, Sentiment Analysis", "Sorting numbers", "Graphics rendering", "Hardware cooling"], "answer": "Translation, Sentiment Analysis" },
+        { "q": "Which function decides if a neuron should fire?", "options": ["Activation Function", "Sum function", "Min function", "Max function"], "answer": "Activation Function" },
+        { "q": "The process of training a Neural Net is called:", "options": ["Learning", "Searching", "Pruning", "Sorting"], "answer": "Learning" },
+        { "q": "Common activation functions are:", "options": ["Sigmoid, ReLU, Tanh", "Add, Sub, Mul", "And, Or, Not", "Sin, Cos, Tan"], "answer": "Sigmoid, ReLU, Tanh" },
+        { "q": "NLP deals with both ________ and ________.", "options": ["Speech, Text", "Video, Image", "Hardware, Software", "Binary, Hex"], "answer": "Speech, Text" }
+      ]
+    },
+    {
+      "day": 20,
+      "phase": "Phase 3 – Knowledge, Logic & Adversarial Search",
+      "title": "Machine Learning Types & Genetic Algorithms",
+      "playlist_videos": [
+        {
+          "tutorial_no": 37,
+          "title": "Supervised, Unsupervised and Reinforcement Learning in Artificial Intelligence in Hindi",
+          "url": "https://youtu.be/4dwsSz_fNSQ?si=KrZq960sEW05cxQ6",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 38,
+          "title": "Genetic Algorithm in Artificial Intelligence in Hindi | Simplest Explanation with real life examples",
+          "url": "https://youtu.be/96-u9s6D16k?si=qhCu9bP1Tg1Tn78F",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Master the three main ML paradigms and learn how evolution-inspired Genetic Algorithms find solutions.",
+      "practice_task": "Give one real-world example for Supervised Learning (Labels) and one for Unsupervised Learning (Clustering).",
+      "quiz": [
+        { "q": "Learning from labeled data is:", "options": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "Deep Learning"], "answer": "Supervised Learning" },
+        { "q": "Learning from patterns in unlabeled data is:", "options": ["Unsupervised Learning", "Supervised Learning", "Logic", "Pruning"], "answer": "Unsupervised Learning" },
+        { "q": "Learning based on Rewards and Penalties is:", "options": ["Reinforcement Learning", "Clustering", "Regression", "Supervised"], "answer": "Reinforcement Learning" },
+        { "q": "Genetic Algorithms are inspired by:", "options": ["Natural Selection / Evolution", "Space travel", "Physics", "Architecture"], "answer": "Natural Selection / Evolution" },
+        { "q": "Which step in Genetic Algo picks the best parents?", "options": ["Selection", "Crossover", "Mutation", "Inversion"], "answer": "Selection" },
+        { "q": "Which step combines two parents to create offspring?", "options": ["Crossover", "Mutation", "Selection", "Termination"], "answer": "Crossover" },
+        { "q": "Which step introduces random changes?", "options": ["Mutation", "Crossover", "Selection", "Initial Population"], "answer": "Mutation" },
+        { "q": "The 'Fitness Function' evaluates:", "options": ["How good a solution is", "The speed of algo", "The weight of code", "The color of agent"], "answer": "How good a solution is" },
+        { "q": "Spam detection is usually ________ learning.", "options": ["Supervised", "Unsupervised", "Genetic", "Blind"], "answer": "Supervised" },
+        { "q": "Clustering (grouping customers) is ________ learning.", "options": ["Unsupervised", "Supervised", "Reinforcement", "Logical"], "answer": "Unsupervised" }
+      ]
+    },
+    {
+      "day": 21,
+      "phase": "Phase 3 – Knowledge, Logic & Adversarial Search",
+      "title": "Constraint Satisfaction Problems (CSP)",
+      "playlist_videos": [
+        {
+          "tutorial_no": 39,
+          "title": "What is Constraint Satisfaction | Constraint Satisfaction Problem (CSP) in AI with Example",
+          "url": "https://youtu.be/AgyCSmDVk5s?si=6nBRmg1EzV_397tT",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 40,
+          "title": "How Constraint Satisfaction Algorithm Works | Explained with Interesting Example | AI",
+          "url": "https://youtu.be/udOfKqeLVSg?si=eJj_k8M0wds0DYeh",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Learn how to solve problems where solutions must meet specific rules (e.g., Map Coloring or Sudoku).",
+      "practice_task": "Formalize the 'Map Coloring' problem with 3 colors for 4 neighboring regions as a CSP (Variables, Domains, Constraints).",
+      "quiz": [
+        { "q": "What are the three main components of a CSP?", "options": ["Variables, Domains, Constraints", "Nodes, Edges, Paths", "If, Then, Else", "Input, Output, Process"], "answer": "Variables, Domains, Constraints" },
+        { "q": "A Sudoku puzzle is a typical ________.", "options": ["CSP", "Genetic Algorithm", "Neural Net", "Minimax problem"], "answer": "CSP" },
+        { "q": "Constraints that involve only one variable are:", "options": ["Unary Constraints", "Binary Constraints", "Higher-order", "Global"], "answer": "Unary Constraints" },
+        { "q": "Constraints that involve two variables are:", "options": ["Binary Constraints", "Unary", "N-ary", "Global"], "answer": "Binary Constraints" },
+        { "q": "Map Coloring problem: Variables are:", "options": ["Regions to color", "Colors available", "The map paper", "The boundary"], "answer": "Regions to color" },
+        { "q": "Map Coloring: Constraints are:", "options": ["Adjacent regions must have different colors", "All regions must be red", "No colors allowed", "Random color"], "answer": "Adjacent regions must have different colors" },
+        { "q": "The set of possible values for a variable is its:", "options": ["Domain", "Scope", "Goal", "Initial state"], "answer": "Domain" },
+        { "q": "Cryptarithmetic (SEND+MORE=MONEY) is a:", "options": ["CSP", "Sorting problem", "Search tree", "Game"], "answer": "CSP" },
+        { "q": "Backtracking is a common method to solve:", "options": ["CSP", "Neural Nets", "NLP", "Fuzzy logic"], "answer": "CSP" },
+        { "q": "A CSP is 'consistent' if:", "options": ["All constraints are satisfied", "One constraint is satisfied", "It has variables", "It is written in Python"], "answer": "All constraints are satisfied" }
+      ]
+    },
+    {
+      "day": 22,
+      "phase": "Phase 3 – Knowledge, Logic & Adversarial Search",
+      "title": "Branch and Bound Algorithm",
+      "playlist_videos": [
+        {
+          "tutorial_no": 41,
+          "title": "Branch & Bound Algorithm with Example | Easiest Explanation of B&B with example",
+          "url": "https://youtu.be/XZbrmetb9VE?si=AP3ttAWcqwCiJF8m",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 42,
+          "title": "0/1 Knapsack using Branch and Bound with example",
+          "url": "https://youtu.be/CwM-Mv0Bm4Y?si=zI_oUW40z5KSTGTy",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Learn the Branch & Bound optimization technique and its application to the Knapsack problem.",
+      "practice_task": "Explain how the 'Bound' part of the algorithm helps in reducing the search space.",
+      "quiz": [
+        { "q": "Branch and Bound is an algorithm design paradigm for ________ problems.", "options": ["Optimization", "Sorting", "Graphic", "Logic"], "answer": "Optimization" },
+        { "q": "The 'Branch' step refers to:", "options": ["Dividing the problem into sub-problems", "Calculating the bound", "Pruning", "Ending the search"], "answer": "Dividing the problem into sub-problems" },
+        { "q": "The 'Bound' step refers to:", "options": ["Finding best possible score for a sub-problem", "Making a decision", "Drawing a tree", "Stopping code"], "answer": "Finding best possible score for a sub-problem" },
+        { "q": "If the bound of a branch is worse than the best found solution, we:", "options": ["Prune / Discard the branch", "Explore it more", "Restart", "Change variables"], "answer": "Prune / Discard the branch" },
+        { "q": "0/1 Knapsack problem: '0/1' means:", "options": ["Items cannot be divided", "Only 2 items exist", "Value is 0 or 1", "Weight is 0 or 1"], "answer": "Items cannot be divided" },
+        { "q": "Branch and Bound uses which tree search usually?", "options": ["BFS or Best-First", "DFS", "Minimax", "Blind"], "answer": "BFS or Best-First" },
+        { "q": "Knapsack problem goal:", "options": ["Maximize value within weight limit", "Minimize weight", "Fill the bag exactly", "Carry no weight"], "answer": "Maximize value within weight limit" },
+        { "q": "Which data structure is often used to store active nodes in B&B?", "options": ["Priority Queue", "Stack", "FIFO Queue", "Linked List"], "answer": "Priority Queue" },
+        { "q": "Branch and Bound is generally ________ than exhaustive search.", "options": ["Faster", "Slower", "Same speed", "Less accurate"], "answer": "Faster" },
+        { "q": "In B&B, 'Upper Bound' is used for ________ problems.", "options": ["Maximization", "Minimization", "Logic", "Pruning"], "answer": "Maximization" }
+      ]
+    },
+    {
+      "day": 23,
+      "phase": "Phase 3 – Knowledge, Logic & Adversarial Search",
+      "title": "Reasoning Under Uncertainty",
+      "playlist_videos": [
+        {
+          "tutorial_no": 43,
+          "title": "Reasoning under Uncertainty in Artificial Intelligence",
+          "url": "https://youtu.be/MIf5shIfsj8?si=aYzmxj2LJo2mujbo",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 44,
+          "title": "When There is Uncertainty🤨",
+          "url": "https://youtu.be/PKeOJ4a2DNc?si=lJ1SPAgEn0ZIe2H5",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Transition from deterministic logic to probability. Understand why AI needs to handle missing or noisy data.",
+      "practice_task": "List three real-world reasons why an AI agent might face uncertainty in an environment.",
+      "quiz": [
+        { "q": "Uncertainty in AI arises due to:", "options": ["Noisy data, Missing info, Hidden states", "Fast CPU", "Correct logic", "Small data"], "answer": "Noisy data, Missing info, Hidden states" },
+        { "q": "The main tool used to handle uncertainty is:", "options": ["Probability", "Logic", "Sorting", "Pruning"], "answer": "Probability" },
+        { "q": "Deterministic logic (If-Then) fails when data is:", "options": ["Incomplete / Uncertain", "Complete", "Big", "Numeric"], "answer": "Incomplete / Uncertain" },
+        { "q": "A 'Stochastic' world means it has:", "options": ["Randomness / Uncertainty", "Fixed rules", "No rules", "Only one state"], "answer": "Randomness / Uncertainty" },
+        { "q": "In probability, P(A) ranges from:", "options": ["0 to 1", "-1 to 1", "0 to 100", "True/False"], "answer": "0 to 1" },
+        { "q": "Conditional Probability is denoted as:", "options": ["P(A|B)", "P(A+B)", "P(A,B)", "P(A-B)"], "answer": "P(A|B)" },
+        { "q": "Probability of an event given that another happened is:", "options": ["Conditional Probability", "Joint Probability", "Prior", "Likelihood"], "answer": "Conditional Probability" },
+        { "q": "Reasoning with uncertainty is also called:", "options": ["Probabilistic Reasoning", "Hard Logic", "Calculus", "Blind Search"], "answer": "Probabilistic Reasoning" },
+        { "q": "Which factor makes an environment uncertain?", "options": ["Partial Observability", "Discrete states", "Static nature", "Finite variables"], "answer": "Partial Observability" },
+        { "q": "A value of P(A) = 0 means:", "options": ["Event is impossible", "Event is certain", "Unknown", "50/50"], "answer": "Event is impossible" }
+      ]
+    },
+    {
+      "day": 24,
+      "phase": "Phase 4 – Probabilistic Reasoning, Fuzzy Logic & Neural Networks",
+      "title": "Propositional & Predicate Logic (FOL)",
+      "playlist_videos": [
+        {
+          "tutorial_no": 45,
+          "title": "Propositional Logic | Artificial Intelligence",
+          "url": "https://youtu.be/519FvcUQqYU?si=MgGdKR3F0shVHLLX",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 46,
+          "title": "Predicate Logic | Artificial Intelligence",
+          "url": "https://youtu.be/FpGeg27Ffk8?si=60H6XiIttxqV0S-Q",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Master the difference between simple facts (Propositional) and complex relationships using objects and quantifiers (Predicate/FOL).",
+      "practice_task": "Translate the sentence 'All students love AI' into First Order Logic using the universal quantifier (∀).",
+      "quiz": [
+        { "q": "Propositional logic is limited because:", "options": ["It can't represent objects or relationships", "It is too slow", "It uses only 0", "It is new"], "answer": "It can't represent objects or relationships" },
+        { "q": "First Order Logic (FOL) is also called:", "options": ["Predicate Logic", "Fuzzy Logic", "Binary Logic", "Neural Logic"], "answer": "Predicate Logic" },
+        { "q": "Which symbol represents 'Universal Quantifier' (For all)?", "options": ["∀", "∃", "∧", "∨"], "answer": "∀" },
+        { "q": "Which symbol represents 'Existential Quantifier' (There exists)?", "options": ["∃", "∀", "¬", "→"], "answer": "∃" },
+        { "q": "In FOL, 'IsStudent(x)' is called a:", "options": ["Predicate", "Variable", "Constant", "Quantifier"], "answer": "Predicate" },
+        { "q": "In FOL, 'Ram' in 'Likes(Ram, AI)' is a:", "options": ["Constant", "Predicate", "Function", "Quantifier"], "answer": "Constant" },
+        { "q": "Predicate logic allows reasoning about ________.", "options": ["Groups and Properties", "Only single bits", "Only numbers", "Images"], "answer": "Groups and Properties" },
+        { "q": "Which logic is more expressive?", "options": ["Predicate Logic", "Propositional Logic", "Neither", "Both are equal"], "answer": "Predicate Logic" },
+        { "q": "The sentence 'Someone likes AI' uses which quantifier?", "options": ["Existential (∃)", "Universal (∀)", "Neither", "Both"], "answer": "Existential (∃)" },
+        { "q": "Predicate logic uses ________ to represent unknown objects.", "options": ["Variables", "Quantifiers", "Constants", "Functions"], "answer": "Variables" }
+      ]
+    },
+    {
+      "day": 25,
+      "phase": "Phase 4 – Probabilistic Reasoning, Fuzzy Logic & Neural Networks",
+      "title": "Predicate Logic Writing & Quantifiers",
+      "playlist_videos": [
+        {
+          "tutorial_no": 47,
+          "title": "How to write First order/Predicate logic | Artificial Intelligence",
+          "url": "https://youtu.be/Aw3EOSr64j0?si=LzgKhgaVP18EVetu",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 48,
+          "title": "Negation of Quantifiers | Predicate Logic | Logic with Certainty | Artificial Intelligence",
+          "url": "https://youtu.be/XYfTz5gziBk?si=fPYra5zrR24l7Ap1",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Learn the syntax of First Order Logic and how to negate complex statements involving 'All' and 'Some'.",
+      "practice_task": "Negate the statement 'Some AI systems are not efficient' and write it in logical form.",
+      "quiz": [
+        { "q": "To negate 'All X are Y', we say:", "options": ["Some X are not Y", "No X are Y", "All X are not Y", "Some X are Y"], "answer": "Some X are not Y" },
+        { "q": "To negate 'Some X are Y', we say:", "options": ["All X are not Y (No X are Y)", "All X are Y", "Some X are not Y", "Some Y are X"], "answer": "All X are not Y (No X are Y)" },
+        { "q": "¬(∀x P(x)) is equivalent to:", "options": ["∃x ¬P(x)", "∀x ¬P(x)", "∃x P(x)", "¬P(x)"], "answer": "∃x ¬P(x)" },
+        { "q": "¬(∃x P(x)) is equivalent to:", "options": ["∀x ¬P(x)", "∀x P(x)", "∃x ¬P(x)", "¬P(x)"], "answer": "∀x ¬P(x)" },
+        { "q": "The domain of a quantifier is:", "options": ["The set of objects x can represent", "The code block", "The number of lines", "The truth table"], "answer": "The set of objects x can represent" },
+        { "q": "Logic with 'Certainty' means:", "options": ["Probability = 1", "Uncertainty included", "Fuzzy logic", "Random logic"], "answer": "Probability = 1" },
+        { "q": "Quantifiers must always be followed by a ________.", "options": ["Variable", "Constant", "Number", "Dot"], "answer": "Variable" },
+        { "q": "Predicate logic is a ________ of propositional logic.", "options": ["Superset / Extension", "Subset", "Alternative", "Competitor"], "answer": "Superset / Extension" },
+        { "q": "Nested quantifiers (∀x ∃y) mean:", "options": ["Order matters", "Order doesn't matter", "Always true", "Invalid syntax"], "answer": "Order matters" },
+        { "q": "A 'bound' variable is one that:", "options": ["Is used with a quantifier", "Is free", "Is constant", "Is zero"], "answer": "Is used with a quantifier" }
+      ]
+    },
+    {
+      "day": 26,
+      "phase": "Phase 4 – Probabilistic Reasoning, Fuzzy Logic & Neural Networks",
+      "title": "Bayes Theorem & Probabilistic Logic",
+      "playlist_videos": [
+        {
+          "tutorial_no": 49,
+          "title": "Bayes Theorem & Total Probability with Examples",
+          "url": "https://youtu.be/SktJqrYereQ?si=tNnWsLUI9eut7i_5",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 50,
+          "title": "Questions on Propositional & Predicate logic | How to Solve Problems in Logic",
+          "url": "https://youtu.be/TD7DilUtUvE?si=HQFMH5sP8jUupICu",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Master the core of probabilistic reasoning. Learn how to update the probability of a hypothesis based on new evidence using Bayes Theorem.",
+      "practice_task": "Solve a simple medical diagnosis problem using Bayes Theorem given Prior, Likelihood, and Evidence.",
+      "quiz": [
+        { "q": "Bayes Theorem formula is:", "options": ["P(H|E) = [P(E|H) * P(H)] / P(E)", "P(H|E) = P(E|H) + P(H)", "P(H|E) = P(E) / P(H)", "P(H) = P(E)"], "answer": "P(H|E) = [P(E|H) * P(H)] / P(E)" },
+        { "q": "P(H) is called the:", "options": ["Prior Probability", "Posterior Probability", "Likelihood", "Evidence"], "answer": "Prior Probability" },
+        { "q": "P(H|E) is called the:", "options": ["Posterior Probability", "Prior", "Likelihood", "Evidence"], "answer": "Posterior Probability" },
+        { "q": "P(E|H) is called the:", "options": ["Likelihood", "Prior", "Posterior", "Evidence"], "answer": "Likelihood" },
+        { "q": "P(E) is called the:", "options": ["Evidence / Marginal Probability", "Prior", "Likelihood", "Posterior"], "answer": "Evidence / Marginal Probability" },
+        { "q": "Total Probability Rule is used to calculate:", "options": ["The Evidence P(E)", "The Prior", "The Score", "The Variable"], "answer": "The Evidence P(E)" },
+        { "q": "Bayes Theorem is widely used in:", "options": ["Spam filtering, Diagnosis", "Sorting", "Image cropping", "Pruning trees"], "answer": "Spam filtering, Diagnosis" },
+        { "q": "If events A and B are independent, P(A|B) =", "options": ["P(A)", "P(B)", "0", "1"], "answer": "P(A)" },
+        { "q": "Bayesian logic allows AI to ________ as new data arrives.", "options": ["Update its beliefs", "Delete memory", "Stop running", "Crash"], "answer": "Update its beliefs" },
+        { "q": "The sum of probabilities of all possible outcomes is:", "options": ["1", "0", "100", "Infinite"], "answer": "1" }
+      ]
+    },
+    {
+      "day": 27,
+      "phase": "Phase 4 – Probabilistic Reasoning, Fuzzy Logic & Neural Networks",
+      "title": "Bayesian Networks & Graph Logic",
+      "playlist_videos": [
+        {
+          "tutorial_no": 51,
+          "title": "Bayesian Network with Examples | Easiest Explanation",
+          "url": "https://youtu.be/DVnubVOjZtg?si=t9-tflTdOu1wYMxD",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 52,
+          "title": "Question on Bayesian Network | Artificial Intelligence",
+          "url": "https://youtu.be/xDyMuT9BliI?si=rWSi2ITdF0i7YcP8",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Learn how Bayesian Networks represent dependencies between variables using Directed Acyclic Graphs (DAGs).",
+      "practice_task": "Draw a Bayesian Network for a simple 'Rain/Sprinkler/Grass Wet' scenario and identify independent nodes.",
+      "quiz": [
+        { "q": "A Bayesian Network is a type of:", "options": ["Probabilistic Graphical Model", "Neural Network", "Search Tree", "Logic Gate"], "answer": "Probabilistic Graphical Model" },
+        { "q": "The structure of a Bayesian Network is a:", "options": ["DAG (Directed Acyclic Graph)", "Tree", "Cycle", "List"], "answer": "DAG (Directed Acyclic Graph)" },
+        { "q": "In a Bayesian Net, nodes represent:", "options": ["Random Variables", "Actions", "Gates", "Heuristics"], "answer": "Random Variables" },
+        { "q": "In a Bayesian Net, edges represent:", "options": ["Conditional Dependencies", "Equality", "Subtraction", "Randomness"], "answer": "Conditional Dependencies" },
+        { "q": "A node is independent of its ancestors given its ________.", "options": ["Parents", "Children", "Siblings", "Root"], "answer": "Parents" },
+        { "q": "Bayesian Networks use which theorem at each node?", "options": ["Bayes Theorem", "Pythagoras", "Central Limit", "Logic Theorem"], "answer": "Bayes Theorem" },
+        { "q": "What does 'Acyclic' mean in DAG?", "options": ["No loops / cycles", "No edges", "No nodes", "Always circular"], "answer": "No loops / cycles" },
+        { "q": "Each node in a Bayesian Net has a ________ associated with it.", "options": ["Conditional Probability Table (CPT)", "Truth table", "Weight", "Score"], "answer": "Conditional Probability Table (CPT)" },
+        { "q": "Bayesian Networks are used for:", "options": ["Inference and Prediction", "Sorting", "Binary arithmetic", "Pruning"], "answer": "Inference and Prediction" },
+        { "q": "If there is no edge between two nodes, they are:", "options": ["Conditionally Independent", "Equal", "Connected", "Invalid"], "answer": "Conditionally Independent" }
+      ]
+    },
+    {
+      "day": 28,
+      "phase": "Phase 4 – Probabilistic Reasoning, Fuzzy Logic & Neural Networks",
+      "title": "Likelihood Weighting & Sampling",
+      "playlist_videos": [
+        {
+          "tutorial_no": 53,
+          "title": "Likelihood Weight Sampling | Inference through Sampling | Uncertainty in Artificial Intelligence",
+          "url": "https://youtu.be/D4x0NB5cKGE?si=rTXj4QPX6NwSxIfY",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 54,
+          "title": "Question on Likelihood Sampling | Probabilistic Inference | Sampling | Artificial Intelligence",
+          "url": "https://youtu.be/kWyFuJWGYdc?si=6Umv5U0P1Kkc75O6",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Learn how AI performs inference in large networks by simulating/sampling data rather than direct calculation.",
+      "practice_task": "Explain why Likelihood Weighting is more efficient than direct probability computation in complex networks.",
+      "quiz": [
+        { "q": "Inference in Bayesian networks can be done using ________.", "options": ["Sampling / Simulation", "Sorting", "DFS only", "Minimax"], "answer": "Sampling / Simulation" },
+        { "q": "Likelihood Weighting is a type of:", "options": ["Approximate Inference", "Exact Inference", "Pruning", "Logic"], "answer": "Approximate Inference" },
+        { "q": "In Likelihood Weighting, we fix the values of ________.", "options": ["Evidence variables", "All variables", "No variables", "Hidden variables"], "answer": "Evidence variables" },
+        { "q": "The 'Weight' in Likelihood Weighting is based on:", "options": ["The probability of evidence given parents", "Random numbers", "Number of nodes", "Depth of tree"], "answer": "The probability of evidence given parents" },
+        { "q": "Why do we use sampling?", "options": ["Exact calculation is too hard (NP-Hard)", "It's faster for small data", "It uses more memory", "It's a new fashion"], "answer": "Exact calculation is too hard (NP-Hard)" },
+        { "q": "In sampling, more samples lead to:", "options": ["Higher accuracy", "Lower accuracy", "No change", "Infinite speed"], "answer": "Higher accuracy" },
+        { "q": "Likelihood weighting avoids generating samples that ________.", "options": ["Conflict with evidence", "Are too large", "Are too small", "Are zero"], "answer": "Conflict with evidence" },
+        { "q": "Each sample in this method is assigned a ________.", "options": ["Weight (w)", "Color", "Constant", "Quantifier"], "answer": "Weight (w)" },
+        { "q": "Likelihood weighting is better than simple sampling because:", "options": ["It focuses on consistent samples", "It's slower", "It ignores parents", "It uses logic"], "answer": "It focuses on consistent samples" },
+        { "q": "Approximate inference means finding ________.", "options": ["An estimate close to real value", "The exact value", "Zero", "Random value"], "answer": "An estimate close to real value" }
+      ]
+    },
+    {
+      "day": 29,
+      "phase": "Phase 4 – Probabilistic Reasoning, Fuzzy Logic & Neural Networks",
+      "title": "Rejection Sampling & Probabilistic Inference",
+      "playlist_videos": [
+        {
+          "tutorial_no": 55,
+          "title": "Rejection Sampling | Probabilistic Inference | Sampling | Artificial Intelligence",
+          "url": "https://youtu.be/ilmJD8tRg-Q?si=4VxJlPz1NImJGjHz",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 56,
+          "title": "Probabilistic Inference | Sampling | Artificial Intelligence",
+          "url": "https://youtu.be/kGlR6gBIjTk?si=wimQ4Ojzdn7JkUj2",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Understand Rejection Sampling and how to discard samples that do not match observed evidence.",
+      "practice_task": "Describe the drawback of Rejection Sampling when evidence is very rare (low probability).",
+      "quiz": [
+        { "q": "Rejection Sampling works by:", "options": ["Generating samples and discarding those inconsistent with evidence", "Keeping all samples", "Weighting samples", "Logical deduction"], "answer": "Generating samples and discarding those inconsistent with evidence" },
+        { "q": "A major drawback of Rejection Sampling is:", "options": ["Inefficiency if evidence is rare", "High memory usage", "Complexity", "Accuracy is zero"], "answer": "Inefficiency if evidence is rare" },
+        { "q": "If evidence E is P(E)=0.01, what % of samples are discarded?", "options": ["99%", "1%", "0%", "100%"], "answer": "99%" },
+        { "q": "Probabilistic Inference is the task of:", "options": ["Computing posterior distribution", "Adding numbers", "Drawing graphs", "Pruning trees"], "answer": "Computing posterior distribution" },
+        { "q": "Sampling is a ________ method.", "options": ["Stochastic", "Deterministic", "Exhaustive", "Logical"], "answer": "Stochastic" },
+        { "q": "Which sampling method uses weights?", "options": ["Likelihood Weighting", "Rejection Sampling", "Blind Sampling", "Random Sampling"], "answer": "Likelihood Weighting" },
+        { "q": "Rejection sampling is simple but ________.", "options": ["Expensive in time", "Cheap in time", "Always exact", "Never works"], "answer": "Expensive in time" },
+        { "q": "The total probability of accepted samples sums to ________.", "options": ["1 (after normalization)", "0", "Unknown", "Evidence value"], "answer": "1 (after normalization)" },
+        { "q": "Sampling methods are part of ________ logic.", "options": ["Uncertainty handling", "Hard logic", "Game playing", "Alpha-beta"], "answer": "Uncertainty handling" },
+        { "q": "Inference can be 'Diagnostic', meaning reasoning from:", "options": ["Effect to Cause", "Cause to Effect", "Random to Logic", "Root to Leaf"], "answer": "Effect to Cause" }
+      ]
+    },
+    {
+      "day": 30,
+      "phase": "Phase 4 – Probabilistic Reasoning, Fuzzy Logic & Neural Networks",
+      "title": "Bayesian Numericals & Modern LLM Architectures",
+      "playlist_videos": [
+        {
+          "tutorial_no": 57,
+          "title": "Bayesian Network Numerical Examples",
+          "url": "https://youtu.be/zLlKc8AePIQ?si=Qeau8X_rc_gx52Uz",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 58,
+          "title": "Token & Parameters in LLama3 META Models | 8B & 70B Parameters Model | GPT model",
+          "url": "https://youtu.be/UcFhiOtNHsQ?si=6xOet_aRfLju7ULh",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Solve numerical problems on Bayesian Nets and explore how modern Large Language Models (LLMs) like Llama 3 are built using tokens and parameters.",
+      "practice_task": "Define what 'Parameters' represent in a neural network model like GPT.",
+      "quiz": [
+        { "q": "In Bayesian numericals, joint probability is calculated by ________ node probabilities.", "options": ["Multiplying", "Adding", "Subtracting", "Dividing"], "answer": "Multiplying" },
+        { "q": "LLM stands for:", "options": ["Large Language Model", "Linear Logic Model", "Low Level Machine", "Long Language Manual"], "answer": "Large Language Model" },
+        { "q": "In Llama3 '8B', '8B' stands for:", "options": ["8 Billion Parameters", "8 Bits", "8 Bytes", "8 Blocks"], "answer": "8 Billion Parameters" },
+        { "q": "What is a 'Token' in LLMs?", "options": ["A unit of text (word or part of word)", "A coin", "A hardware part", "A security key"], "answer": "A unit of text (word or part of word)" },
+        { "q": "Parameters in an LLM are primarily its ________.", "options": ["Weights and Biases", "Code lines", "Number of users", "Storage size"], "answer": "Weights and Biases" },
+        { "q": "Llama 3 was developed by:", "options": ["Meta", "Google", "OpenAI", "Microsoft"], "answer": "Meta" },
+        { "q": "More parameters generally lead to a model that is ________.", "options": ["More capable / Smart", "Faster", "Smaller", "Simpler"], "answer": "More capable / Smart" },
+        { "q": "The training process of LLMs requires ________.", "options": ["Massive data and GPU power", "Small text", "Only logic", "Paper and pencil"], "answer": "Massive data and GPU power" },
+        { "q": "In a Bayesian Net numerical, a node with no parents uses its ________.", "options": ["Prior probability", "Conditional probability", "Evidence", "Bound"], "answer": "Prior probability" },
+        { "q": "Bayesian networks are based on which rule?", "options": ["Product Rule of Probability", "Sum rule of sorting", "Game rules", "Pruning rules"], "answer": "Product Rule of Probability" }
+      ]
+    },
+    {
+      "day": 31,
+      "phase": "Phase 4 – Probabilistic Reasoning, Fuzzy Logic & Neural Networks",
+      "title": "Markov Models & Hidden Markov Models (HMM)",
+      "playlist_videos": [
+        {
+          "tutorial_no": 59,
+          "title": "Uncertainty probabilistic inference (Markov Model) | Artificial Intelligence",
+          "url": "https://youtu.be/6eKQnSf7atA?si=3NjltKBN9wDA-0uf",
+          "github_resource": null
+        },
+        {
+          "tutorial_no": 60,
+          "title": "Introduction to Hidden Markov Model | Artificial Intelligence",
+          "url": "https://youtu.be/GIuaPCWXy0Q?si=nI2r9VBzwiZHX2W3",
+          "github_resource": null
+        }
+      ],
+      "watch_focus": "Master temporal reasoning. Learn how Markov Models predict future states and how HMMs handle sequences with hidden information (e.g., Speech-to-Text).",
+      "practice_task": "Explain the difference between a standard Markov Model and a Hidden Markov Model in terms of observability.",
+      "quiz": [
+        { "q": "The 'Markov Property' states that the future depends only on:", "options": ["The present state", "The entire history", "The goal", "Nothing"], "answer": "The present state" },
+        { "q": "Markov Models deal with ________ processes.", "options": ["Temporal (Time-based)", "Static", "Binary", "Linear"], "answer": "Temporal (Time-based)" },
+        { "q": "In a Hidden Markov Model (HMM), 'Hidden' means:", "options": ["The states are not directly observed", "The code is secret", "The goal is unknown", "The user is hidden"], "answer": "The states are not directly observed" },
+        { "q": "HMMs are widely used in:", "options": ["Speech recognition, weather prediction", "Sorting", "Graphic design", "CPU cooling"], "answer": "Speech recognition, weather prediction" },
+        { "q": "A transition in a Markov Model is governed by ________.", "options": ["Transition Probabilities", "Logic gates", "Fixed rules", "The user"], "answer": "Transition Probabilities" },
+        { "q": "In HMM, the observable output is called:", "options": ["Emission", "State", "Transition", "Prior"], "answer": "Emission" },
+        { "q": "The 'Transition Matrix' contains probabilities of:", "options": ["Moving from one state to another", "Winning a game", "Failing a test", "Random numbers"], "answer": "Moving from one state to another" },
+        { "q": "Hidden Markov Models are a type of ________.", "options": ["Dynamic Bayesian Network", "Neural Network", "Search tree", "Logic circuit"], "answer": "Dynamic Bayesian Network" },
+        { "q": "The 'Markov Chain' is the simplest form of ________.", "options": ["Markov Model", "LLM", "C++ code", "Hardware"], "answer": "Markov Model" },
+        { "q": "HMM has two main components: ________ and ________.", "options": ["Transitions, Emissions", "Input, Output", "Add, Mul", "True, False"], "answer": "Transitions, Emissions" }
+      ]
+    }
+  ]
+}

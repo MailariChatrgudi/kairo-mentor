@@ -78,22 +78,20 @@ const CareerSelect = () => {
   };
 
   const confirm = () => {
-    // For 12th passout: career chosen separately; for others: chosen IS the career
-    const finalCareer = is12thPassout ? (chosenCareer || chosen || 'Software Engineer') : chosen;
-    setSelectedCareer(finalCareer);
+    setSelectedCareer(chosen);
 
-    const updatedProfile = { ...profile, career: chosen, careerPath: finalCareer };
+    const updatedProfile = { ...profile, career: chosen };
     setUserProfile(updatedProfile);
 
-    // Save profile to backend
+    // Save to backend — career_path is resolved server-side to a course_id
     const userId = (updatedProfile.name || 'Student').toLowerCase().replace(/\s+/g, '_') || 'demo_user';
-    fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/create_user`, {
+    fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5050'}/api/create_user`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-           user_id: userId,
-           profile: updatedProfile,
-           self_discovery: updatedProfile.iks_answers || {}
+           user_id:     userId,
+           profile:     updatedProfile,
+           career_path: chosen,            // server resolves → course_id
         })
     }).catch(console.error);
 
