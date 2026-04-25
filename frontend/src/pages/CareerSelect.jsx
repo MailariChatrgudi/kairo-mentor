@@ -47,7 +47,9 @@ const CareerSelect = () => {
   const [loadingColleges, setLoadingColleges] = useState(false);
   const [selectedCollegeDetails, setSelectedCollegeDetails] = useState(null);
 
-  const is12thPassout = profile?.student_type === '12th Passout';
+  // If the user is an explorer (doesn't have a rank), treat them like a standard user here
+  // so they skip the rank-based college selection and go straight to career paths.
+  const is12thPassout = profile?.student_type === '12th Passout' && !profile?.is_explorer;
 
   useEffect(() => {
     if (is12thPassout) {
@@ -77,9 +79,10 @@ const CareerSelect = () => {
     setShowConfidence(true);
   };
 
-  const confirm = () => {
+  const confirm = (isSkip = false) => {
+    const skipActive = isSkip === true; // explicitly check for boolean to avoid event objects
     // For 12th passout: career chosen separately; for others: chosen IS the career
-    const finalCareer = is12thPassout ? (chosenCareer || chosen || 'Software Engineer') : chosen;
+    const finalCareer = skipActive ? '' : (is12thPassout ? (chosenCareer || chosen) : chosen);
     setSelectedCareer(finalCareer);
 
     const updatedProfile = { ...profile, career: chosen, careerPath: finalCareer };
@@ -113,6 +116,16 @@ const CareerSelect = () => {
     }
   };
 
+  const handleSkip = () => {
+    if (is12thPassout && colleges.length > 0 && !showCareerPath) {
+      // Skip college selection -> go to career selection
+      setShowCareerPath(true);
+    } else {
+      // Skip career selection or confidence check -> go straight to dashboard with no career
+      confirm(true);
+    }
+  };
+
   const displayCareers = careers.length > 0
     ? careers
     : ['Web Developer', 'Data Analyst', 'Software Engineer'];
@@ -120,7 +133,7 @@ const CareerSelect = () => {
   return (
     <div className="career-select min-h-screen flex flex-col items-center bg-[#F8F8F8] relative">
       <button 
-        onClick={() => { setIsLoggedIn(true); navigate('/dashboard'); }} 
+        onClick={handleSkip} 
         style={{ position: 'absolute', top: '1.5rem', right: '1.5rem', zIndex: 10, background: 'transparent', border: 'none', color: '#111', fontWeight: 700, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 4 }}
       >
         Skip <ChevronRight size={16} color="#111" />

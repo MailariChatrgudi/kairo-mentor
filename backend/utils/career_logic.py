@@ -163,11 +163,36 @@ def parse_cutoff(cutoff_str: str) -> int:
         return 999999
     return 999999
 
-def filter_colleges(user_rank: int, exam_type: str = "KCET") -> list:
-    """Filter colleges by rank cutoff using colleges.json format."""
-    colleges = load_json("colleges.json")
-    if not colleges: return []
+def filter_colleges(user_rank: int, exam_type: str = "KCET", is_explorer: bool = False) -> list:
+    """Filter colleges by rank cutoff using colleges.json format.
     
+    Explorer mode (is_explorer=True or user_rank=0/None):
+      - Skips all rank/cutoff filtering.
+      - Returns top 10 colleges sorted by placement_rating + infrastructure_rating.
+    """
+    colleges = load_json("colleges.json")
+    if not colleges:
+        return []
+
+    # ── Explorer Mode ──────────────────────────────────────────────────────────
+    if is_explorer or not user_rank:
+        def explorer_score(c):
+            return (c.get("placement_rating", 0) or 0) + (c.get("infrastructure_rating", 0) or 0)
+
+        sorted_colleges = sorted(colleges, key=explorer_score, reverse=True)
+        results = []
+        for college in sorted_colleges[:10]:
+            college_data = dict(college)
+            college_data["eligible_branches"] = [
+                {"branch": b, "cutoff": "Open (Explorer Mode)"}
+                for b in college.get("branches_available", [])
+            ]
+            college_data["match_score"] = explorer_score(college)
+            college_data["is_explorer"] = True
+            results.append(college_data)
+        return results
+
+    # ── Ranked Mode ────────────────────────────────────────────────────────────
     results = []
     for college in colleges:
         exam_cutoffs = college.get("cutoff_rank", {}).get(exam_type, {})
@@ -185,13 +210,15 @@ def filter_colleges(user_rank: int, exam_type: str = "KCET") -> list:
         if eligible_branches:
             infra = college.get("infrastructure_rating", 0)
             place = college.get("placement_rating", 0)
-            acad = college.get("academics_rating", 0)
+            acad  = college.get("academics_rating", 0)
             match_score = infra + place + acad
             
             college_data = dict(college)
             college_data["eligible_branches"] = eligible_branches
             college_data["match_score"] = match_score
+            college_data["is_explorer"] = False
             results.append(college_data)
             
     results.sort(key=lambda x: x["match_score"], reverse=True)
     return results[:10]
+

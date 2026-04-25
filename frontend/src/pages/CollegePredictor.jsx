@@ -27,7 +27,7 @@ const BRANCH_META = {
 
 const CollegePredictor = ({ initialRank }) => {
   const navigate = useNavigate();
-  const { userProfile, setUserProfile, setSelectedCareer } = useAppContext();
+  const { userProfile, setUserProfile, setSelectedCareer, isExplorer } = useAppContext();
 
   // Tab: 'branches' | 'change'
   const [tab, setTab] = useState('branches');
@@ -50,7 +50,7 @@ const CollegePredictor = ({ initialRank }) => {
       fetch(`${API_BASE}/api/get_college_suggestions`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ rank, exam_type: 'KCET' })
+        body: JSON.stringify({ rank, exam_type: 'KCET', is_explorer: isExplorer })
       })
         .then(r => r.json())
         .then(data => { if (data.success) setAllColleges(data.colleges || []); })
@@ -78,17 +78,22 @@ const CollegePredictor = ({ initialRank }) => {
       }));
     }
 
-    const kcetCutoffs = currentCollege.cutoff_rank?.KCET || {};
-    const available   = currentCollege.branches_available || [];
+    const kcetCutoffs   = currentCollege.cutoff_rank?.KCET || {};
+    const managementFee = currentCollege.management_fees || {};
+    const available     = currentCollege.branches_available || [];
 
     return available
       .filter(code => BRANCH_META[code]) // only known branches
-      .map(code => ({
-        code,
-        ...BRANCH_META[code],
-        cutoff: kcetCutoffs[code] || 'N/A',
-        seats:  'N/A', // seat data not in JSON; show N/A
-      }));
+      .map(code => {
+        const branchFee = managementFee[code] || managementFee['Note'] || 'Contact for details';
+        return {
+          code,
+          ...BRANCH_META[code],
+          cutoff: kcetCutoffs[code] || 'N/A',
+          fee: branchFee,
+          seats: 'N/A', // seat data not in JSON; show N/A
+        };
+      });
   }, [currentCollege]);
 
   // When a college is selected in "Change College"
@@ -147,6 +152,12 @@ const CollegePredictor = ({ initialRank }) => {
               exit={{ opacity: 0 }}
               className="college-predictor__branches"
             >
+              {isExplorer && (
+                <div className="college-predictor__explorer-badge mb-4">
+                  <span className="text-sm font-bold">Explorer Mode: Viewing Management Estimates</span>
+                </div>
+              )}
+
               {currentCollege && (
                 <p className="college-predictor__hint">
                   Showing branches for <strong>{currentCollege.college_name}</strong>
@@ -171,8 +182,8 @@ const CollegePredictor = ({ initialRank }) => {
                       <div className="college-predictor__branch-info">
                         <h3>{b.label}</h3>
                         <p>
-                          KCET Cutoff: {b.cutoff}
-                          {b.seats !== 'N/A' ? ` · Seats: ${b.seats}` : ''}
+                          {isExplorer ? `Mgmt Fee: ${b.fee}` : `KCET Cutoff: ${b.cutoff}`}
+                          {!isExplorer && b.seats !== 'N/A' ? ` · Seats: ${b.seats}` : ''}
                         </p>
                       </div>
                       <ChevronRight size={18} color="#CCCCCC" />
@@ -217,12 +228,21 @@ const CollegePredictor = ({ initialRank }) => {
               )}
 
               <div className="college-predictor__detail-stats">
-                <div className="college-predictor__stat">
-                  <span className="college-predictor__stat-value">
-                    {selectedBranch.cutoff}
-                  </span>
-                  <span className="college-predictor__stat-label">KCET Cutoff</span>
-                </div>
+                {isExplorer ? (
+                  <div className="college-predictor__stat" style={{ flex: 1.5 }}>
+                    <span className="college-predictor__stat-value" style={{ fontSize: 16 }}>
+                      {selectedBranch.fee}
+                    </span>
+                    <span className="college-predictor__stat-label">Management Fee</span>
+                  </div>
+                ) : (
+                  <div className="college-predictor__stat">
+                    <span className="college-predictor__stat-value">
+                      {selectedBranch.cutoff}
+                    </span>
+                    <span className="college-predictor__stat-label">KCET Cutoff</span>
+                  </div>
+                )}
                 <div className="college-predictor__stat">
                   <span className="college-predictor__stat-value">
                     {currentCollege?.average_package || 'N/A'}
@@ -262,6 +282,12 @@ const CollegePredictor = ({ initialRank }) => {
                 </div>
               ) : (
                 <>
+                  {isExplorer && (
+                    <div className="college-predictor__explorer-badge mb-4">
+                      <span className="text-sm font-bold">Explorer Mode: Top Rated Colleges</span>
+                    </div>
+                  )}
+
                   {/* Currently selected college */}
                   {currentCollege && (
                     <div className="mb-6">

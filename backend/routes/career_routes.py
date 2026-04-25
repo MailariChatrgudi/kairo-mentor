@@ -127,6 +127,7 @@ def get_college_suggestions():
 
     rank = data.get("rank", 0)
     exam_type = data.get("exam_type", "KCET").strip()
+    is_explorer = data.get("is_explorer", False)
 
     try:
         rank = int(rank) if rank else 0
@@ -134,11 +135,12 @@ def get_college_suggestions():
         return jsonify({"error": "'rank' must be a valid integer"}), 400
 
     try:
-        colleges = filter_colleges(user_rank=rank, exam_type=exam_type)
+        colleges = filter_colleges(user_rank=rank, exam_type=exam_type, is_explorer=is_explorer)
         return jsonify({
             "success": True,
             "rank": rank,
             "exam_type": exam_type,
+            "is_explorer": is_explorer,
             "total_colleges_found": len(colleges),
             "colleges": colleges
         }), 200

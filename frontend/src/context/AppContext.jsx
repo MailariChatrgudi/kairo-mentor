@@ -66,6 +66,15 @@ export const AppProvider = ({ children }) => {
   const [focusMinutes, setFocusMinutes] = useState(() => {
     return parseInt(localStorage.getItem('kairo_focus_minutes')) || 0;
   });
+
+  // ── Explorer Mode (12th passout with no rank) ──
+  const [isExplorer, setIsExplorer] = useState(() => {
+    return localStorage.getItem('kairo_is_explorer') === 'true';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('kairo_is_explorer', isExplorer);
+  }, [isExplorer]);
   const addFocusMinutes = (mins) => {
     setFocusMinutes(prev => {
       const next = prev + Math.round(mins);
@@ -82,6 +91,7 @@ export const AppProvider = ({ children }) => {
     setRoadmapData(null);
     setJourneyProgress({ currentPhase: 1, reflections: [] });
     setFullUserData(null);
+    setIsExplorer(false);
   };
 
   return (
@@ -95,6 +105,7 @@ export const AppProvider = ({ children }) => {
         currentDay, updateCurrentDay,
         fullUserData, setFullUserData,
         focusMinutes, addFocusMinutes,
+        isExplorer, setIsExplorer,
         logout
       }}
     >

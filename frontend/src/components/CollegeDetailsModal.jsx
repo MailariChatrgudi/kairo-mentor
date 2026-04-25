@@ -129,6 +129,32 @@ const CollegeDetailsModal = ({ isOpen, onClose, college }) => {
                 </div>
               </div>
 
+              {/* Management Fees */}
+              {college.management_fees && Object.keys(college.management_fees).length > 0 && (
+                <div className="mb-8">
+                  <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <Building2 size={20} className="text-indigo-500" />
+                    Management Quota Fees
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {Object.entries(college.management_fees).map(([branch, fee]) => {
+                      if (branch.toLowerCase() === 'note') return null; // Handle notes separately
+                      return (
+                        <div key={branch} className="bg-indigo-50 p-4 rounded-xl flex justify-between items-center">
+                          <span className="text-sm font-bold text-indigo-900">{branch.replace('_', ' ')}</span>
+                          <span className="text-sm font-bold text-indigo-700">{fee}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  {college.management_fees.Note && (
+                    <div className="mt-3 text-sm text-gray-500 italic bg-gray-50 p-3 rounded-lg border border-gray-100">
+                      * {college.management_fees.Note}
+                    </div>
+                  )}
+                </div>
+              )}
+
               {/* Branches Available */}
               {college.branches_available?.length > 0 && (
                 <div className="mb-8">
@@ -175,6 +201,26 @@ const CollegeDetailsModal = ({ isOpen, onClose, college }) => {
                   </ul>
                 </div>
               </div>
+
+              {/* YouTube Reviews */}
+              {college.youtube_review_links && college.youtube_review_links.length > 0 && (
+                <div className="mt-8 border-t border-gray-100 pt-6">
+                  <h3 className="text-lg font-bold text-gray-900 mb-4">Video Reviews</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {college.youtube_review_links.map((link, i) => (
+                      <a 
+                        key={i}
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-sm font-bold transition-colors"
+                      >
+                        YouTube Review {i + 1}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
             
             <div className="p-4 border-t border-gray-100 flex justify-end bg-gray-50">

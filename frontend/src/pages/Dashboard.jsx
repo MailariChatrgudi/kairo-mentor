@@ -215,51 +215,53 @@ const Dashboard = () => {
         </motion.div>
 
         {/* 1-Week Roadmap Section (LOCKED SYSTEM) */}
-        <motion.div className="dashboard__section" variants={item}>
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="dashboard__section-title">Weekly Roadmap</h2>
-            <div className="flex items-center gap-1 text-xs font-semibold text-indigo-600 bg-indigo-50 px-2 py-1 rounded-full">
-              <span className="dot w-1.5 h-1.5 bg-indigo-600 rounded-full animate-pulse"></span>
-              7-Day Sprint
-            </div>
-          </div>
-          
-          <div className="weekly-scroll">
-            {weekPlan.map((dayData, idx) => {
-              const isSelected = dayData.day === selectedDay;
-              const isCurrent = dayData.day === (journeyProgress?.currentPhase || 1);
-              const isCompleted = dayData.videos?.length > 0 && dayData.videos.every(v => v.completed);
-              
-              return (
-                <div 
-                  key={idx} 
-                  className={`weekly-card ${dayData.locked ? 'is-locked' : 'is-unlocked'} ${isSelected ? 'is-selected' : ''} ${isCurrent ? 'is-current' : ''} ${isCompleted ? 'is-completed' : ''}`}
-                  onClick={() => {
-                    setLoading(true);
-                    setTodayPlan(null);
-                    setSelectedDay(dayData.day);
-                  }}
-                >
-                  <div className="weekly-card__header">
-                    <span className="day-label">Day {dayData.day}</span>
-                    {dayData.locked ? (
-                      <Lock size={14} className="text-gray-400" />
-                    ) : isCompleted ? (
-                      <CheckCircle2 size={16} className="text-emerald-500" />
-                    ) : isCurrent ? (
-                      <div className="pulse-indicator"></div>
-                    ) : null}
-                  </div>
-                <h4 className="weekly-card__title">{dayData.title}</h4>
-                <div className="weekly-card__video-count">
-                    {dayData.videos?.length || 0} Lessons
+        {selectedCareer ? (
+          <>
+            <motion.div className="dashboard__section" variants={item}>
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="dashboard__section-title">Weekly Roadmap</h2>
+                <div className="flex items-center gap-1 text-xs font-semibold text-indigo-600 bg-indigo-50 px-2 py-1 rounded-full">
+                  <span className="dot w-1.5 h-1.5 bg-indigo-600 rounded-full animate-pulse"></span>
+                  7-Day Sprint
                 </div>
-                {dayData.locked && <div className="locked-overlay-subtle"></div>}
               </div>
-              );
-            })}
-          </div>
-        </motion.div>
+              
+              <div className="weekly-scroll">
+                {weekPlan.map((dayData, idx) => {
+                  const isSelected = dayData.day === selectedDay;
+                  const isCurrent = dayData.day === (journeyProgress?.currentPhase || 1);
+                  const isCompleted = dayData.videos?.length > 0 && dayData.videos.every(v => v.completed);
+                  
+                  return (
+                    <div 
+                      key={idx} 
+                      className={`weekly-card ${dayData.locked ? 'is-locked' : 'is-unlocked'} ${isSelected ? 'is-selected' : ''} ${isCurrent ? 'is-current' : ''} ${isCompleted ? 'is-completed' : ''}`}
+                      onClick={() => {
+                        setLoading(true);
+                        setTodayPlan(null);
+                        setSelectedDay(dayData.day);
+                      }}
+                    >
+                      <div className="weekly-card__header">
+                        <span className="day-label">Day {dayData.day}</span>
+                        {dayData.locked ? (
+                          <Lock size={14} className="text-gray-400" />
+                        ) : isCompleted ? (
+                          <CheckCircle2 size={16} className="text-emerald-500" />
+                        ) : isCurrent ? (
+                          <div className="pulse-indicator"></div>
+                        ) : null}
+                      </div>
+                    <h4 className="weekly-card__title">{dayData.title}</h4>
+                    <div className="weekly-card__video-count">
+                        {dayData.videos?.length || 0} Lessons
+                    </div>
+                    {dayData.locked && <div className="locked-overlay-subtle"></div>}
+                  </div>
+                  );
+                })}
+              </div>
+            </motion.div>
 
         {/* Roadmap View (Based on Reference) */}
         <motion.div className="roadmap-view" variants={item}>
@@ -469,8 +471,24 @@ const Dashboard = () => {
             )}
           </div>
         </motion.div>
-
-
+        </>
+      ) : (
+        <motion.div className="dashboard__section flex flex-col items-center justify-center p-12 bg-white border border-gray-200 rounded-3xl shadow-sm text-center" variants={item}>
+          <div className="p-5 bg-indigo-50 text-indigo-500 rounded-full mb-6">
+            <Target size={48} />
+          </div>
+          <h2 className="text-2xl font-black text-gray-900 mb-3 tracking-tight">No Career Path Selected</h2>
+          <p className="text-gray-500 max-w-md mx-auto mb-8 leading-relaxed text-lg">
+            You skipped choosing a career path during setup. Select a path now to unlock your personalized learning roadmap, daily tasks, and progress tracking.
+          </p>
+          <button 
+            onClick={() => navigate('/career-select')} 
+            className="px-8 py-3 bg-indigo-600 text-white rounded-xl font-bold text-lg hover:bg-indigo-700 hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center gap-2 shadow-lg shadow-indigo-200"
+          >
+            Choose a Career Path <ChevronRight size={20} />
+          </button>
+        </motion.div>
+      )}
 
       </motion.div>
       
