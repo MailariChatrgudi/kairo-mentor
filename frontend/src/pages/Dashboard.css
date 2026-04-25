@@ -5,7 +5,13 @@
 }
 
 .dashboard__content {
-  padding: 20px;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .dashboard__content {
+    padding: 24px;
+  }
 }
 
 .dashboard__header {
@@ -24,8 +30,14 @@
 }
 
 .dashboard__name {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .dashboard__name {
+    font-size: 28px;
+  }
 }
 
 .dashboard__avatar {
@@ -157,14 +169,21 @@
 
 .roadmap-banner {
   background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-  padding: 24px;
-  border-radius: 20px;
+  padding: 16px;
+  border-radius: 16px;
   color: white;
   margin-bottom: 24px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .roadmap-banner {
+    padding: 24px;
+    border-radius: 20px;
+  }
 }
 
 .roadmap-banner.is-preview {
@@ -190,10 +209,16 @@
 }
 
 .roadmap-banner__title {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 800;
   color: #111827;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .roadmap-banner__title {
+    font-size: 22px;
+  }
 }
 
 .roadmap-banner__btn {
@@ -221,29 +246,50 @@
 
 .roadmap-list-container {
   background: white;
-  border-radius: 24px 24px 0 0;
-  margin-top: -30px;
-  padding: 30px 20px;
+  border-radius: 20px 20px 0 0;
+  margin-top: -20px;
+  padding: 20px 16px;
   min-height: 400px;
   box-shadow: 0 -10px 40px rgba(0,0,0,0.05);
+}
+
+@media (min-width: 768px) {
+  .roadmap-list-container {
+    border-radius: 24px 24px 0 0;
+    margin-top: -30px;
+    padding: 30px 20px;
+  }
 }
 
 .roadmap-list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 20px;
   position: relative;
   padding-left: 10px;
 }
 
+@media (min-width: 768px) {
+  .roadmap-list {
+    gap: 32px;
+  }
+}
+
 .roadmap-line {
   position: absolute;
-  left: 17px;
+  left: 13px;
   top: 10px;
   bottom: 30px;
-  width: 2px;
+  width: 1.5px;
   background: #E5E7EB;
   z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .roadmap-line {
+    left: 17px;
+    width: 2px;
+  }
 }
 
 .roadmap-item {
@@ -255,24 +301,41 @@
 }
 
 .roadmap-node {
-  width: 36px;
-  height: 36px;
-  min-width: 36px;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
   border-radius: 50%;
   background: white;
-  border: 2px solid #E5E7EB;
+  border: 1.5px solid #E5E7EB;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .roadmap-node {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border: 2px solid #E5E7EB;
+  }
+}
+
 .roadmap-node .inner-node {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: transparent;
-  border: 2px solid #E5E7EB;
+  border: 1.5px solid #E5E7EB;
+}
+
+@media (min-width: 768px) {
+  .roadmap-node .inner-node {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #E5E7EB;
+  }
 }
 
 .roadmap-node.completed {
@@ -298,19 +361,32 @@
 }
 
 .roadmap-item__title {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 700;
   color: #374151;
   line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .roadmap-item__title {
+    font-size: 15px;
+  }
 }
 
 .roadmap-item__meta {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 13px;
+  gap: 8px;
+  font-size: 11px;
   color: #6B7280;
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .roadmap-item__meta {
+    gap: 10px;
+    font-size: 13px;
+  }
 }
 
 .dot-sep {
@@ -339,19 +415,28 @@
 }
 
 .weekly-card {
-  min-width: 200px;
-  max-width: 200px;
+  min-width: 150px;
+  max-width: 150px;
   background: white;
-  border-radius: 20px;
-  padding: 16px;
+  border-radius: 16px;
+  padding: 12px;
   border: 1px solid #f1f5f9;
   box-shadow: 0 4px 20px rgba(0,0,0,0.03);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   position: relative;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .weekly-card {
+    min-width: 200px;
+    max-width: 200px;
+    padding: 16px;
+    gap: 12px;
+  }
 }
 
 .weekly-card.is-active {
@@ -463,4 +548,235 @@
   margin-top: 10px;
 }
 
+/* ── Topics Peek Button (on weekly card) ─────────────────────── */
+.weekly-card__video-count {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 
+.topics-peek-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8eaf6;
+  border: none;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  color: #6366f1;
+  transition: background 0.2s;
+  padding: 0;
+}
+
+.topics-peek-btn:hover {
+  background: #c7d2fe;
+}
+
+/* ── Modal Backdrop ──────────────────────────────────────────── */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 9000;
+}
+
+/* ── Phase Topics Modal ──────────────────────────────────────── */
+.phase-modal {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: min(480px, 100vw);
+  max-height: 80vh;
+  background: white;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -20px 60px rgba(0, 0, 0, 0.15);
+  z-index: 9100;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .phase-modal {
+    bottom: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 24px;
+    max-height: 85vh;
+  }
+}
+
+.phase-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 24px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  flex-shrink: 0;
+}
+
+.phase-modal__label {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.phase-modal__title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.phase-modal__close {
+  background: #f1f5f9;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #64748b;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.phase-modal__close:hover { background: #e2e8f0; }
+
+.phase-modal__body {
+  padding: 20px 24px 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.phase-modal__status {
+  margin-bottom: 20px;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 100px;
+}
+
+.status-badge.locked    { background: #fff7ed; color: #c2410c; }
+.status-badge.completed { background: #ecfdf5; color: #065f46; }
+.status-badge.active    { background: #eef2ff; color: #4338ca; }
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background: #6366f1;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.phase-modal__topics {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.phase-topic-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #f1f5f9;
+  transition: all 0.2s;
+}
+
+.phase-topic-item.is-done {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.phase-topic-item.is-locked {
+  opacity: 0.5;
+}
+
+.phase-topic-node {
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.phase-topic-node.completed {
+  background: #059669;
+  color: white;
+}
+
+.phase-topic-node.pending {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.phase-topic-node.locked {
+  background: #f1f5f9;
+  color: #94a3b8;
+}
+
+.phase-topic-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.phase-topic-item.is-done .phase-topic-label {
+  color: #065f46;
+}
+
+.phase-topic-item.is-locked .phase-topic-label {
+  color: #94a3b8;
+}
+
+.phase-modal__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4);
+}
+
+.phase-modal__action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.5);
+}
