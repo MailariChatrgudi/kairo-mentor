@@ -149,3 +149,76 @@ def get_colleges_for_rank(rank: int, branch: str) -> list:
 
     results.sort(key=lambda x: x.get("rating", 0), reverse=True)
     return results[:10]
+
+def parse_cutoff(cutoff_str: str) -> int:
+    if not cutoff_str:
+        return 999999
+    parts = cutoff_str.replace('+', '').split('-')
+    try:
+        if len(parts) == 2:
+            return int(parts[1])
+        elif len(parts) == 1:
+            return int(parts[0])
+    except:
+        return 999999
+    return 999999
+
+def filter_colleges(user_rank: int, exam_type: str = "KCET", is_explorer: bool = False) -> list:
+    """Filter colleges by rank cutoff using colleges.json format.
+    
+    Explorer mode (is_explorer=True or user_rank=0/None):
+      - Skips all rank/cutoff filtering.
+      - Returns top 10 colleges sorted by placement_rating + infrastructure_rating.
+    """
+    colleges = load_json("colleges.json")
+    if not colleges:
+        return []
+
+    # ── Explorer Mode ──────────────────────────────────────────────────────────
+    if is_explorer or not user_rank:
+        def explorer_score(c):
+            return (c.get("placement_rating", 0) or 0) + (c.get("infrastructure_rating", 0) or 0)
+
+        sorted_colleges = sorted(colleges, key=explorer_score, reverse=True)
+        results = []
+        for college in sorted_colleges[:10]:
+            college_data = dict(college)
+            college_data["eligible_branches"] = [
+                {"branch": b, "cutoff": "Open (Explorer Mode)"}
+                for b in college.get("branches_available", [])
+            ]
+            college_data["match_score"] = explorer_score(college)
+            college_data["is_explorer"] = True
+            results.append(college_data)
+        return results
+
+    # ── Ranked Mode ────────────────────────────────────────────────────────────
+    results = []
+    for college in colleges:
+        exam_cutoffs = college.get("cutoff_rank", {}).get(exam_type, {})
+        
+        eligible_branches = []
+        for branch, cutoff_str in exam_cutoffs.items():
+            max_rank = parse_cutoff(cutoff_str)
+            # Give a 15% margin for cutoff
+            if user_rank <= max_rank * 1.15:
+                eligible_branches.append({
+                    "branch": branch,
+                    "cutoff": cutoff_str
+                })
+        
+        if eligible_branches:
+            infra = college.get("infrastructure_rating", 0)
+            place = college.get("placement_rating", 0)
+            acad  = college.get("academics_rating", 0)
+            match_score = infra + place + acad
+            
+            college_data = dict(college)
+            college_data["eligible_branches"] = eligible_branches
+            college_data["match_score"] = match_score
+            college_data["is_explorer"] = False
+            results.append(college_data)
+            
+    results.sort(key=lambda x: x["match_score"], reverse=True)
+    return results[:10]
+

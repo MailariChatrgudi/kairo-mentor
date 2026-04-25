@@ -42,7 +42,6 @@ export const AppProvider = ({ children }) => {
     setJourneyProgress(prev => ({ ...prev, currentPhase: d }));
   };
 
-  // ── Full user data from backend ──
   const [fullUserData, setFullUserData] = useState(null);
 
   // Derive the canonical course_id from backend user data if available
@@ -66,6 +65,27 @@ export const AppProvider = ({ children }) => {
     localStorage.setItem('kairo_journey', JSON.stringify(journeyProgress));
   }, [journeyProgress]);
 
+  // ── Focus Timer State ──
+  const [focusMinutes, setFocusMinutes] = useState(() => {
+    return parseInt(localStorage.getItem('kairo_focus_minutes')) || 0;
+  });
+
+  // ── Explorer Mode (12th passout with no rank) ──
+  const [isExplorer, setIsExplorer] = useState(() => {
+    return localStorage.getItem('kairo_is_explorer') === 'true';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('kairo_is_explorer', isExplorer);
+  }, [isExplorer]);
+  const addFocusMinutes = (mins) => {
+    setFocusMinutes(prev => {
+      const next = prev + Math.round(mins);
+      localStorage.setItem('kairo_focus_minutes', next);
+      return next;
+    });
+  };
+
   const logout = () => {
     localStorage.clear();
     setIsLoggedIn(false);
@@ -75,6 +95,7 @@ export const AppProvider = ({ children }) => {
     setJourneyProgress({ currentPhase: 1, reflections: [] });
     setCurrentDay(1);
     setFullUserData(null);
+    setIsExplorer(false);
   };
 
   return (
@@ -87,8 +108,10 @@ export const AppProvider = ({ children }) => {
         journeyProgress, setJourneyProgress,
         currentDay, updateCurrentDay,
         fullUserData, setFullUserData,
-        courseId,
+        focusMinutes, addFocusMinutes,
+        isExplorer, setIsExplorer,
         logout,
+        courseId,
       }}
     >
       {children}

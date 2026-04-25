@@ -4,12 +4,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Sparkles, CheckCircle2, BookOpen, Briefcase, Loader2,
   ChevronRight, Book, ClipboardCheck, HelpCircle, Lock,
-  X, Calendar, ArrowRight
+  X, Calendar, ArrowRight, Target
 } from 'lucide-react';
 import Card from '../components/Card';
 import BottomNav from '../components/BottomNav';
 import ProgressionTracker from '../components/ProgressionTracker';
 import QuizModal from '../components/QuizModal';
+import CollegePredictor from './CollegePredictor';
 import { useAppContext } from '../context/AppContext';
 import './Dashboard.css';
 
@@ -95,7 +96,10 @@ const PhaseTopicsModal = ({ isOpen, onClose, weekPlan, selectedPhaseDay }) => {
 // ── Dashboard ─────────────────────────────────────────────────────────────────
 const Dashboard = () => {
   const navigate = useNavigate();
-  const { userProfile, selectedCareer, journeyProgress, setFullUserData, updateCurrentDay, logout } = useAppContext();
+  const {
+    userProfile, selectedCareer, journeyProgress, setFullUserData,
+    currentDay: currentJourneyDay, updateCurrentDay, logout
+  } = useAppContext();
   const displayName = userProfile?.name || 'Student';
 
   const handleLogout = () => { logout(); navigate('/'); };
@@ -225,9 +229,46 @@ const Dashboard = () => {
     } catch { alert('Submission failed. Check your connection.'); }
   };
 
-  // ── Computed values ───────────────────────────────────────────────────────
-  const currentJourneyDay = userProgress?.current_day
-    || (weekPlan.find(d => !d.locked && !d.completed)?.day ?? 1);
+
+  // ── IST Greeting Logic ────────────────────────────────────────────────────
+  const getGreetingConfig = useCallback(() => {
+    // Use local system time (IST on user's device)
+    const hour = new Date().getHours();
+
+    // Hustle phases → weight 900, solid black, tight tracking
+    const hardcore = {
+      color: '#000000',
+      fontWeight: 900,
+      letterSpacing: '-0.02em',
+    };
+    // Standard phases → weight 500, still solid black for max contrast
+    const standard = {
+      color: '#000000',
+      fontWeight: 500,
+    };
+
+    // 12:00 AM – 4:59 AM
+    if (hour >= 0  && hour < 5)  return { text: 'Elite Hours! 💎',      style: hardcore };
+    // 5:00 AM – 8:59 AM
+    if (hour >= 5  && hour < 9)  return { text: 'Good morning ☀️',      style: standard };
+    // 9:00 AM – 11:59 AM
+    if (hour >= 9  && hour < 12) return { text: 'Morning Grinding! ⚙️', style: hardcore };
+    // 12:00 PM – 4:59 PM
+    if (hour >= 12 && hour < 17) return { text: 'Good afternoon ☕',     style: standard };
+    // 5:00 PM – 8:59 PM
+    if (hour >= 17 && hour < 21) return { text: 'Good evening 🌆',       style: standard };
+    // 9:00 PM – 11:59 PM
+    return                               { text: 'Grinding! 🔥',          style: hardcore };
+  }, []);
+
+  // Live-update the greeting every minute so it switches automatically
+  const [greetingConfig, setGreetingConfig] = useState(() => getGreetingConfig());
+
+  useEffect(() => {
+    setGreetingConfig(getGreetingConfig());
+    const id = setInterval(() => setGreetingConfig(getGreetingConfig()), 60_000);
+    return () => clearInterval(id);
+  }, [getGreetingConfig]);
 
   return (
     <div className="dashboard lg:pl-64 min-h-screen bg-[#F8F8F8]">
@@ -237,7 +278,9 @@ const Dashboard = () => {
         {/* ── Header ─────────────────────────────────────────────────────── */}
         <motion.div className="dashboard__header" variants={item}>
           <div>
-            <p className="dashboard__greeting">Good day,</p>
+            <p className="dashboard__greeting" style={greetingConfig.style}>
+              {greetingConfig.text}
+            </p>
             <h1 className="dashboard__name">{displayName} ✨</h1>
           </div>
           <div className="dashboard__avatar" onClick={handleLogout} style={{ cursor: 'pointer' }} title="Log out">
@@ -254,67 +297,69 @@ const Dashboard = () => {
         </motion.div>
 
         {/* ── SYSTEM 5: Weekly Roadmap with Phase Popup ──────────────────── */}
-        <motion.div className="dashboard__section" variants={item}>
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="dashboard__section-title">Weekly Roadmap</h2>
-            <div className="flex items-center gap-1 text-xs font-semibold text-indigo-600 bg-indigo-50 px-2 py-1 rounded-full">
-              <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full animate-pulse" />
-              {weekPlan.length}-Day Sprint
-            </div>
-          </div>
+        {selectedCareer ? (
+          <>
+            <motion.div className="dashboard__section" variants={item}>
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="dashboard__section-title">Weekly Roadmap</h2>
+                <div className="flex items-center gap-1 text-xs font-semibold text-indigo-600 bg-indigo-50 px-2 py-1 rounded-full">
+                  <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full animate-pulse" />
+                  {weekPlan.length}-Day Sprint
+                </div>
+              </div>
 
-          <div className="weekly-scroll">
-            {weekPlan.map((dayData, idx) => {
-              const isSelected  = dayData.day === selectedDay;
-              const isCompleted = dayData.completed || (
-                dayData.videos?.length > 0 && dayData.videos.every(v => v.completed)
-              );
-              return (
-                <div
-                  key={idx}
-                  className={`weekly-card ${dayData.locked ? 'is-locked' : 'is-unlocked'} ${isSelected ? 'is-selected' : ''} ${isCompleted ? 'is-completed' : ''}`}
-                  onClick={() => {
-                    // Single click → select day
-                    setSelectedDay(dayData.day);
-                  }}
-                  onDoubleClick={() => {
-                    // Double click → open phase popup
-                    setPhaseModalDay(dayData.day);
-                    setPhaseModalOpen(true);
-                  }}
-                  title="Click to view • Double-click for topic list"
-                >
-                  <div className="weekly-card__header">
-                    <span className="day-label">Day {dayData.day}</span>
-                    {dayData.locked ? (
-                      <Lock size={14} className="text-gray-400" />
-                    ) : isCompleted ? (
-                      <CheckCircle2 size={16} className="text-emerald-500" />
-                    ) : isSelected ? (
-                      <div className="pulse-indicator" />
-                    ) : null}
-                  </div>
-                  <h4 className="weekly-card__title">{dayData.title}</h4>
-                  <div className="weekly-card__video-count">
-                    {dayData.videos?.length || 0} Lessons
-                    <button
-                      className="topics-peek-btn"
-                      onClick={e => {
-                        e.stopPropagation();
+              <div className="weekly-scroll">
+                {weekPlan.map((dayData, idx) => {
+                  const isSelected  = dayData.day === selectedDay;
+                  const isCompleted = dayData.completed || (
+                    dayData.videos?.length > 0 && dayData.videos.every(v => v.completed)
+                  );
+                  return (
+                    <div
+                      key={idx}
+                      className={`weekly-card ${dayData.locked ? 'is-locked' : 'is-unlocked'} ${isSelected ? 'is-selected' : ''} ${isCompleted ? 'is-completed' : ''}`}
+                      onClick={() => {
+                        // Single click → select day
+                        setSelectedDay(dayData.day);
+                      }}
+                      onDoubleClick={() => {
+                        // Double click → open phase popup
                         setPhaseModalDay(dayData.day);
                         setPhaseModalOpen(true);
                       }}
-                      title="View topics"
+                      title="Click to view • Double-click for topic list"
                     >
-                      <Calendar size={11} />
-                    </button>
-                  </div>
-                  {dayData.locked && <div className="locked-overlay-subtle" />}
-                </div>
-              );
-            })}
-          </div>
-        </motion.div>
+                      <div className="weekly-card__header">
+                        <span className="day-label">Day {dayData.day}</span>
+                        {dayData.locked ? (
+                          <Lock size={14} className="text-gray-400" />
+                        ) : isCompleted ? (
+                          <CheckCircle2 size={16} className="text-emerald-500" />
+                        ) : isSelected ? (
+                          <div className="pulse-indicator" />
+                        ) : null}
+                      </div>
+                      <h4 className="weekly-card__title">{dayData.title}</h4>
+                      <div className="weekly-card__video-count">
+                        {dayData.videos?.length || 0} Lessons
+                        <button
+                          className="topics-peek-btn"
+                          onClick={e => {
+                            e.stopPropagation();
+                            setPhaseModalDay(dayData.day);
+                            setPhaseModalOpen(true);
+                          }}
+                          title="View topics"
+                        >
+                          <Calendar size={11} />
+                        </button>
+                      </div>
+                      {dayData.locked && <div className="locked-overlay-subtle" />}
+                    </div>
+                  );
+                })}
+              </div>
+            </motion.div>
 
         {/* ── Roadmap Detail View ─────────────────────────────────────────── */}
         <motion.div className="roadmap-view" variants={item}>
@@ -508,6 +553,24 @@ const Dashboard = () => {
             )}
           </div>
         </motion.div>
+        </>
+      ) : (
+        <motion.div className="dashboard__section flex flex-col items-center justify-center p-12 bg-white border border-gray-200 rounded-3xl shadow-sm text-center" variants={item}>
+          <div className="p-5 bg-indigo-50 text-indigo-500 rounded-full mb-6">
+            <Target size={48} />
+          </div>
+          <h2 className="text-2xl font-black text-gray-900 mb-3 tracking-tight">No Career Path Selected</h2>
+          <p className="text-gray-500 max-w-md mx-auto mb-8 leading-relaxed text-lg">
+            You skipped choosing a career path during setup. Select a path now to unlock your personalized learning roadmap, daily tasks, and progress tracking.
+          </p>
+          <button 
+            onClick={() => navigate('/career-select')} 
+            className="px-8 py-3 bg-indigo-600 text-white rounded-xl font-bold text-lg hover:bg-indigo-700 hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center gap-2 shadow-lg shadow-indigo-200"
+          >
+            Choose a Career Path <ChevronRight size={20} />
+          </button>
+        </motion.div>
+      )}
 
       </motion.div>
 

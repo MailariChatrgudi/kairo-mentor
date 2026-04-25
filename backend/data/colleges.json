@@ -1,8 +1,14 @@
 [
   {
-    "college_name": "BMS College of Engineering",
+    "college_name": "BMS College of Engineering (BMSCE)",
     "location": "Basavanagudi, Bengaluru",
     "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹12–15 Lakhs/year",
+      "ISE": "₹10–12 Lakhs/year",
+      "ECE": "₹7–9 Lakhs/year",
+      "Other_Branches": "₹3–6 Lakhs/year"
+    },
     "cutoff_rank": {
       "KCET": {
         "CSE": "1000-3000",
@@ -23,31 +29,35 @@
     "academics_rating": 3.8,
     "placement_rating": 4.3,
     "average_package": "₹6–10 LPA",
+    "highest_package": "₹50 LPA",
     "top_companies": ["Amazon", "Microsoft", "Deloitte", "Accenture", "Infosys", "TCS", "Capgemini", "Cisco"],
     "pros": [
       "Strong placements for CSE/ISE/ECE",
-      "Excellent campus life",
-      "Prime Bangalore location",
+      "Excellent campus life and culture",
+      "Prime Bangalore location with metro access",
       "Strong alumni network",
       "Good ROI",
-      "Good internship exposure"
+      "Good internship and startup exposure"
     ],
     "cons": [
-      "Average infrastructure",
+      "Average infrastructure, not modern",
       "Outdated VTU syllabus",
-      "Weak core placements",
-      "Wi-Fi and hostel issues",
-      "Requires self-learning"
+      "Weak core branch placements",
+      "Wi-Fi and hostel facilities are average",
+      "Requires strong self-learning"
     ],
-    "youtube_review_links": [
-      "https://youtu.be/4xboBV4baog",
-      "https://youtu.be/nf4h62BdFSo"
-    ]
+    "youtube_review_links": ["https://youtu.be/4xboBV4baog", "https://youtu.be/nf4h62BdFSo"]
   },
   {
-    "college_name": "R.V. College of Engineering",
+    "college_name": "R.V. College of Engineering (RVCE)",
     "location": "Mysore Road, Bengaluru",
     "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹15–18 Lakhs/year",
+      "ISE": "₹12–14 Lakhs/year",
+      "ECE": "₹9–11 Lakhs/year",
+      "Note": "Requires high merit/marks even for management seats"
+    },
     "cutoff_rank": {
       "KCET": {
         "CSE": "300-1200",
@@ -68,29 +78,32 @@
     "academics_rating": 4.0,
     "placement_rating": 4.5,
     "average_package": "₹8–12 LPA",
+    "highest_package": "₹92 LPA",
     "top_companies": ["Amazon", "Microsoft", "Adobe", "Goldman Sachs", "Cisco", "Deloitte", "Infosys", "TCS"],
     "pros": [
-      "Top-tier placements",
-      "Strong academics",
-      "Competitive peer group",
-      "Good reputation",
-      "Strong industry connections"
+      "Top-tier placements among private colleges",
+      "Strong academic environment",
+      "Highly competitive peer group",
+      "Excellent reputation and alumni network",
+      "Strong industry connections and research culture"
     ],
     "cons": [
-      "Outside city location",
-      "Less vibrant campus life",
+      "Located outside city, limited urban exposure",
+      "Campus life less vibrant",
       "High academic pressure",
-      "Average hostel facilities"
+      "Core placements still limited compared to IT"
     ],
-    "youtube_review_links": [
-      "https://youtu.be/Z9qk2Nrhgfs",
-      "https://youtu.be/he6l2_dPMdA"
-    ]
+    "youtube_review_links": ["https://youtu.be/Z9qk2Nrhgfs", "https://youtu.be/he6l2_dPMdA"]
   },
   {
-    "college_name": "Ramaiah Institute of Technology",
+    "college_name": "Ramaiah Institute of Technology (MSRIT)",
     "location": "MS Ramaiah Nagar, Bengaluru",
     "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹10–12 Lakhs/year",
+      "ISE": "₹8–10 Lakhs/year",
+      "ECE": "₹6–8 Lakhs/year"
+    },
     "cutoff_rank": {
       "KCET": {
         "CSE": "1500-4000",
@@ -111,29 +124,32 @@
     "academics_rating": 3.8,
     "placement_rating": 4.3,
     "average_package": "₹6–10 LPA",
+    "highest_package": "₹50 LPA",
     "top_companies": ["Amazon", "Microsoft", "Accenture", "Deloitte", "Infosys", "TCS", "Capgemini", "Bosch"],
     "pros": [
-      "Balanced college life",
-      "Good placements",
-      "Good location",
-      "Less academic pressure",
-      "Strong alumni network"
+      "Well-balanced college life (less stressful)",
+      "Good placements in CSE/ISE/ECE",
+      "Central Bangalore location with good exposure",
+      "Strong alumni base",
+      "Good ROI"
     ],
     "cons": [
-      "Not top-tier infrastructure",
-      "Outdated syllabus",
-      "Limited core placements",
-      "Moderate research culture"
+      "Infrastructure is functional but not top-tier",
+      "VTU syllabus is outdated",
+      "Core branch placements are limited",
+      "Research culture is not very strong"
     ],
-    "youtube_review_links": [
-      "https://youtu.be/HMBGYXurrfo",
-      "https://youtu.be/KtKmb8Zl1nk"
-    ]
+    "youtube_review_links": ["https://youtu.be/HMBGYXurrfo", "https://youtu.be/KtKmb8Zl1nk"]
   },
   {
-    "college_name": "PES University",
+    "college_name": "PES University (PESU)",
     "location": "RR Nagar & Electronic City, Bengaluru",
     "branches_available": ["CSE", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹11–13 Lakhs/year",
+      "ECE": "₹7–9 Lakhs/year",
+      "Note": "Management fees are high but very transparently handled"
+    },
     "cutoff_rank": {
       "KCET": {
         "CSE": "300-1200",
@@ -148,29 +164,32 @@
     "academics_rating": 4.3,
     "placement_rating": 4.5,
     "average_package": "₹8–12 LPA",
+    "highest_package": "₹65 LPA",
     "top_companies": ["Amazon", "Microsoft", "Adobe", "Flipkart", "Goldman Sachs", "Cisco", "Deloitte"],
     "pros": [
-      "Best infrastructure",
-      "Strong placements",
-      "Updated curriculum",
+      "Best modern infrastructure among Bangalore colleges",
+      "Strong placements (especially in CSE)",
+      "Updated industry-focused curriculum",
       "Strong coding culture",
       "High-quality peer group"
     ],
     "cons": [
-      "High academic pressure",
-      "High fees",
-      "Less vibrant campus life",
-      "Limited core opportunities"
+      "Very high academic pressure",
+      "High fees via PESSAT/Management",
+      "Campus life is less vibrant and 'less chill'",
+      "Core branches have limited opportunities"
     ],
-    "youtube_review_links": [
-      "https://youtu.be/q2eOqHGCxj4",
-      "https://youtu.be/InBJyaQVT68"
-    ]
+    "youtube_review_links": ["https://youtu.be/q2eOqHGCxj4", "https://youtu.be/InBJyaQVT68"]
   },
   {
-    "college_name": "Dayananda Sagar College of Engineering",
+    "college_name": "Dayananda Sagar College of Engineering (DSCE)",
     "location": "Kumaraswamy Layout, Bengaluru",
     "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹7–9 Lakhs/year",
+      "ISE": "₹6–8 Lakhs/year",
+      "ECE": "₹4–6 Lakhs/year"
+    },
     "cutoff_rank": {
       "KCET": {
         "CSE": "5000-12000",
@@ -179,28 +198,642 @@
         "EEE": "20000-40000",
         "Mechanical": "30000-60000+",
         "Civil": "40000-80000+"
+      },
+      "COMEDK": {
+        "CSE": "5000-12000",
+        "ISE": "7000-15000",
+        "ECE": "10000-20000",
+        "EEE": "15000-30000"
       }
     },
     "infrastructure_rating": 4.0,
     "academics_rating": 3.5,
     "placement_rating": 3.8,
     "average_package": "₹4–7 LPA",
+    "highest_package": "₹45 LPA",
     "top_companies": ["Infosys", "TCS", "Wipro", "Accenture", "Capgemini", "Cognizant"],
     "pros": [
-      "Decent infrastructure",
-      "Good campus life",
+      "Decent campus infrastructure",
+      "Good campus life and student environment",
       "Affordable via KCET",
-      "Manageable academics"
+      "Manageable academics, not very intense"
     ],
     "cons": [
-      "Weaker placements",
-      "Limited high packages",
-      "Outdated syllabus",
-      "Requires self-learning"
+      "Placements are weaker compared to top-tier colleges",
+      "Limited high packages (mostly mass recruiters)",
+      "Outdated VTU syllabus",
+      "Requires strong self-learning for good jobs"
     ],
-    "youtube_review_links": [
-      "https://youtu.be/T5NPBI3_qIM",
-      "https://youtu.be/kRfsqIQboRM"
-    ]
+    "youtube_review_links": ["https://youtu.be/T5NPBI3_qIM", "https://youtu.be/kRfsqIQboRM"]
+  },
+  {
+    "college_name": "Siddaganga Institute of Technology (SIT Tumkur)",
+    "location": "Tumkur",
+    "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹4–6 Lakhs/year",
+      "ISE": "₹3.5–5 Lakhs/year",
+      "ECE": "₹3–4.5 Lakhs/year"
+    },
+    "cutoff_rank": {
+      "KCET": {
+        "CSE": "5000-12000",
+        "ISE": "8000-18000",
+        "ECE": "10000-25000",
+        "EEE": "20000-40000",
+        "Mechanical": "30000-60000+",
+        "Civil": "40000-80000+"
+      },
+      "COMEDK": {
+        "CSE": "6000-15000",
+        "ISE": "8000-18000",
+        "ECE": "12000-25000"
+      }
+    },
+    "infrastructure_rating": 3.8,
+    "academics_rating": 3.8,
+    "placement_rating": 3.5,
+    "average_package": "₹4–6 LPA",
+    "highest_package": "₹41 LPA",
+    "top_companies": ["Infosys", "TCS", "Wipro", "Accenture", "Capgemini"],
+    "pros": [
+      "Affordable fees (excellent ROI for KCET)",
+      "Peaceful green campus environment",
+      "Autonomous curriculum (better than strict VTU)",
+      "Good for focused study with fewer distractions"
+    ],
+    "cons": [
+      "Limited industry exposure compared to Bangalore",
+      "Fewer internship and networking opportunities",
+      "Campus life is less active",
+      "Core branches have limited core-job opportunities"
+    ],
+    "youtube_review_links": ["https://youtu.be/whxFGTDtkJQ", "https://youtu.be/rGsVtb8kF9U"]
+  },
+  {
+    "college_name": "University Visvesvaraya College of Engineering (UVCE)",
+    "location": "KR Circle, Bengaluru",
+    "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "Note": "Government College. Management quota is generally NOT available. Admission via KCET only."
+    },
+    "cutoff_rank": {
+      "KCET": {
+        "CSE": "2000-5000",
+        "ISE": "4000-8000",
+        "ECE": "5000-10000",
+        "EEE": "10000-20000",
+        "Mechanical": "15000-30000",
+        "Civil": "20000-40000+"
+      }
+    },
+    "infrastructure_rating": 3.3,
+    "academics_rating": 3.5,
+    "placement_rating": 3.8,
+    "average_package": "₹5–8 LPA",
+    "highest_package": "₹30 LPA",
+    "top_companies": ["Infosys", "TCS", "Wipro", "Accenture", "Bosch", "Cognizant"],
+    "pros": [
+      "Extremely low fees (best ROI in Bangalore)",
+      "Prime central location (KR Circle/Cubbon Park)",
+      "Good peer group with decent KCET ranks",
+      "Less academic pressure compared to private colleges"
+    ],
+    "cons": [
+      "Very old and basic infrastructure",
+      "Limited modern laboratory facilities",
+      "Requires heavy self-learning",
+      "Hostel facilities are very basic"
+    ],
+    "youtube_review_links": ["https://youtu.be/U0EJyVHD4L0", "https://youtu.be/tPB0gV79aCE"]
+  },
+  {
+    "college_name": "NMAM Institute of Technology (NMAMIT)",
+    "location": "Nitte (near Udupi)",
+    "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹5–8 Lakhs/year",
+      "ISE": "₹4–5 Lakhs/year",
+      "ECE": "₹3–4.5 Lakhs/year"
+    },
+    "cutoff_rank": {
+      "KCET": {
+        "CSE": "8000-15000",
+        "ISE": "12000-20000",
+        "ECE": "15000-30000",
+        "EEE": "30000-50000",
+        "Mechanical": "50000+",
+        "Civil": "60000+"
+      },
+      "COMEDK": {
+        "CSE": "10000-20000",
+        "ISE": "15000-25000",
+        "ECE": "20000-35000"
+      }
+    },
+    "infrastructure_rating": 4.0,
+    "academics_rating": 4.0,
+    "placement_rating": 3.8,
+    "average_package": "₹5–7 LPA",
+    "highest_package": "₹40 LPA",
+    "top_companies": ["Infosys", "TCS", "Wipro", "Accenture", "Cognizant", "Capgemini", "Deloitte"],
+    "pros": [
+      "Good campus infrastructure and hostels",
+      "Autonomous curriculum more updated than VTU",
+      "Peaceful environment for focused study",
+      "Less competition stress than top Bangalore colleges"
+    ],
+    "cons": [
+      "Remote rural location; low industry exposure",
+      "Placements are not as strong as top city colleges",
+      "Limited startup ecosystem",
+      "Campus life is less vibrant"
+    ],
+    "youtube_review_links": ["https://youtu.be/YMaeKvMSQKs", "https://youtu.be/wRD4SRduZCk"]
+  },
+  {
+    "college_name": "JSS Science and Technology University (SJCE)",
+    "location": "Mysuru",
+    "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹7–9 Lakhs/year",
+      "ISE": "₹6–8 Lakhs/year",
+      "ECE": "₹4–6 Lakhs/year"
+    },
+    "cutoff_rank": {
+      "KCET": {
+        "CSE": "5000-9000",
+        "ISE": "8000-14000",
+        "ECE": "10000-18000",
+        "EEE": "20000-35000",
+        "Mechanical": "30000-50000",
+        "Civil": "40000-70000"
+      },
+      "COMEDK": {
+        "CSE": "5000-10000",
+        "ISE": "8000-15000",
+        "ECE": "10000-20000"
+      }
+    },
+    "infrastructure_rating": 4.0,
+    "academics_rating": 4.0,
+    "placement_rating": 4.0,
+    "average_package": "₹6–9 LPA",
+    "highest_package": "₹54 LPA",
+    "top_companies": ["Infosys", "TCS", "Accenture", "Deloitte", "Capgemini", "Bosch", "Wipro", "Cognizant"],
+    "pros": [
+      "Strong placements (especially CSE/ISE/ECE)",
+      "Excellent ROI via KCET",
+      "Autonomous curriculum and good faculty consistency",
+      "Peaceful, clean, and student-friendly city"
+    ],
+    "cons": [
+      "Less industry exposure than Bangalore colleges",
+      "Limited startup ecosystem",
+      "Core branches have weaker placement opportunities",
+      "Wi-Fi inconsistency at peak hours"
+    ],
+    "youtube_review_links": ["https://youtu.be/gMYkezeZHE8", "https://youtu.be/ZulA1Uk0XLY"]
+  },
+  {
+    "college_name": "Sir M. Visvesvaraya Institute of Technology (Sir MVIT)",
+    "location": "Hunasamaranahalli, Bengaluru",
+    "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹5–7.5 Lakhs/year",
+      "ISE": "₹4–6 Lakhs/year",
+      "ECE": "₹3.5–5 Lakhs/year"
+    },
+    "cutoff_rank": {
+      "KCET": {
+        "CSE": "6000-12000",
+        "ISE": "9000-16000",
+        "ECE": "12000-25000"
+      },
+      "COMEDK": {
+        "CSE": "8000-15000",
+        "ISE": "10000-18000",
+        "ECE": "15000-25000"
+      }
+    },
+    "infrastructure_rating": 3.5,
+    "academics_rating": 3.7,
+    "placement_rating": 3.7,
+    "average_package": "₹5–7 LPA",
+    "highest_package": "₹28 LPA",
+    "top_companies": ["TCS", "Infosys", "Wipro", "Cognizant", "Accenture"],
+    "pros": [
+      "Reputed name and legacy",
+      "Large, green campus",
+      "Decent placements for IT branches",
+      "Manageable academic pressure"
+    ],
+    "cons": [
+      "Aging infrastructure requiring renovation",
+      "Located far from the main city",
+      "Limited high-end product company visits",
+      "Strict VTU curriculum rules"
+    ],
+    "youtube_review_links": []
+  },
+  {
+    "college_name": "Bangalore Institute of Technology (BIT)",
+    "location": "V.V. Puram, Bengaluru",
+    "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹8–10 Lakhs/year",
+      "ISE": "₹6–8 Lakhs/year",
+      "ECE": "₹5–7 Lakhs/year"
+    },
+    "cutoff_rank": {
+      "KCET": {
+        "CSE": "3000-6000",
+        "ISE": "5000-9000",
+        "ECE": "8000-15000"
+      },
+      "COMEDK": {
+        "CSE": "4000-8000",
+        "ISE": "6000-10000",
+        "ECE": "9000-18000"
+      }
+    },
+    "infrastructure_rating": 3.2,
+    "academics_rating": 3.8,
+    "placement_rating": 4.0,
+    "average_package": "₹6–8 LPA",
+    "highest_package": "₹38 LPA",
+    "top_companies": ["Infosys", "TCS", "Accenture", "Dell", "Bosch"],
+    "pros": [
+      "Strong historical placement record",
+      "Located in a food and hangout hub (V.V. Puram)",
+      "Experienced faculty members",
+      "Good peer group"
+    ],
+    "cons": [
+      "Very compact urban campus (no big grounds)",
+      "Old infrastructure",
+      "Heavy academic focus; fewer extra-curriculars",
+      "Parking and traffic issues in the area"
+    ],
+    "youtube_review_links": []
+  },
+  {
+    "college_name": "SDM College of Engineering and Technology (SDMCET)",
+    "location": "Dharwad, Karnataka",
+    "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil", "Chemical", "AI & ML"],
+    "management_fees": {
+      "CSE": "₹4.5–6.5 Lakhs/year",
+      "ISE": "₹4–5.5 Lakhs/year",
+      "ECE": "₹3–4.5 Lakhs/year",
+      "AI_ML": "₹4.5–6.5 Lakhs/year"
+    },
+    "cutoff_rank": {
+      "KCET": {
+        "CSE": "13000-17000",
+        "ISE": "14000-21000",
+        "ECE": "16000-24000",
+        "EEE": "26000-47000",
+        "Mechanical": "69000-113000+",
+        "Civil": "72000-140000+"
+      },
+      "COMEDK": {
+        "CSE": "21000-49000",
+        "ISE": "25000-57000",
+        "ECE": "47000-67000",
+        "EEE": "107000-108000"
+      }
+    },
+    "infrastructure_rating": 4.2,
+    "academics_rating": 3.5,
+    "placement_rating": 3.7,
+    "average_package": "₹4.5–6.5 LPA",
+    "highest_package": "₹28 LPA",
+    "top_companies": ["Accenture", "Walmart", "Infosys", "TCS", "Goldman Sachs", "IBM", "Intel", "Bosch"],
+    "pros": [
+      "Reputed autonomous college in North Karnataka",
+      "Peaceful and green campus environment",
+      "Strong faculty with many Ph.D. holders",
+      "Excellent hostel facilities and food (Santrupti Mess)",
+      "Good placements for IT/Circuit branches",
+      "Active student clubs and cultural teams"
+    ],
+    "cons": [
+      "Limited city exposure compared to Bangalore colleges",
+      "Stricter academic grading and tough exams",
+      "Placement percentage has seen recent fluctuations",
+      "Core branches have significantly lower placement rates",
+      "Research culture is moderate"
+    ],
+    "youtube_review_links": ["https://youtu.be/4xboBV4baog", "https://www.youtube.com/watch?v=g5Vn0EI8bTc"]
+  },
+  {
+  "college_name": "CMR Institute of Technology (CMRIT)",
+  "location": "Hesaraghatta, Bengaluru",
+  "branches_available": ["CSE", "ISE", "ECE", "EEE", "AIML", "CSDS"],
+  "management_fees": {
+    "CSE": "₹5–7 Lakhs/year",
+    "ISE": "₹4.5–6.5 Lakhs/year",
+    "ECE": "₹4–6 Lakhs/year",
+    "Note": "Fees vary; higher for AIML/CSDS"
+  },
+  "cutoff_rank": {
+    "KCET": {
+      "CSE": "18000-25000",
+      "ISE": "20000-30000",
+      "ECE": "22000-32000",
+      "EEE": "35000-45000"
+    },
+    "COMEDK": {
+      "CSE": "15000-22000",
+      "ISE": "18000-25000",
+      "ECE": "20000-30000"
+    }
+  },
+  "infrastructure_rating": 3.8,
+  "academics_rating": 3.5,
+  "placement_rating": 3.7,
+  "average_package": "₹4–6 LPA",
+  "highest_package": "₹14 LPA",
+  "top_companies": ["Infosys", "TCS", "Accenture", "Wipro", "Cognizant", "IBM"],
+  "pros": [
+    "Modern campus infrastructure",
+    "Good campus life with many clubs and events",
+    "Industry-focused curriculum updates",
+    "Good Wi-Fi and decent hostel facilities"
+  ],
+  "cons": [
+    "Located on outskirts (Hesaraghatta); limited city exposure",
+    "Placements are okay but not top-tier",
+    "Heavy academic pressure and strict attendance policies",
+    "Wi-Fi can be slow during peak hours",
+    "Faculty experience levels vary widely"
+  ],
+  "youtube_review_links": [
+    "https://youtu.be/J1K7g2J61aM",
+    "https://youtu.be/0D4p6Y5Wn0Q"
+  ]
+},
+{
+    "college_name": "REVA University",
+    "location": "Yelahanka, Bengaluru",
+    "branches_available": ["CSE", "AI & ML", "ECE", "EEE", "Civil", "Mechanical", "Robotics"],
+    "management_fees": {
+      "CSE": "₹9.0 Lakhs/year",
+      "AI_ML": "₹8.0 Lakhs/year",
+      "ECE": "₹7.0 Lakhs/year",
+      "Civil_Mech": "₹5.0 Lakhs/year"
+    },
+    "infrastructure_rating": 4.6,
+    "academics_rating": 3.9,
+    "placement_rating": 4.1,
+    "average_package": "₹8–12 LPA",
+    "highest_package": "₹58 LPA",
+    "top_companies": ["Amazon", "Deloitte", "Capgemini", "Infosys", "Wipro", "IBM"],
+    "pros": [
+      "Modern sprawling campus with 5-star facilities",
+      "Industry-aligned specialized branches",
+      "Excellent sports and cultural scene"
+    ],
+    "cons": [
+      "Large batch sizes can be competitive",
+      "Relatively high management fees",
+      "Strict campus security/rules"
+    ],
+    "youtube_review_links": ["https://youtu.be/InBJyaQVT68"]
+  },
+  {
+    "college_name": "National Institute of Engineering (NIE)",
+    "location": "Manandavadi Road, Mysuru",
+    "branches_available": ["CSE", "ISE", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹7–9 Lakhs/year",
+      "ISE": "₹6–8 Lakhs/year",
+      "ECE": "₹5–6.5 Lakhs/year"
+    },
+    "infrastructure_rating": 4.1,
+    "academics_rating": 4.3,
+    "placement_rating": 4.4,
+    "average_package": "₹10.5 LPA",
+    "highest_package": "₹28 LPA",
+    "top_companies": ["L&T", "Vedanta", "Siemens", "Caterpillar", "ABB India"],
+    "pros": [
+      "One of the oldest and most prestigious autonomous colleges",
+      "Strong core branch placements",
+      "High academic reputation"
+    ],
+    "cons": [
+      "Mysuru location might feel slower than Bengaluru",
+      "Older labs compared to new-age universities"
+    ],
+    "youtube_review_links": ["https://youtu.be/gMYkezeZHE8"]
+  },
+  {
+    "college_name": "New Horizon College of Engineering (NHCE)",
+    "location": "Marathahalli, Bengaluru",
+    "branches_available": ["CSE", "ISE", "ECE", "AI & ML", "Civil", "Mechanical"],
+    "management_fees": {
+      "CSE": "₹8.5 Lakhs/year",
+      "ISE": "₹7.5 Lakhs/year",
+      "ECE": "₹6.5 Lakhs/year"
+    },
+    "infrastructure_rating": 4.5,
+    "academics_rating": 3.8,
+    "placement_rating": 4.2,
+    "average_package": "₹6–10 LPA",
+    "highest_package": "₹40 LPA",
+    "top_companies": ["TCS", "Infosys", "Wipro", "Capgemini", "IBM", "Accenture"],
+    "pros": [
+      "Premium infrastructure in the heart of the IT corridor",
+      "Excellent lab facilities and training centers",
+      "High corporate visibility"
+    ],
+    "cons": [
+      "Strict attendance and disciplinary rules",
+      "High academic workload"
+    ],
+    "youtube_review_links": []
+  },
+  {
+    "college_name": "BMS Institute of Technology (BMSIT)",
+    "location": "Yelahanka, Bengaluru",
+    "branches_available": ["CSE", "AI & DS", "ECE", "EEE", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹7.5 Lakhs/year",
+      "AI_DS": "₹7.0 Lakhs/year",
+      "ECE": "₹6.0 Lakhs/year"
+    },
+    "infrastructure_rating": 4.2,
+    "academics_rating": 4.1,
+    "placement_rating": 4.2,
+    "average_package": "₹8–12 LPA",
+    "highest_package": "₹48 LPA",
+    "top_companies": ["Amazon", "Microsoft", "Google", "TCS", "Capgemini"],
+    "pros": [
+      "Strong placement connection as part of BMS trust",
+      "Modern and quiet campus environment",
+      "Focused on technical excellence"
+    ],
+    "cons": [
+      "Smaller campus compared to BMSCE",
+      "Quiet location with fewer nearby hangouts"
+    ],
+    "youtube_review_links": []
+  },
+  {
+    "college_name": "CMR Institute of Technology (CMRIT)",
+    "location": "Whitefield, Bengaluru",
+    "branches_available": ["CSE", "ISE", "ECE", "AI & ML", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹8.0 Lakhs/year",
+      "ISE": "₹6.5 Lakhs/year",
+      "ECE": "₹6.0 Lakhs/year"
+    },
+    "infrastructure_rating": 4.0,
+    "academics_rating": 3.8,
+    "placement_rating": 4.0,
+    "average_package": "₹6–10 LPA",
+    "highest_package": "₹44 LPA",
+    "top_companies": ["Infosys", "Capgemini", "Deloitte", "IBM", "Cognizant"],
+    "pros": [
+      "Whitefield location is perfect for internships",
+      "Strong emphasis on practical projects",
+      "Good placement assistance for mass recruiters"
+    ],
+    "cons": [
+      "Commute can be tough due to Whitefield traffic",
+      "Average sports facilities"
+    ],
+    "youtube_review_links": []
+  },
+  {
+    "college_name": "Alliance University",
+    "location": "Anekal, Bengaluru",
+    "branches_available": ["CSE", "ECE", "Aerospace", "Mechanical", "EEE"],
+    "management_fees": {
+      "CSE": "₹4.5–5 Lakhs/year",
+      "Aerospace": "₹3.5–4.5 Lakhs/year",
+      "Note": "Fees can be higher depending on the specific specialisation"
+    },
+    "infrastructure_rating": 4.7,
+    "academics_rating": 3.8,
+    "placement_rating": 3.8,
+    "average_package": "₹6.0 LPA",
+    "highest_package": "₹21.6 LPA",
+    "top_companies": ["Cisco", "Oracle", "IBM", "HP", "Deloitte"],
+    "pros": [
+      "One of the best university campuses in India",
+      "Strong focus on holistic personality development",
+      "Global exposure and exchange programs"
+    ],
+    "cons": [
+      "Located very far from the main city",
+      "Fees for some specializations can be expensive"
+    ],
+    "youtube_review_links": []
+  },
+  {
+    "college_name": "RNS Institute of Technology (RNSIT)",
+    "location": "Channasandra, Bengaluru",
+    "branches_available": ["CSE", "ISE", "ECE", "AI & ML", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹6.0–8.0 Lakhs/year",
+      "ISE": "₹5.0–6.5 Lakhs/year",
+      "ECE": "₹4.0–5.5 Lakhs/year"
+    },
+    "infrastructure_rating": 3.9,
+    "academics_rating": 4.0,
+    "placement_rating": 4.1,
+    "average_package": "₹9.2 LPA",
+    "highest_package": "₹42 LPA",
+    "top_companies": ["Amazon", "Deloitte", "Infosys", "TCS", "HCL"],
+    "pros": [
+      "Excellent faculty and academic focus",
+      "Solid placement history especially for IT branches",
+      "Disciplined environment"
+    ],
+    "cons": [
+      "Traditional campus style, not overly modern",
+      "Strict rules about attendance"
+    ],
+    "youtube_review_links": []
+  },
+  {
+    "college_name": "KLE Technological University",
+    "location": "Hubballi",
+    "branches_available": ["CSE", "ECE", "Mechanical", "Civil", "AI"],
+    "management_fees": {
+      "CSE": "₹2.5–3.5 Lakhs/year",
+      "ECE": "₹1.5–2.5 Lakhs/year",
+      "Note": "Relatively lower management fees compared to Bengaluru"
+    },
+    "infrastructure_rating": 4.3,
+    "academics_rating": 4.2,
+    "placement_rating": 3.9,
+    "average_package": "₹6–8 LPA",
+    "highest_package": "₹33 LPA",
+    "top_companies": ["Microsoft", "Amazon", "Bosch", "Samsung", "TCS"],
+    "pros": [
+      "Top-tier autonomous university in North Karnataka",
+      "Excellent focus on innovation and product design",
+      "Very high ROI"
+    ],
+    "cons": [
+      "Located in Hubballi (outside the Bengaluru tech hub)",
+      "Limited city life compared to Bengaluru"
+    ],
+    "youtube_review_links": []
+  },
+  {
+    "college_name": "MVJ College of Engineering",
+    "location": "Whitefield, Bengaluru",
+    "branches_available": ["Aeronautical", "Aerospace", "CSE", "ISE", "ECE"],
+    "management_fees": {
+      "CSE": "₹4.5–6.0 Lakhs/year",
+      "Aerospace": "₹4.0–5.5 Lakhs/year",
+      "ECE": "₹3.5–4.5 Lakhs/year"
+    },
+    "infrastructure_rating": 4.2,
+    "academics_rating": 3.7,
+    "placement_rating": 3.6,
+    "average_package": "₹5.5 LPA",
+    "highest_package": "₹21 LPA",
+    "top_companies": ["Airbus", "Quest Global", "TCS", "Infosys", "Capgemini"],
+    "pros": [
+      "Unique Aeronautical/Aerospace facilities",
+      "Modern architecture and laboratories",
+      "Strategic location near Whitefield companies"
+    ],
+    "cons": [
+      "Placements for non-aero branches are average",
+      "Can be academically demanding"
+    ],
+    "youtube_review_links": []
+  },
+  {
+    "college_name": "Don Bosco Institute of Technology (DBIT)",
+    "location": "Mysore Road, Bengaluru",
+    "branches_available": ["CSE", "ISE", "ECE", "AI & ML", "Mechanical", "Civil"],
+    "management_fees": {
+      "CSE": "₹3.5–5.0 Lakhs/year",
+      "ISE": "₹3.0–4.0 Lakhs/year",
+      "ECE": "₹2.5–3.5 Lakhs/year"
+    },
+    "infrastructure_rating": 4.1,
+    "academics_rating": 3.5,
+    "placement_rating": 3.4,
+    "average_package": "₹4.5 LPA",
+    "highest_package": "₹18 LPA",
+    "top_companies": ["Infosys", "TCS", "Accenture", "Wipro", "Mindtree"],
+    "pros": [
+      "Vast campus with good sports facilities",
+      "Affordable management quota option",
+      "Good support for extra-curriculars"
+    ],
+    "cons": [
+      "Placements are mostly mass recruiters",
+      "Infrastructure in some blocks is older"
+    ],
+    "youtube_review_links": []
   }
 ]
+

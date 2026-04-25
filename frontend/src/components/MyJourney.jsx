@@ -6,7 +6,7 @@ import {
 import { useAppContext } from '../context/AppContext';
 import './MyJourney.css';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5050';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
 
@@ -210,9 +210,6 @@ const MyJourney = () => {
       {/* Header */}
       <div className="my-journey__header">
         <h2 className="my-journey__title">My Journey</h2>
-        <span className="my-journey__career-badge" title={careerLabel}>
-          {careerLabel}
-        </span>
       </div>
 
       {/* Loading */}

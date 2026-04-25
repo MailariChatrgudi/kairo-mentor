@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from utils.career_logic import suggest_career, get_colleges_for_rank
+from utils.career_logic import suggest_career, get_colleges_for_rank, filter_colleges
 
 career_bp = Blueprint("career", __name__)
 
@@ -110,5 +110,50 @@ def get_colleges():
             "total_colleges_found": len(colleges),
             "colleges": colleges
         }), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# POST /api/get_college_suggestions
+# Input : { "rank": 12000, "exam_type": "KCET" }
+# Output: Filtered list of colleges with match scores
+# ─────────────────────────────────────────────────────────────────────────────
+@career_bp.route("/get_college_suggestions", methods=["POST"])
+def get_college_suggestions():
+    data = request.get_json()
+    if not data:
+        return jsonify({"error": "Request body must be JSON"}), 400
+
+    rank = data.get("rank", 0)
+    exam_type = data.get("exam_type", "KCET").strip()
+    is_explorer = data.get("is_explorer", False)
+
+    try:
+        rank = int(rank) if rank else 0
+    except (ValueError, TypeError):
+        return jsonify({"error": "'rank' must be a valid integer"}), 400
+
+    try:
+        colleges = filter_colleges(user_rank=rank, exam_type=exam_type, is_explorer=is_explorer)
+        return jsonify({
+            "success": True,
+            "rank": rank,
+            "exam_type": exam_type,
+            "is_explorer": is_explorer,
+            "total_colleges_found": len(colleges),
+            "colleges": colleges
+        }), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# GET /api/get_all_colleges - returns all colleges without rank filtering
+@career_bp.route("/get_all_colleges", methods=["GET"])
+def get_all_colleges():
+    try:
+        from utils.career_logic import load_json
+        colleges = load_json("colleges.json")
+        return jsonify({"success": True, "colleges": colleges or []}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500

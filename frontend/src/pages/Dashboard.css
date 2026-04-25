@@ -23,10 +23,11 @@
 }
 
 .dashboard__greeting {
-  font-size: 14px;
-  color: var(--color-text-secondary);
-  font-weight: 500;
-  margin-bottom: 2px;
+  font-size: 15px;
+  color: #000000;          /* Always solid black – overridden by inline style if needed */
+  font-weight: 500;        /* Default; JS overrides to 900 for hustle phases */
+  margin-bottom: 3px;
+  transition: font-weight 0.3s ease, letter-spacing 0.3s ease;
 }
 
 .dashboard__name {

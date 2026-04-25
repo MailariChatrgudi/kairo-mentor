@@ -55,11 +55,12 @@ const steps = [
 
 const ProfileSetup = () => {
   const navigate = useNavigate();
-  const { setUserProfile } = useAppContext();
+  const { setUserProfile, setIsExplorer } = useAppContext();
 
-  const [step, setStep]               = useState(0);
-  const [loading, setLoading]         = useState(false);
-  const [error, setError]             = useState('');
+  const [step, setStep]                     = useState(0);
+  const [loading, setLoading]               = useState(false);
+  const [error, setError]                   = useState('');
+  const [isExplorerMode, setIsExplorerMode] = useState(false);
 
   // Form fields
   const [name, setName]               = useState('');
@@ -85,7 +86,7 @@ const ProfileSetup = () => {
     if (step === 0) return name.trim().length > 0;
     if (step === 1) {
       if (!studentType) return false;
-      if (studentType === '12th Passout') return kcetRank.trim().length > 0;
+      if (studentType === '12th Passout') return isExplorerMode || kcetRank.trim().length > 0;
       if (studentType === 'Engineering Student') return currentYear.length > 0;
       return false;
     }
@@ -117,9 +118,12 @@ const ProfileSetup = () => {
       financial_background: finance,
       preferred_language: language,
       iks_answers,
-      ...(studentType === '12th Passout'
+      is_explorer: isExplorerMode,
+      ...(studentType === '12th Passout' && !isExplorerMode
         ? { kcet_rank: parseInt(kcetRank) || 0 }
-        : { current_year: currentYear }),
+        : studentType === 'Engineering Student'
+          ? { current_year: currentYear }
+          : {}),
     };
 
     try {
@@ -129,11 +133,12 @@ const ProfileSetup = () => {
         body: JSON.stringify({
           interest,
           goal,
-          rank: studentType === '12th Passout' ? parseInt(kcetRank) || 0 : 0,
+          rank: studentType === '12th Passout' && !isExplorerMode ? parseInt(kcetRank) || 0 : 0,
           student_type: studentType,
           financial_background: finance,
           preferred_language: language,
           current_year: currentYear || null,
+          is_explorer: isExplorerMode,
           iks_answers
         }),
       });
@@ -145,6 +150,7 @@ const ProfileSetup = () => {
       }
 
       setUserProfile(profile);
+      setIsExplorer(isExplorerMode);
       const careers = json.data?.suggested_careers || [];
       const whySuited = json.data?.why_suited || "Based on our analysis, this fits you perfectly.";
       
@@ -159,6 +165,23 @@ const ProfileSetup = () => {
 
   const next = () => {
     setError('');
+    
+    if (step === 0) {
+      const isValid = /^[a-zA-Z\s]+$/.test(name.trim());
+      if (!isValid) {
+        setError('Please enter a valid name (letters only)');
+        return;
+      }
+    }
+
+    if (step === 1 && studentType === '12th Passout' && !isExplorerMode) {
+      const rank = parseInt(kcetRank);
+      if (!kcetRank.trim() || isNaN(rank) || rank <= 0) {
+        setError('Please enter a valid KCET rank');
+        return;
+      }
+    }
+
     if (step < steps.length - 1) {
       setStep(step + 1);
     } else {
@@ -200,8 +223,9 @@ const ProfileSetup = () => {
                 label="Your Name"
                 placeholder="e.g. Arjun"
                 value={name}
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => { setName(e.target.value); setError(''); }}
                 icon={<User size={20} strokeWidth={1.5} />}
+                error={!!error && step === 0}
               />
             )}
 
@@ -227,14 +251,58 @@ const ProfileSetup = () => {
 
                 {studentType === '12th Passout' && (
                   <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
-                    <Input
-                      label="KCET Rank"
-                      placeholder="e.g. 12500"
-                      type="number"
-                      value={kcetRank}
-                      onChange={(e) => setKcetRank(e.target.value)}
-                      icon={<Hash size={20} strokeWidth={1.5} />}
-                    />
+                    {!isExplorerMode && (
+                      <Input
+                        label="KCET Rank"
+                        placeholder="e.g. 12500"
+                        type="number"
+                        value={kcetRank}
+                        onChange={(e) => { setKcetRank(e.target.value); setError(''); }}
+                        icon={<Hash size={20} strokeWidth={1.5} />}
+                        error={!!error && step === 1}
+                      />
+                    )}
+
+                    {/* Explorer Mode Toggle */}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const next = !isExplorerMode;
+                        setIsExplorerMode(next);
+                        if (next) setKcetRank('');
+                        setError('');
+                      }}
+                      style={{
+                        display: 'flex', alignItems: 'center', gap: 10,
+                        marginTop: 14, width: '100%',
+                        padding: '13px 18px', borderRadius: 16,
+                        border: `2px solid ${isExplorerMode ? '#6366F1' : '#e5e7eb'}`,
+                        background: isExplorerMode ? 'rgba(99,102,241,0.07)' : '#fafafa',
+                        cursor: 'pointer', transition: 'all 0.2s',
+                        textAlign: 'left',
+                      }}
+                    >
+                      <span style={{
+                        width: 20, height: 20, borderRadius: 6, flexShrink: 0,
+                        border: `2px solid ${isExplorerMode ? '#6366F1' : '#d1d5db'}`,
+                        background: isExplorerMode ? '#6366F1' : 'transparent',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        transition: 'all 0.2s',
+                      }}>
+                        {isExplorerMode && <span style={{ color: '#fff', fontSize: 13, fontWeight: 900, lineHeight: 1 }}>✓</span>}
+                      </span>
+                      <span>
+                        <span style={{ display: 'block', fontWeight: 700, fontSize: 14, color: isExplorerMode ? '#4f46e5' : '#374151' }}>
+                          I don't have a rank / Just exploring
+                        </span>
+                        <span style={{ display: 'block', fontSize: 12, color: '#9ca3af', marginTop: 2 }}>
+                          We'll show top colleges sorted by placements &amp; infrastructure
+                        </span>
+                      </span>
+                      {isExplorerMode && (
+                        <span style={{ marginLeft: 'auto', background: '#6366F1', color: '#fff', fontSize: 10, fontWeight: 800, padding: '3px 8px', borderRadius: 99, letterSpacing: '0.05em' }}>EXPLORER</span>
+                      )}
+                    </button>
                   </motion.div>
                 )}
 

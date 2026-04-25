@@ -1,18 +1,22 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, MessageCircle, Lightbulb, Briefcase, Menu, X, LogOut } from 'lucide-react';
+import { Home, MessageCircle, Lightbulb, Briefcase, GraduationCap, Menu, X, LogOut } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 
 const navItems = [
-  { path: '/dashboard', icon: Home, label: 'Home' },
-  { path: '/mentor', icon: MessageCircle, label: 'Mentor' },
-  { path: '/skills', icon: Lightbulb, label: 'Skills & Journey' },
-  { path: '/opportunities', icon: Briefcase, label: 'Opportunities' },
+  { path: '/dashboard',    icon: Home,           label: 'Home' },
+  { path: '/mentor',       icon: MessageCircle,  label: 'Mentor' },
+  { path: '/skills',       icon: Lightbulb,      label: 'Skills & Journey' },
+  { path: '/opportunities',icon: Briefcase,      label: 'Opportunities' },
 ];
 
+const clgInfoItem = { path: '/colleges', icon: GraduationCap, label: 'Clg Info' };
+
 const Navigation = () => {
-  const { logout } = useAppContext();
+  const { logout, userProfile } = useAppContext();
   const [isOpen, setIsOpen] = useState(false);
+  const is12th = userProfile?.student_type === '12th Passout';
+  const allNavItems = is12th ? [...navItems, clgInfoItem] : navItems;
 
   return (
     <>
@@ -37,7 +41,7 @@ const Navigation = () => {
         </div>
 
         <div className="flex w-full lg:flex-col flex-row justify-around lg:justify-start gap-1 lg:gap-2">
-          {navItems.map(({ path, icon: Icon, label }) => (
+          {allNavItems.map(({ path, icon: Icon, label }) => (
             <NavLink
               key={path}
               to={path}

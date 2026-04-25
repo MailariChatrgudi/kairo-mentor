@@ -1,0 +1,7 @@
+.college-info {
+  min-height: 100vh;
+}
+
+.college-info__content {
+  padding-bottom: 80px; /* space for bottom nav on mobile */
+}

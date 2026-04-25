@@ -46,3 +46,20 @@
 .kairo-input::placeholder {
   color: #BEBEBE;
 }
+
+.kairo-input-container--error {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2 !important;
+}
+
+.kairo-input-container--error .kairo-input {
+  color: #ef4444;
+}
+
+.kairo-input-container--error .kairo-input::placeholder {
+  color: #fca5a5;
+}
+
+.kairo-input-icon--error {
+  color: #ef4444 !important;
+}

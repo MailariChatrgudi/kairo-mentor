@@ -15,6 +15,8 @@ import MentorChat from './pages/MentorChat';
 import SkillHub from './pages/SkillHub';
 import Opportunities from './pages/Opportunities';
 import VideoConsole from './pages/VideoConsole';
+import CollegeInfo from './pages/CollegeInfo';
+import GrindOrb from './components/GrindOrb';
 
 import './App.css';
 
@@ -43,6 +45,7 @@ function AppRoutes() {
           <Route path="/mentor" element={<ProtectedRoute><MentorChat /></ProtectedRoute>} />
           <Route path="/skills" element={<ProtectedRoute><SkillHub /></ProtectedRoute>} />
           <Route path="/opportunities" element={<ProtectedRoute><Opportunities /></ProtectedRoute>} />
+          <Route path="/colleges" element={<ProtectedRoute><CollegeInfo /></ProtectedRoute>} />
           <Route path="/learn/:videoTitle" element={<ProtectedRoute><VideoConsole /></ProtectedRoute>} />
 
           <Route path="*" element={<Navigate to="/" replace />} />
@@ -56,6 +59,7 @@ function App() {
   return (
     <AppProvider>
       <AppRoutes />
+      <GrindOrb />
     </AppProvider>
   );
 }
