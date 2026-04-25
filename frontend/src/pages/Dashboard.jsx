@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Sparkles, CheckCircle2, BookOpen, Briefcase, Loader2,
   ChevronRight, Book, ClipboardCheck, HelpCircle, Lock,
-  X, Calendar, ArrowRight
+  X, Calendar, ArrowRight, Target
 } from 'lucide-react';
 import Card from '../components/Card';
 import BottomNav from '../components/BottomNav';

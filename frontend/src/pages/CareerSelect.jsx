@@ -90,7 +90,7 @@ const CareerSelect = () => {
 
     // Save to backend — career_path is resolved server-side to a course_id
     const userId = (updatedProfile.name || 'Student').toLowerCase().replace(/\s+/g, '_') || 'demo_user';
-    fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5050'}/api/create_user`, {
+    fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/create_user`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
