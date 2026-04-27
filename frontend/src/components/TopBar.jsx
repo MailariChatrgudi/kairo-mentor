@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 import './TopBar.css';
 
-const TopBar = ({ title, showBack = false, rightAction = null, onBack = null }) => {
+const TopBar = ({ title, showBack = false, leftAction = null, rightAction = null, onBack = null }) => {
   const navigate = useNavigate();
 
   const handleBack = () => {
@@ -14,6 +14,7 @@ const TopBar = ({ title, showBack = false, rightAction = null, onBack = null }) 
   return (
     <header className="top-bar">
       <div className="top-bar__left">
+        {leftAction}
         {showBack && (
           <button className="top-bar__back" onClick={handleBack}>
             <ChevronLeft size={24} strokeWidth={2} />

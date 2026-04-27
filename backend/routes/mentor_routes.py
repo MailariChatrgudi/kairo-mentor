@@ -2,8 +2,26 @@ from flask import Blueprint, request, jsonify
 import json
 from utils.storage_logic import get_user
 from utils.task_logic import get_day_data, _get_completed_videos, _get_completed_days
-from utils.ai_helper import generate_mentor_response
+from utils.ai_helper import generate_mentor_response, generate_chat_title
 from utils.mentor_logic import is_query_relevant
+from utils.storage_logic import get_user, save_user
+
+def _identify_weak_areas(user):
+    """Analyze scores to identify specific learning gaps."""
+    weak = []
+    quizzes = user.get("quiz_progress", {})
+    for topic, data in quizzes.items():
+        score = data.get("score") if isinstance(data, dict) else data
+        if isinstance(score, (int, float)) and score < 70:
+            weak.append(f"{topic} (Quiz: {score}%)")
+    
+    assignments = user.get("assignment_progress", {})
+    for task, data in assignments.items():
+        score = data.get("score") if isinstance(data, dict) else data
+        if isinstance(score, (int, float)) and score < 70:
+            weak.append(f"{task} (Assignment: {score}%)")
+    
+    return weak if weak else ["None identified yet! Keep it up."]
 
 mentor_bp = Blueprint("mentor", __name__)
 
@@ -28,10 +46,16 @@ def ai_mentor_v2():
         return jsonify({"error": "'user_id' field is required"}), 400
 
     # 1. Human-like Sensitivity & Relevance Filter
+    user = get_user(user_id)
+    career = user.get("career", {}).get("selected", "Technology")
+    current_day = user["journey"].get("day", 1)
+    day_data = get_day_data(current_day, user)
+    topic = day_data.get("title", "current tasks")
+
     if not is_query_relevant(message):
          return jsonify({
             "success": True, 
-            "response": "👋 Hey! I noticed that might be a bit off-topic. I'm here to make sure you reach your career goals as a professional. Let's get back to your learning journey—how can I help you with your current tasks?"
+            "response": f"I’m focused on being your career mentor. Let's get back to your {career} goals so we can keep your momentum going!"
          })
 
     try:
@@ -55,13 +79,18 @@ def ai_mentor_v2():
                 "day": current_day,
                 "topic": topic,
                 "streak": streak,
-                "total_videos_finished": len(vids_done),
-                "total_milestones_reached": len(days_done),
-                "last_active": user["progress"].get("last_active_date")
+                "videos_finished": vids_done,
+                "milestones_reached": days_done,
+                "last_active": user["progress"].get("last_active_date"),
+                "weak_areas": _identify_weak_areas(user),
+                "task_completion": user.get("task_progress", {}),
+                "assignment_scores": user.get("assignment_progress", {}),
+                "quiz_scores": user.get("quiz_progress", {})
             },
             "curriculum_peek": {
-                "tasks": day_data.get("tasks", []),
-                "assignment_focus": day_data.get("assignment", {}).get("description", "")
+                "current_day_tasks": day_data.get("tasks", []),
+                "assignment_focus": day_data.get("assignment", {}).get("description", ""),
+                "next_day_topic": get_day_data(current_day + 1, user).get("title", "Advanced Concepts") if current_day < 30 else "Completion"
             }
         }
 
@@ -84,3 +113,85 @@ def ai_mentor_v2():
             "success": True,
             "response": "👋 I'm currently reflecting on your progress and having a small technical hiccup. Feel free to continue with your current lesson, and I'll be back to guide you in a moment!"
         }), 200
+
+@mentor_bp.route("/generate_chat_title", methods=["POST"])
+def generate_title():
+    data = request.get_json()
+    message = data.get("message", "").strip()
+    if not message:
+        return jsonify({"error": "Message is required"}), 400
+    
+    title = generate_chat_title(message)
+    return jsonify({"success": True, "title": title}), 200
+
+@mentor_bp.route("/save_chat", methods=["POST"])
+def save_chat_to_history():
+    data = request.get_json()
+    user_id = data.get("user_id")
+    chat_id = data.get("chat_id")
+    title = data.get("title")
+    messages = data.get("messages")
+
+    if not all([user_id, chat_id, title, messages]):
+        return jsonify({"error": "Missing fields"}), 400
+
+    user = get_user(user_id)
+    history = user.get("chat_history", [])
+    
+    # Check if chat already exists
+    existing = next((c for c in history if c["id"] == chat_id), None)
+    if existing:
+        existing["messages"] = messages
+        existing["title"] = title
+    else:
+        history.append({
+            "id": chat_id,
+            "title": title,
+            "messages": messages,
+            "timestamp": request.json.get("timestamp")
+        })
+    
+    user["chat_history"] = history
+    save_user(user_id, user)
+    return jsonify({"success": True}), 200
+
+@mentor_bp.route("/get_chat_history/<user_id>", methods=["GET"])
+def get_history(user_id):
+    user = get_user(user_id)
+    return jsonify({"success": True, "history": user.get("chat_history", [])}), 200
+
+@mentor_bp.route("/delete_chat", methods=["POST"])
+def delete_chat():
+    data = request.get_json()
+    user_id = data.get("user_id")
+    chat_id = data.get("chat_id")
+    
+    if not user_id or not chat_id:
+        return jsonify({"error": "Missing user_id or chat_id"}), 400
+        
+    user = get_user(user_id)
+    history = user.get("chat_history", [])
+    user["chat_history"] = [c for c in history if c["id"] != chat_id]
+    save_user(user_id, user)
+    return jsonify({"success": True}), 200
+
+@mentor_bp.route("/edit_chat_title", methods=["POST"])
+def edit_chat_title():
+    data = request.get_json()
+    user_id = data.get("user_id")
+    chat_id = data.get("chat_id")
+    new_title = data.get("title")
+    
+    if not all([user_id, chat_id, new_title]):
+        return jsonify({"error": "Missing fields"}), 400
+        
+    user = get_user(user_id)
+    history = user.get("chat_history", [])
+    for chat in history:
+        if chat["id"] == chat_id:
+            chat["title"] = new_title
+            break
+            
+    user["chat_history"] = history
+    save_user(user_id, user)
+    return jsonify({"success": True}), 200

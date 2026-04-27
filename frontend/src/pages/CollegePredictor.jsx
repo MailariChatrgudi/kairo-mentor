@@ -105,6 +105,14 @@ const CollegePredictor = ({ initialRank }) => {
     setTab('branches');
     setSelectedBranch(null);
   };
+  
+  const calculateMatchProb = (rank, cutoffStr) => {
+    if (!rank || !cutoffStr || cutoffStr === 'N/A') return 'Unknown';
+    const maxRank = parseInt(cutoffStr.split('-').pop().replace('+', ''));
+    if (rank <= maxRank) return 'High';
+    if (rank <= maxRank * 1.2) return 'Moderate';
+    return 'Reach';
+  };
 
   // Internal back handler — only close the branch detail; never go to browser history
   const handleBack = () => {
@@ -181,10 +189,17 @@ const CollegePredictor = ({ initialRank }) => {
                       </div>
                       <div className="college-predictor__branch-info">
                         <h3>{b.label}</h3>
-                        <p>
-                          {isExplorer ? `Mgmt Fee: ${b.fee}` : `KCET Cutoff: ${b.cutoff}`}
-                          {!isExplorer && b.seats !== 'N/A' ? ` · Seats: ${b.seats}` : ''}
-                        </p>
+                        <div className="flex items-center gap-2">
+                          <p>
+                            {isExplorer ? `Mgmt Fee: ${b.fee}` : `KCET Cutoff: ${b.cutoff}`}
+                            {!isExplorer && b.seats !== 'N/A' ? ` · Seats: ${b.seats}` : ''}
+                          </p>
+                          {!isExplorer && b.cutoff !== 'N/A' && (
+                            <span className={`match-badge ${calculateMatchProb(userProfile?.kcet_rank, b.cutoff)}`}>
+                              {calculateMatchProb(userProfile?.kcet_rank, b.cutoff)}
+                            </span>
+                          )}
+                        </div>
                       </div>
                       <ChevronRight size={18} color="#CCCCCC" />
                     </div>

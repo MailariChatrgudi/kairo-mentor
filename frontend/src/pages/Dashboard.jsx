@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Sparkles, CheckCircle2, BookOpen, Briefcase, Loader2,
   ChevronRight, Book, ClipboardCheck, HelpCircle, Lock,
-  X, Calendar, ArrowRight, Target
+  X, Calendar, ArrowRight, Target, Menu
 } from 'lucide-react';
 import Card from '../components/Card';
 import BottomNav from '../components/BottomNav';
@@ -270,8 +270,37 @@ const Dashboard = () => {
     return () => clearInterval(id);
   }, [getGreetingConfig]);
 
+  const [navOpen, setNavOpen] = useState(false);
+
   return (
-    <div className="dashboard lg:pl-64 min-h-screen bg-[#F8F8F8]">
+    <div className={`dashboard ${navOpen ? 'nav-open' : ''} lg:pl-64 min-h-screen bg-[#F8F8F8]`}>
+      <AnimatePresence>
+        {navOpen && (
+          <>
+            <motion.div 
+              className="dashboard__nav-overlay"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setNavOpen(false)}
+            />
+            <motion.div 
+              className="dashboard__nav-drawer"
+              initial={{ x: '-100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '-100%' }}
+            >
+              <div className="p-6">
+                <div className="flex justify-between items-center mb-8">
+                  <h2 className="font-black text-xl">KAIRO</h2>
+                  <button onClick={() => setNavOpen(false)}><X size={24} /></button>
+                </div>
+                <BottomNav isDrawer onClose={() => setNavOpen(false)} />
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
       <motion.div className="dashboard__content max-w-5xl mx-auto p-4 lg:p-10 lg:pt-8"
         variants={container} initial="hidden" animate="show">
 
