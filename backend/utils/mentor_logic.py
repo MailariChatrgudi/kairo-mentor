@@ -14,7 +14,8 @@ def is_query_relevant(message: str) -> bool:
     invalid_keywords = [
         "joke", "pm", "prime minister", "president", "movie", "song", "weather",
         "sports", "cricket", "football", "who is", "tell me a story",
-        "recipe", "capital of", "buy", "sell", "random general knowledge"
+        "recipe", "food", "hobby", "hobbies", "entertainment",
+        "capital of", "buy", "sell", "random general knowledge"
     ]
     
     for kw in invalid_keywords:
@@ -57,9 +58,7 @@ def chat_with_mentor(user_id: str, message: str, history: list) -> str:
     if not is_query_relevant(message):
         context = build_student_context(user_id)
         career = context.get('career') or 'your chosen career'
-        return (f"I understand your question. However, this is slightly outside your current learning focus.\n\n"
-                f"Based on your profile, your goal is {career}. Let’s stay aligned with this path to ensure steady progress.\n\n"
-                f"If you’d like, I can help you with topics directly related to your goal.")
+        return f"I’m focused on being your career mentor. Let's get back to your {career} goals so we can keep your momentum going!"
 
     try:
         # PART 1: CONTEXT BUILDING

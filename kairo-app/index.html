@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAIRO | AI Voice Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Background elements -->
+        <div class="bg-glow"></div>
+        
+        <header>
+            <div class="logo">KAIRO</div>
+            <div class="status" id="status">System Idle</div>
+        </header>
+
+        <main>
+            <!-- Avatar Section -->
+            <div class="avatar-container" id="avatar-container">
+                <div class="avatar-wrapper">
+                    <img src="avatar.png" alt="Kairo Avatar" class="avatar-image" id="avatar">
+                    <div class="avatar-glow" id="avatar-glow"></div>
+                </div>
+            </div>
+
+            <!-- Interaction Display -->
+            <div class="display-section">
+                <div class="chat-display" id="chat-display">
+                    <p class="ai-msg">Hello! I am KAIRO. How can I assist you today?</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="controls">
+                <button class="mic-btn" id="mic-btn">
+                    <div class="mic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" fill="currentColor"/>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="12" y1="19" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="8" y1="23" x2="16" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="pulse-ring"></div>
+                </button>
+                <p class="hint">Click to speak</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

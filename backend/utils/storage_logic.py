@@ -58,6 +58,7 @@ def get_default_user_schema(user_id):
         "quiz_progress": {},
         # Per-course snapshot — preserves progress if user switches course
         "course_progress": {},
+        "chat_history": [],
         "updated_at": datetime.utcnow().isoformat()
     }
 

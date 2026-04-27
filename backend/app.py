@@ -25,12 +25,14 @@ from routes.roadmap_routes import roadmap_bp
 from routes.task_routes import task_bp
 from routes.mentor_routes import mentor_bp
 from routes.progress_routes import progress_bp
+from routes.tts_routes import tts_bp
 
 app.register_blueprint(career_bp, url_prefix="/api")
 app.register_blueprint(roadmap_bp, url_prefix="/api")
 app.register_blueprint(task_bp, url_prefix="/api")
 app.register_blueprint(mentor_bp, url_prefix="/api")
 app.register_blueprint(progress_bp, url_prefix="/api")
+app.register_blueprint(tts_bp, url_prefix="/api")
 
 
 # ─── Health Check ──────────────────────────────────────────────────────────────
